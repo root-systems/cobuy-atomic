@@ -11,11 +11,9 @@
     "url": "git+https://github.com/root-systems/cobuy-atomic.git"
   },
   "keywords": [
-    "atomic",
-    "design",
+    "atomic design",
     "cobuy",
-    "group",
-    "buying"
+    "group buying"
   ],
   "author": "rootsystems",
   "license": "UNLICENCED",
