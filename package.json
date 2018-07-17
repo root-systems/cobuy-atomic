@@ -1,0 +1,26 @@
+{
+  "name": "cobuy-atomic",
+  "version": "0.0.1",
+  "description": "Cobuy built from the ground up using atomic-dog",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/root-systems/cobuy-atomic.git"
+  },
+  "keywords": [
+    "atomic",
+    "design",
+    "cobuy",
+    "group",
+    "buying"
+  ],
+  "author": "rootsystems",
+  "license": "UNLICENCED",
+  "bugs": {
+    "url": "https://github.com/root-systems/cobuy-atomic/issues"
+  },
+  "homepage": "https://github.com/root-systems/cobuy-atomic#readme"
+}
