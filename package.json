@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/root-systems/cobuy-atomic#readme",
   "devDependencies": {
-    "atomic-dog": "https://github.com/root-systems/atomic-dog/tarball/codecept-scaffolding"
+    "atomic-dog": "https://github.com/root-systems/atomic-dog/tarball/codecept-scaffolding",
+    "nightmare": "^3.0.1"
   }
 }
