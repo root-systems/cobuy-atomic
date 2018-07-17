@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/root-systems/cobuy-atomic/issues"
   },
-  "homepage": "https://github.com/root-systems/cobuy-atomic#readme"
+  "homepage": "https://github.com/root-systems/cobuy-atomic#readme",
+  "devDependencies": {
+    "atomic-dog": "https://github.com/root-systems/atomic-dog/tarball/codecept-scaffolding"
+  }
 }
