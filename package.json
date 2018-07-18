@@ -4,7 +4,8 @@
   "description": "Cobuy built from the ground up using atomic-dog",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "start-storybook -p 9001 -c .storybook"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/root-systems/cobuy-atomic/issues"
   },
-  "homepage": "https://github.com/root-systems/cobuy-atomic#readme"
+  "homepage": "https://github.com/root-systems/cobuy-atomic#readme",
+  "dependencies": {
+    "@storybook/react": "^3.4.8",
+    "babel-core": "^6.26.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
 }
