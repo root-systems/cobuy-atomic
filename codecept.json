@@ -1,0 +1,14 @@
+{
+  "tests": "./ui/pages/tests/*_test.js",
+  "timeout": 10000,
+  "output": "./ui/pages/test-output/output",
+  "helpers": {
+    "Nightmare": {
+      "url": "http://localhost"
+    }
+  },
+  "include": {},
+  "bootstrap": false,
+  "mocha": {},
+  "name": "cobuy-atomic"
+}
