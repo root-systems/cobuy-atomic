@@ -44,6 +44,7 @@
     "@storybook/addon-links": "4.0.0-alpha.14",
     "@storybook/addon-notes": "4.0.0-alpha.14",
     "@storybook/addon-options": "4.0.0-alpha.14",
+    "@storybook/addon-storysource": "^3.4.8",
     "@storybook/addon-viewport": "4.0.0-alpha.14",
     "@storybook/addons": "4.0.0-alpha.14",
     "@storybook/components": "^4.0.0-alpha.14",
@@ -51,6 +52,7 @@
     "@storybook/node-logger": "4.0.0-alpha.14",
     "@storybook/react": "4.0.0-alpha.14",
     "babel-core": "^7.0.0-bridge.0",
-    "moment": "^2.22.2"
+    "moment": "^2.22.2",
+    "storybook-addon-jsx": "^5.3.0"
   }
 }
