@@ -4,7 +4,7 @@ import Button from '../atoms/button'
 import Label from '../atoms/label'
 import Input from '../atoms/input'
 
-export default (props) => {
+const search = (props) => {
   const { label, title } = props
 
   return (
@@ -17,3 +17,5 @@ export default (props) => {
     </div>
   )
 }
+
+export default search

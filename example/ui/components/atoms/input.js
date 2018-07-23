@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default (props) => {
+const input = (props) => {
   return (
     <input placeholder='enter text'></input>
   )
 }
+
+export default input

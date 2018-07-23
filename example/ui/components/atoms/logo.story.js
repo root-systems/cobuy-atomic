@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import Logo from './logo'
 
-storiesOf('example/atoms/Logo', module)
+storiesOf('@example|atoms/Logo', module)
   .add('plain', () => (
     <Logo height={50} width={100} />
   ))

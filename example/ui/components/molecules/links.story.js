@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import Links from './links'
 
-storiesOf('example/molecules/links', module)
+storiesOf('@example|molecules/links', module)
   .add('plain', () => (
     <Links
       links={[

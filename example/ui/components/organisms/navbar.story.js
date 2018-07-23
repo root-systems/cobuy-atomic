@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import Navbar from './navbar'
 
-storiesOf('example/organisms/navbar', module)
+storiesOf('@example|organisms/navbar', module)
   .add('plain', () => (
     <Navbar
       links={[

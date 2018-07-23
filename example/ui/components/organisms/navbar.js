@@ -3,7 +3,7 @@ import React from 'react'
 import Links from '../molecules/links'
 import Search from '../molecules/search'
 
-export default (props) => {
+const navbar = (props) => {
   const { links, logo, label, title } = props
 
   return (
@@ -19,3 +19,5 @@ export default (props) => {
     </div>
   )
 }
+
+export default navbar
