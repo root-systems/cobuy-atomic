@@ -1,7 +1,7 @@
 {
-  "tests": "./ui/pages/tests/*_test.js",
+  "tests": "./ux/flow-tests/*_test.js",
   "timeout": 10000,
-  "output": "./ui/pages/test-output/output",
+  "output": "./ux/test-output/output",
   "helpers": {
     "Nightmare": {
       "url": "http://localhost"
