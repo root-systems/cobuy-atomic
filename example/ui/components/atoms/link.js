@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default (props) => {
+const link = (props) => {
   return (
     <a>{props.name}</a>
   )
 }
+
+export default link

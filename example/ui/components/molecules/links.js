@@ -3,7 +3,7 @@ import React from 'react'
 import Link from '../atoms/link'
 import Logo from '../atoms/logo'
 
-export default (props) => {
+const links = (props) => {
   const { links, logo } = props
 
   return (
@@ -19,3 +19,5 @@ export default (props) => {
     </div>
   )
 }
+
+export default links

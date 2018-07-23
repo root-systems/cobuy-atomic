@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default (props) => {
+const a001 = (props) => {
   return (
     <button>{props.title}</button>
   )
 }
+
+export default a001
