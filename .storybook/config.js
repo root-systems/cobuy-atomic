@@ -8,11 +8,11 @@ function importAll(req) {
 
 function loadStories() {
   let req;
-  req = require.context('../example/ui/components/atoms', true, /\.stories\.js$/);
+  req = require.context('../example/ui/components/atoms', true, /\.story.js$/);
   importAll(req);
 
- // req = require.context('../ui/components/atoms', true, /\.stories\.js$/);
- // importAll(req);
+ req = require.context('../ui/components/atoms', true, /\.story.js$/);
+ importAll(req);
 }
 
 configure(loadStories, module);
