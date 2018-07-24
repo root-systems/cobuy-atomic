@@ -1,9 +1,20 @@
 import React from 'react'
+import { withStyles } from '@material-ui/core/styles';
+
+const styles = {
+  container: {
+    backgroundColor: 'red',
+  },
+};
 
 const a001 = (props) => {
   return (
-    <button>{props.title}</button>
+    <div>
+      <div className={props.classes.container}>
+        <button>{props.title}</button>
+      </div>
+    </div>
   )
 }
 
-export default a001
+export default withStyles(styles)(a001)
