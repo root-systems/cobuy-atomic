@@ -4,6 +4,10 @@ Before((I) => {
   I.amOnPage('/packaging');
 });
 
+Scenario('View order list', (I) => {
+  I.seeElement('#order-list');
+});
+
 Scenario('View task list', (I) => {
   I.click('#order');
   I.amOnPage('/packaging/task-list');
