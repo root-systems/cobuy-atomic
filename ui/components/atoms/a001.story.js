@@ -11,11 +11,11 @@ import Button from './a001'
 storiesOf('Atoms|a001', module)
   .addDecorator(muiThemeProvider)
   .add('Default', () => (
-    <Button title={'default button'} variant = {'contained'} buttonColor = {'default'} />
+    <Button title={'default button'} buttonColor = {'default'} />
   ))
   .add('Primary', () => (
-    <Button title={'primary button'} variant = {'contained'} buttonColor = {'primary'} />
+    <Button title={'primary button'} buttonColor = {'primary'} />
   ))
   .add('Secondary', () => (
-    <Button title={'seconday button'} variant = {'contained'} buttonColor ={'secondary'} />
+    <Button title={'seconday button'} buttonColor ={'secondary'} />
   ))
