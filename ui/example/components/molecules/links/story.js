@@ -1,11 +1,11 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Navbar from './navbar'
+import Links from '.'
 
-storiesOf('@example|organisms/navbar', module)
+storiesOf('@example|molecules/links', module)
   .add('plain', () => (
-    <Navbar
+    <Links
       links={[
         { name: 'Home' },
         { name: 'About' },
@@ -13,7 +13,5 @@ storiesOf('@example|organisms/navbar', module)
         { name: 'Contact' }
       ]}
       logo={{ height: 50, width: 100 }}
-      label={'Search the site'}
-      title={'Search'}
     />
   ))

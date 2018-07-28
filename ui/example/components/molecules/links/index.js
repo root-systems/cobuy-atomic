@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Link from '../atoms/link'
-import Logo from '../atoms/logo'
+import Link from '../../atoms/link'
+import Logo from '../../atoms/logo'
 
 const links = (props) => {
   const { links, logo } = props

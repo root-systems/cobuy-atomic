@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Button from '../atoms/button'
-import Label from '../atoms/label'
-import Input from '../atoms/input'
+import Button from '../../atoms/button'
+import Label from '../../atoms/label'
+import Input from '../../atoms/input'
 
 const search = (props) => {
   const { label, title } = props

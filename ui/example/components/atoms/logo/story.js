@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Logo from './logo'
+import Logo from '.'
 
 storiesOf('@example|atoms/Logo', module)
   .add('plain', () => (

@@ -1,9 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Link from './link'
+import Input from '.'
 
-storiesOf('@example|atoms/Link', module)
+storiesOf('@example|atoms/Input', module)
   .add('plain', () => (
-    <Link name={'Home'} />
+    <Input />
   ))

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Links from '../molecules/links'
-import Search from '../molecules/search'
+import Links from '../../molecules/links'
+import Search from '../../molecules/search'
 
 const navbar = (props) => {
   const { links, logo, label, title } = props
