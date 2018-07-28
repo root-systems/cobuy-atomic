@@ -1,9 +1,10 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import Button from '@material-ui/core/Button'
 import createPropTypes from 'json-schema-prop-types'
 
 import schema from './schema'
+
+import Button from '@material-ui/core/Button'
 
 const styles = {
 
@@ -11,7 +12,7 @@ const styles = {
 
 const a001 = (props) => {
   return (
-    <Button variant={'contained'} color={props.buttonColor}>{props.title}</Button>
+    <Button variant={'contained'} color={props.color}>{props.title}</Button>
   )
 }
 
