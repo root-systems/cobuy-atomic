@@ -1,20 +1,14 @@
 import React from 'react'
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles'
+import Button from '@material-ui/core/Button'
 
-const styles = {
-  container: {
-    backgroundColor: 'red',
-  },
-};
+const styles = {}
 
-const a001 = (props) => {
+const a001 = props => {
   return (
-    <div>
-      <div className={props.classes.container}>
-        <button>{props.title}</button>
-      </div>
-    </div>
+    <Button variant={'contained'} color={props.buttonColor}>
+      {props.title}
+    </Button>
   )
 }
-
 export default withStyles(styles)(a001)
