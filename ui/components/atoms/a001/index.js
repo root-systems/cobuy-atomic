@@ -14,4 +14,5 @@ const a001 = (props) => {
 a001.propTypes = createPropTypes(schema)
 
 export default a001
-  
+
+// todo: add - size="large"
