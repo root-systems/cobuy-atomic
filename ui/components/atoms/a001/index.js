@@ -1,14 +1,9 @@
 import React from 'react'
-import { withStyles } from '@material-ui/core/styles'
 import createPropTypes from 'json-schema-prop-types'
-
-import schema from './schema'
 
 import Button from '@material-ui/core/Button'
 
-const styles = {
-
-};
+import schema from './schema'
 
 const a001 = (props) => {
   return (
@@ -18,5 +13,5 @@ const a001 = (props) => {
 
 a001.propTypes = createPropTypes(schema)
 
-export default withStyles(styles)(a001)
+export default a001
   
