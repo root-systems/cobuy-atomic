@@ -1,19 +1,13 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createMuiTheme } from '@material-ui/core/styles'
+import red from '@material-ui/core/colors/red'
+import green from '@material-ui/core/colors/green'
+import grey from '@material-ui/core/colors/grey'
 
 export default createMuiTheme({
   palette: {
-    primary: {
-        light: '#81C784',
-        main: '#00838F',
-        dark: '#004D40',
-        contrastText: '#fff',
-    },
-    secondary: {
-        light: '#FFD54F',
-        main: '#FDD835',
-        dark: '#F57C00',
-        contrastText: '#fff',
-    }
+    primary: green,
+    secondary: grey,
+    error: red
   },
   themeName: 'Cobuy Theme'
 })
