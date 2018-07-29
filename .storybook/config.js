@@ -2,6 +2,7 @@ import { configure } from '@storybook/react'
 import { normal } from './theme'
 import { setOptions } from '@storybook/addon-options'
 import { configureViewport, INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
+import { configureActions } from '@storybook/addon-actions'
 
 import extraViewports from './extra-viewports.json'
 
@@ -26,6 +27,10 @@ configureViewport({
   },
 })
 
+configureActions({
+  depth: 100,
+  limit: 20,
+})
 
 function importAll(req) {
   req.keys().forEach(filename => req(filename));
