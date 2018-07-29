@@ -1,3 +1,3 @@
-## Card
+## Checkbox
 
-The elevations less change the elevation and more the different renders. Suggested use is to vary the elevation to create dynamism in the page.
+Used for asking users to tick off that they have completed tasks
