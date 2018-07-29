@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import Input from '.'
 
-storiesOf('@example|atoms/Input', module)
+storiesOf('@example|atoms/input', module)
   .add('vanilla', () => (
     <Input type='text'/>
   ))

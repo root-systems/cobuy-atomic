@@ -1,6 +1,5 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
-
 import "wired-elements"
 
 import schema from './schema'
