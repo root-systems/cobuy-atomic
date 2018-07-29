@@ -34,10 +34,10 @@ function importAll(req) {
 function loadStories() {
   let req
 
-  req = require.context('../ui/', true, /story\.js$/)
+  req = require.context('../ui/', true, /stories\.js$/)
   importAll(req)
 
-  req = require.context('../domains/', true, /story\.js$/)
+  req = require.context('../domains/', true, /stories\.js$/)
   importAll(req)
 }
 
