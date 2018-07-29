@@ -6,7 +6,7 @@ import Button from '.'
 
 const eventsFromButtons = actions({ onClick: 'clicked'})
 
-storiesOf('@example|atoms/button', module)
+storiesOf('@example|atoms/Button', module)
   .add('Elevation 1', () => (
     <Button {...eventsFromButtons} title={'Search'} elevation={1} />
   ))

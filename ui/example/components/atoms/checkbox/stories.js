@@ -6,7 +6,7 @@ import { withNotes } from '@storybook/addon-notes'
 import Checkbox from '.'
 import notes from './notes.md';
 
-storiesOf('@example|atoms/checkbox', module)
+storiesOf('@example|atoms/Checkbox', module)
   .addDecorator(withNotes)
   .add('checkbox', () => (
   <Checkbox text={'Orange Lorry'} />),

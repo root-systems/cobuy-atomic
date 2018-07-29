@@ -11,7 +11,7 @@ const Quote = React.createElement('div', {},
   React.createElement('p', {}, '"No one in the brief history of computing has ever written a piece of perfect software. It\'s unlikely that you\'ll be the first." - Andy Hunt')
 )
 
-storiesOf('@example|atoms/card', module)
+storiesOf('@example|atoms/Card', module)
   .addDecorator(withNotes)
   .add('Elevation 2', () => (
   <Card element={Quote} elevation={2} />),
