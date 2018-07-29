@@ -2,10 +2,23 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /stories\.js?$/,
-        loaders: [require.resolve('@storybook/addon-storysource/loader'),require('./mui-theme-loader')],
-        enforce: 'pre',
-      },
-    ],
-  },
-};
+        test: /stories\.js$/,
+        loaders: [
+          {
+            loader: require.resolve('@storybook/addon-storysource/loader'),
+            options: {
+              prettierConfig: {
+                printWidth: 80,
+                singleQuote: false,
+              }
+            }
+          },
+          {
+            loader: require('./mui-theme-loader')
+          }
+        ],
+        enforce: 'pre'
+      }
+    ]
+  }
+}
