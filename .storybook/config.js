@@ -1,5 +1,5 @@
 import { configure } from '@storybook/react'
-import { themes } from '@storybook/components'
+import { dark } from './theme'
 import { setOptions } from '@storybook/addon-options'
 import { configureViewport, INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 
@@ -16,7 +16,7 @@ setOptions({
   hierarchySeparator: /\/|\./,
   hierarchyRootSeparator: /\|/,
   enableShortcuts: false,
-  theme: themes.dark
+  theme: dark
 })
 
 configureViewport({
