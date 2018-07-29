@@ -1,16 +1,18 @@
 import React from 'react'
-import { withStyles } from '@material-ui/core/styles'
 import createPropTypes from 'json-schema-prop-types'
 
+import "wired-elements"
+
 import schema from './schema'
-import styles from './styles'
 
 const button = (props) => {
-  return (
-    <button>{props.title}</button>
+  return(
+  props.disabled
+  ? <wired-button elevation={props.elevation} disabled>{props.title}</wired-button>
+  : <wired-button elevation={props.elevation}>{props.title}</wired-button>
   )
 }
 
 button.propTypes = createPropTypes(schema)
 
-export default withStyles(styles)(button)
+export default button

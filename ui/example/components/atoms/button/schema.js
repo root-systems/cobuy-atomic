@@ -4,6 +4,14 @@ export default {
   "properties": {
     "title": {
       "type": "string"
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "elevation": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
     }
   },
   "required": ["title"]
