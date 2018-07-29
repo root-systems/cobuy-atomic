@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import createPropTypes from 'json-schema-prop-types'
 import "wired-elements"
