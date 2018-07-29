@@ -8,8 +8,8 @@ import schema from './schema'
 const button = (props) => {
   return(
   props.disabled
-  ? <wired-button elevation={props.elevation} disabled>{props.title}</wired-button>
-  : <wired-button elevation={props.elevation}>{props.title}</wired-button>
+  ? <wired-button onClick={props.onClick} elevation={props.elevation} disabled>{props.title}</wired-button>
+  : <wired-button onClick={props.onClick} elevation={props.elevation}>{props.title}</wired-button>
   )
 }
 

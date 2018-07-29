@@ -12,6 +12,9 @@ export default {
       "type": "integer",
       "minimum": 1,
       "maximum": 5
+    },
+    "onClick": {
+      "instanceOf": "function"
     }
   },
   "required": ["title"]
