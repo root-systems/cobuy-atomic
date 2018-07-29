@@ -30,6 +30,7 @@
     "@babel/plugin-transform-runtime": "^7.0.0-beta.54",
     "@babel/runtime": "^7.0.0-beta.54",
     "@material-ui/core": "^1.4.1",
+    "json-schema-prop-types": "^0.1.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
@@ -52,7 +53,9 @@
     "@storybook/node-logger": "4.0.0-alpha.14",
     "@storybook/react": "4.0.0-alpha.14",
     "babel-core": "^7.0.0-bridge.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
     "moment": "^2.22.2",
-    "storybook-addon-jsx": "^5.3.0"
+    "react-inspector": "^2.3.0",
+    "wired-elements": "^0.7.1"
   }
 }

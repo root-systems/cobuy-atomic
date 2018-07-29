@@ -1,7 +1,8 @@
 import { configure } from '@storybook/react'
-import { themes } from '@storybook/components'
+import { normal } from './theme'
 import { setOptions } from '@storybook/addon-options'
 import { configureViewport, INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
+import { configureActions } from '@storybook/addon-actions'
 
 import extraViewports from './extra-viewports.json'
 
@@ -16,7 +17,7 @@ setOptions({
   hierarchySeparator: /\/|\./,
   hierarchyRootSeparator: /\|/,
   enableShortcuts: false,
-  theme: themes.dark
+  theme: normal
 })
 
 configureViewport({
@@ -26,6 +27,10 @@ configureViewport({
   },
 })
 
+configureActions({
+  depth: 100,
+  limit: 20,
+})
 
 function importAll(req) {
   req.keys().forEach(filename => req(filename));
@@ -34,7 +39,10 @@ function importAll(req) {
 function loadStories() {
   let req
 
-  req = require.context('../', true, /\.story.js$/)
+  req = require.context('../ui/', true, /stories\.js$/)
+  importAll(req)
+
+  req = require.context('../domains/', true, /stories\.js$/)
   importAll(req)
 }
 
