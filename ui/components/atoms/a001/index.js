@@ -5,14 +5,12 @@ import Button from '@material-ui/core/Button'
 
 import schema from './schema'
 
-const a001 = (props) => {
+const A001 = props => {
   return (
     <Button variant={'contained'} color={props.color}>{props.title}</Button>
   )
 }
 
-a001.propTypes = createPropTypes(schema)
+A001.propTypes = createPropTypes(schema)
 
-export default a001
-
-// todo: add - size="large"
+export default A001

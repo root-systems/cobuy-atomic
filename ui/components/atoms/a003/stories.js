@@ -4,22 +4,84 @@ import { withNotes } from '@storybook/addon-notes'
 
 import Icon from '@material-ui/core/Icon'
 
-import Button from '.'
 import notes from './notes.md'
 
 storiesOf('Atoms|A003', module)
   .addDecorator(withNotes)
   .add(
-    'add_circle icon',
-    () => <Button color={'default'} icon={<Icon>add_icon</Icon>} />,
+    'header back icon',
+    () => (
+      <Icon color={'default'} style={{ fontSize: 24 }}>
+        arrow_back_ios
+      </Icon>
+    ),
   {
     notes: { markdown: notes }
   }
   )
-// .add(
-//   'Group',
-//   () => <Button color={'default'} icon={<Icon>group_icon</Icon>} />,
-// {
-//   notes: { markdown: notes }
-// }
-// )
+  .add(
+    'header cancel icon',
+    () => (
+      <Icon color={'default'} style={{ fontSize: 24 }}>
+        cancel
+      </Icon>
+    ),
+  {
+    notes: { markdown: notes }
+  }
+  )
+  .add(
+    'header more vertical icon',
+    () => (
+      <Icon color={'default'} style={{ fontSize: 24 }}>
+        more_vert
+      </Icon>
+    ),
+  {
+    notes: { markdown: notes }
+  }
+  )
+  .add(
+    'header more horizontal icon',
+    () => (
+      <Icon color={'default'} style={{ fontSize: 24 }}>
+        more_horizontal
+      </Icon>
+    ),
+  {
+    notes: { markdown: notes }
+  }
+  )
+  .add(
+    'tab group list icon',
+    () => (
+      <Icon color={'default'} style={{ fontSize: 24 }}>
+        group
+      </Icon>
+    ),
+  {
+    notes: { markdown: notes }
+  }
+  )
+  .add(
+    'tab basket icon',
+    () => (
+      <Icon color={'default'} style={{ fontSize: 24 }}>
+        shopping_basket
+      </Icon>
+    ),
+  {
+    notes: { markdown: notes }
+  }
+  )
+  .add(
+    'tab member list icon',
+    () => (
+      <Icon color={'default'} style={{ fontSize: 24 }}>
+        supervised_user_circle
+      </Icon>
+    ),
+  {
+    notes: { markdown: notes }
+  }
+  )
