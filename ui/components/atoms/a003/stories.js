@@ -8,8 +8,15 @@ import notes from './readme.md'
 storiesOf('Atoms|A003', module)
   .addDecorator(withNotes)
   .add(
-    'header back icon',
-    () => <Icon palette='primary' size='24' iconName='add' />,
+    'Header back icon',
+    () => <Icon palette='primary' size='100' iconName='hamburger' />, // TODO: size not working
+  {
+    notes: { markdown: notes }
+  }
+  )
+  .add(
+    'Header settings icon',
+    () => <Icon palette='primary' size='24' iconName='gear' />,
   {
     notes: { markdown: notes }
   }

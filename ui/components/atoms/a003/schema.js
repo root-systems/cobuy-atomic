@@ -22,18 +22,16 @@ export default {
         'Edge-cases'
       ]
     },
-    size: {
-      type: 'string'
-    },
     iconName: {
       type: 'string',
       enum: [
         'add',
+        'cancel',
         'minus',
         'delete',
         'question',
-        'burger',
-        'more',
+        'hamburger',
+        'gear',
         'settings',
         'basket',
         'person',
@@ -41,7 +39,7 @@ export default {
       ]
     }
   },
-  required: ['size', 'iconName']
+  required: ['iconName']
 }
 
 // need to update/fix properties
