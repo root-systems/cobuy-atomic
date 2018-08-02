@@ -7,7 +7,9 @@ import schema from './schema'
 
 const A001 = props => {
   return (
-    <Button variant={'contained'} color={props.color}>{props.title}</Button>
+    <Button variant={'contained'} color={props.color}>
+      {props.buttonTitle}
+    </Button>
   )
 }
 

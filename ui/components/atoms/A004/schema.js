@@ -5,9 +5,9 @@ export default {
     color: {
       type: 'string'
     },
-    buttonTitle: {
+    appBarTitle: {
       type: 'string'
     }
   },
-  required: ['color', 'buttonTitle']
+  required: ['color', 'appBarTitle']
 }

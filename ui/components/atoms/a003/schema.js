@@ -2,14 +2,46 @@ export default {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
   properties: {
-    color: {
-      type: 'string'
+    palette: {
+      type: 'string',
+      enum: [
+        'primary',
+        'seconadry',
+        'inherit', // TODO check this
+        'error'
+      ]
+    },
+    variant: {
+      type: 'string',
+      enum: [
+        'Filled',
+        'Outlined',
+        'Rounded',
+        'Two Tone',
+        'Sharp',
+        'Edge-cases'
+      ]
     },
     size: {
-      type: 'integer'
+      type: 'string'
+    },
+    iconName: {
+      type: 'string',
+      enum: [
+        'add',
+        'minus',
+        'delete',
+        'question',
+        'burger',
+        'more',
+        'settings',
+        'basket',
+        'person',
+        'group'
+      ]
     }
   },
-  required: ['color', 'size']
+  required: ['size', 'iconName']
 }
 
 // need to update/fix properties

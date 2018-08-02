@@ -1,1 +1,0 @@
-this is a sample icon notes.
