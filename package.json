@@ -55,6 +55,7 @@
     "@storybook/node-logger": "4.0.0-alpha.14",
     "@storybook/react": "4.0.0-alpha.14",
     "babel-core": "^7.0.0-bridge.0",
+    "babel-plugin-inline-react-svg": "^0.5.4",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
     "moment": "^2.22.2",
     "react-inspector": "^2.3.0",
