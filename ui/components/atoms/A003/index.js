@@ -29,9 +29,12 @@ const svgMap = {
 }
 
 // Takes an SVG React Element and returns its child Elements (Paths)
-const renderSvgPaths = (name) => {
-  console.log(svgMap[name])
-  const svgELement = svgMap[name]()
+const renderSvgPaths = (iconname) => {
+  if (svgMap[iconname] === undefined) { 
+    console.error('iconname not found in the key of svgMap') 
+    return null
+  }
+  const svgELement = svgMap[iconname]()
   return React.Children.map(svgELement.props.children, (childElement) => {
     return childElement
   })

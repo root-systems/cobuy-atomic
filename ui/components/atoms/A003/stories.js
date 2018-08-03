@@ -9,7 +9,7 @@ storiesOf('Atoms|A003', module)
   .addDecorator(withNotes)
   .add(
     'Header back icon',
-    () => <Icon palette='primary' iconname='add' />,
+    () => <Icon palette='primary' iconname='hamburger' />,
   {
     notes: { markdown: notes }
   }
