@@ -6,7 +6,7 @@ import Icon from '@material-ui/core/Icon'
 import AppBar from '@material-ui/core/AppBar'
 
 import Button from '.'
-import notes from './notes.md'
+import notes from './readme.md'
 
 storiesOf('Atoms|A004', module).addDecorator(withNotes).add('App bar', () => (
   <div>

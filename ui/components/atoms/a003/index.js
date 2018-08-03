@@ -7,7 +7,7 @@ import svgAdd from '../../../assets/icons/baseline-accessibility-24px.svg'
 
 import schema from './schema'
 
-const uiMode = 'default'
+const uiMode = 'svg'
 
 const materialMap = {
   add: 'add',
@@ -28,6 +28,9 @@ const svgMap = {
 }
 
 const A003 = props => {
+  
+  console.log(svgAdd)
+
   switch (uiMode) {
     case 'wired':
       return (
@@ -38,9 +41,17 @@ const A003 = props => {
 
     case 'svg':
       return (
-        <SvgIcon {...props}>
-          <path d={`${svgMap[props.iconName]}`} />
-        </SvgIcon>
+        // <SvgIcon {...props}>
+        //   <path d={`${svgMap[props.iconName]}`} />
+        // </SvgIcon>
+        <div>
+          <SvgIcon>
+            <path d={svgAdd} />
+          </SvgIcon>
+        </div>
+    
+    
+
       )
 
     default:
