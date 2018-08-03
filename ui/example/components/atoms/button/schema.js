@@ -2,7 +2,7 @@ export default {
   "$schema": "http://json-schema.org/schema#",
   "type": "object",
   "properties": {
-    "title": {
+    "text": {
       "type": "string"
     },
     "disabled": {
