@@ -11,10 +11,7 @@ export default {
     "text": {
       "type": "string"
     },
-    "error": {
-      "type": "boolean"
-    },
-    "onChange": {
+    "onClick": {
       "instanceOf": "function"
     }
   },
