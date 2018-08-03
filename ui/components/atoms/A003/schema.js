@@ -22,7 +22,7 @@ export default {
         'Edge-cases'
       ]
     },
-    iconName: {
+    iconname: {
       type: 'string',
       enum: [
         'add',
@@ -39,7 +39,7 @@ export default {
       ]
     }
   },
-  required: ['iconName']
+  required: ['iconname']
 }
 
 // need to update/fix properties

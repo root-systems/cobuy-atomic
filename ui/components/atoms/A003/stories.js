@@ -9,14 +9,14 @@ storiesOf('Atoms|A003', module)
   .addDecorator(withNotes)
   .add(
     'Header back icon',
-    () => <Icon palette='primary' size='100' iconName='hamburger' />, // TODO: size not working
+    () => <Icon palette='primary' iconname='add' />,
   {
     notes: { markdown: notes }
   }
   )
   .add(
     'Header settings icon',
-    () => <Icon palette='primary' size='24' iconName='gear' />,
+    () => <Icon palette='primary' iconname='gear' />,
   {
     notes: { markdown: notes }
   }

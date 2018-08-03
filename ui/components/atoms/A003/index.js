@@ -1,5 +1,6 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
+
 import Icon from '@material-ui/core/Icon'
 import SvgIcon from '@material-ui/core/SvgIcon'
 
@@ -27,37 +28,36 @@ const svgMap = {
   add: svgAdd
 }
 
-const A003 = props => {
-  
-  console.log(svgAdd)
+// Takes an SVG React Element and returns its child Elements (Paths)
+const renderSvgPaths = (name) => {
+  console.log(svgMap[name])
+  const svgELement = svgMap[name]()
+  return React.Children.map(svgELement.props.children, (childElement) => {
+    return childElement
+  })
+}
 
+const A003 = props => {
   switch (uiMode) {
     case 'wired':
       return (
         <Icon color={props.variant}>
-          {materialMap[props.iconName]}
+          {materialMap[props.iconname]}
         </Icon>
       )
 
     case 'svg':
       return (
-        // <SvgIcon {...props}>
-        //   <path d={`${svgMap[props.iconName]}`} />
-        // </SvgIcon>
-        <div>
-          <SvgIcon>
-            <path d={svgAdd} />
-          </SvgIcon>
-        </div>
-    
-    
+        <SvgIcon {...props}>
+          {renderSvgPaths(props.iconname)}
+        </SvgIcon>
 
       )
 
     default:
       return (
         <Icon color={props.palette}>
-          {materialMap[props.iconName]}
+          {materialMap[props.iconname]}
         </Icon>
       )
   }
