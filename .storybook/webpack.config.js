@@ -18,6 +18,10 @@ module.exports = {
           }
         ],
         enforce: 'pre'
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-path-loader',
       }
     ]
   }
