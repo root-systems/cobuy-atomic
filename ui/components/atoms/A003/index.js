@@ -8,7 +8,7 @@ import svgAdd from '../../../assets/icons/baseline-accessibility-24px.svg'
 
 import schema from './schema'
 
-const uiMode = 'svg'
+const uiMode = 'default'
 
 const materialMap = {
   add: 'add',

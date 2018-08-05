@@ -20,22 +20,22 @@ export default {
     paragraph: {
       type: 'boolean'
     },
-    // variant: {
-    //   type: 'string',
-    //   enum: [
-    //     'display4',
-    //     'display3', 
-    //     'display2',
-    //     'display1',
-    //     'headline',
-    //     'title',
-    //     'subheading',
-    //     'body2',
-    //     'body1',
-    //     'caption',
-    //     'button'
-    //   ]
-    // },
+    variant: {
+      type: 'string',
+      enum: [
+        'display4',
+        'display3', 
+        'display2',
+        'display1',
+        'headline',
+        'title',
+        'subheading',
+        'body2',
+        'body1',
+        'caption',
+        'button'
+      ]
+    },
   },
   required: ['title']
 }

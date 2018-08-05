@@ -5,7 +5,7 @@ import { withNotes } from '@storybook/addon-notes'
 import Icon from '.'
 import notes from './readme.md'
 
-storiesOf('Atoms|A003', module)
+storiesOf('Atoms|A003 - Icons', module)
   .addDecorator(withNotes)
   .add(
     'Header back icon',

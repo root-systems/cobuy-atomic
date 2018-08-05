@@ -7,7 +7,7 @@ import Icon from '@material-ui/core/Icon'
 import Button from '.'
 import notes from './readme.md'
 
-storiesOf('Atoms|A002', module)
+storiesOf('Atoms|A002 - FAB Buttons', module)
   .addDecorator(withNotes)
   .add('Add', () => <Button color='secondary' icon={<Icon>add_icon</Icon>} />, {
     notes: { markdown: notes }
