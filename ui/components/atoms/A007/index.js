@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button'
 
 // Import JSON schema
 import schema from './schema'
+
 // Import styles here - see example setup for styles at ui/example/components/atoms/checkbox
 
 // custom styling

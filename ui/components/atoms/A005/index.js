@@ -1,15 +1,17 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
-import { AppBar, Toolbar } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 
 import schema from './schema'
 
 const A005 = props => {
   return (
-    <span>until than its shit</span>
+    <Typography variant="title" align={props.alignment} color={props.color}>
+      {props.title}
+    </Typography>
   )
 }
 
-//A005.propTypes = createPropTypes(schema)
+A005.propTypes = createPropTypes(schema)
 
 export default A005

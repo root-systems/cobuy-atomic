@@ -8,7 +8,9 @@ import AppBar from '@material-ui/core/AppBar'
 import Button from '.'
 import notes from './readme.md'
 
-storiesOf('Atoms|A004 - AppBar', module).addDecorator(withNotes).add('App bar', () => (
+storiesOf('Atoms|A004 - AppBar', module)
+.addDecorator(withNotes)
+.add('App bar', () => (
   <div>
     <AppBar position='static' color='default' appBarTitle='App bar title' />
   </div>

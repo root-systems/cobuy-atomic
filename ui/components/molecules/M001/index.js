@@ -10,7 +10,9 @@ const styles = {}
 
 const M001 = props => {
   return (
-    <Icon iconName='hamburger' />
+    <div>
+      <Icon iconName='hamburger' />
+    </div>
   )
 }
 

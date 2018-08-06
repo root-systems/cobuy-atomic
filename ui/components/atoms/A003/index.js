@@ -16,12 +16,8 @@ const materialMap = {
   minus: 'minus',
   hamburger: 'menu',
   gear: 'settings',
-  burger: '',
-  more: '',
-  settings: '',
-  basket: '',
-  person: '',
-  group: ''
+  question: 'help'
+
 }
 
 const svgMap = {
