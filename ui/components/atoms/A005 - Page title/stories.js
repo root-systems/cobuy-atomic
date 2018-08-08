@@ -4,7 +4,6 @@ import { withNotes } from '@storybook/addon-notes'
 
 import Typography from '.'
 
-// import Button from '.'
 import notes from './readme.md'
 
 storiesOf('Atoms|A005 - Page title', module)

@@ -41,7 +41,3 @@ export default {
   },
   required: ['iconname']
 }
-
-// need to update/fix properties
-// - background
-// - size

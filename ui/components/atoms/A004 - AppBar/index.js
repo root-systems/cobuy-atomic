@@ -9,9 +9,8 @@ const A004 = props => {
     <AppBar position={props.position} color='primary' position='static'>
       <Toolbar>
       <Typography variant="title" color="inherit">
-            {/* Groups Domain */}
-            {props.children}
-          </Typography>
+          {props.children}
+        </Typography>
       </Toolbar>
     </AppBar>
   )

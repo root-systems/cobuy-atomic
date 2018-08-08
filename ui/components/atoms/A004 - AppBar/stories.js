@@ -11,7 +11,5 @@ import notes from './readme.md'
 storiesOf('Atoms|A004 - AppBar', module)
 .addDecorator(withNotes)
 .add('App bar', () => (
-  <div>
-    <AppBar position='static' color='default' appBarTitle='App bar title' />
-  </div>
+  <AppBar position='static' color='default' appBarTitle='App bar title' />
 ), { notes: { markdown: notes } })
