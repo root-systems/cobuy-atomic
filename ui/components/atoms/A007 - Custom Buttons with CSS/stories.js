@@ -5,7 +5,10 @@ import { storiesOf } from '@storybook/react'
 import Button from '.'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A008 - Another AppBar', module)
+storiesOf('Atoms|A007 - Custom Buttons with CSS', module)
   .add('Default', () => (
     <Button buttonTitle={'default button'} color={'default'} />
+  ))
+  .add('Primary', () => (
+    <Button buttonTitle={'primary button'} color={'primary'} />
   ))

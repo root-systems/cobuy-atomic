@@ -7,7 +7,7 @@ import schema from './schema'
 const A006 = props => {
   return (
     <Typography variant={props.variant}>
-      {props.title} <br/> {props.variant}
+      {props.title}
     </Typography>
   )
 }

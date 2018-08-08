@@ -9,14 +9,13 @@ storiesOf('Atoms|A003 - Icons', module)
   .addDecorator(withNotes)
   .add(
     'Header back icon',
-    () => <Icon palette='primary' iconname='hamburger' />,
+    () => <Icon palette={'primary'} iconname={'hamburger'} />,
   {
     notes: { markdown: notes }
   }
   )
   .add(
-    'Header settings icon',
-    () => <Icon palette='primary' iconname='gear' />,
+    'Header settings icon',() => <Icon palette={'primary'} iconname={'gear'} />,
   {
     notes: { markdown: notes }
   }

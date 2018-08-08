@@ -5,10 +5,7 @@ import { storiesOf } from '@storybook/react'
 import Button from '.'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A007 - Custom Buttons &  CSS', module)
+storiesOf('Atoms|A008 - Nav AppBar', module)
   .add('Default', () => (
     <Button buttonTitle={'default button'} color={'default'} />
-  ))
-  .add('Primary', () => (
-    <Button buttonTitle={'primary button'} color={'primary'} />
   ))
