@@ -4,9 +4,9 @@ import createPropTypes from 'json-schema-prop-types'
 
 import schema from './schema'
 
-import Appbar from '../../atoms/A004 - AppBar'
-import LeftIcon from '../../atoms/A003 - Icons'
-import PageTitle from '../../atoms/A005 - Page title'
+import Appbar from '../../atoms/A004-AppBar'
+import LeftIcon from '../../atoms/A003-Icons'
+import PageTitle from '../../atoms/A005-PageTitle'
 import RightMenu from '../../molecules/M002'
 
 

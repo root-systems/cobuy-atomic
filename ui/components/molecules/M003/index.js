@@ -4,7 +4,7 @@ import createPropTypes from 'json-schema-prop-types'
 
 import schema from './schema'
 
-import Button from '../../atoms/A001 - Button'
+import Button from '../../atoms/A001-Button'
 
 const styles = {}
 
