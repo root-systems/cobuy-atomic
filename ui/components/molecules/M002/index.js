@@ -8,14 +8,15 @@ import Icon from '../../atoms/A003'
 
 const styles = {}
 
-const M001 = props => {
+const M002 = props => {
   return (
     <div>
-      <Icon iconName='hamburger' />
+      <Icon iconname='question'/>
+      <Icon iconname='gear'/>
     </div>
   )
 }
 
-M001.propTypes = createPropTypes(schema)
+M002.propTypes = createPropTypes(schema)
 
-export default withStyles(styles)(M001)
+export default withStyles(styles)(M002)

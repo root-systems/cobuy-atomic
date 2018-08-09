@@ -4,10 +4,7 @@ export default {
   "properties": {
     "color": {
       "type": "string"
-    },
-    "title": {
-      "type": "string"
     }
   },
-  "required": ["color", "title"]
+  "required": ["color"]
 }

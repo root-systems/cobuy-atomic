@@ -4,18 +4,18 @@ import createPropTypes from 'json-schema-prop-types'
 
 import schema from './schema'
 
-import Icon from '../../atoms/A003'
+import Button from '../../atoms/A001'
 
 const styles = {}
 
-const M001 = props => {
+const M003 = props => {
   return (
     <div>
-      <Icon iconName='hamburger' />
+      <Button title={props.title} color={'primary'} />
     </div>
   )
 }
 
-M001.propTypes = createPropTypes(schema)
+M003.propTypes = createPropTypes(schema)
 
-export default withStyles(styles)(M001)
+export default withStyles(styles)(M003)

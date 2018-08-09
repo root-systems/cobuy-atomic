@@ -2,6 +2,7 @@
   "plugins": [
     "@babel/plugin-transform-runtime",
     "@babel/plugin-proposal-object-rest-spread",
-    "transform-react-jsx"
+    "transform-react-jsx",
+    "inline-react-svg"
   ]
 }
