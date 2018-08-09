@@ -17,7 +17,6 @@ const materialMap = {
   hamburger: 'menu',
   gear: 'settings',
   question: 'help'
-
 }
 
 const svgMap = {
