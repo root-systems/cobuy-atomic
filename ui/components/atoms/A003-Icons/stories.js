@@ -7,16 +7,17 @@ import notes from './readme.md'
 
 storiesOf('Atoms|A003 - Icons', module)
   .addDecorator(withNotes)
-  .add(
-    'Header back icon',
-    () => <Icon palette={'primary'} iconname={'hamburger'} />,
-  {
-    notes: { markdown: notes }
-  }
-  )
-  .add(
-    'Header settings icon',() => <Icon palette={'primary'} iconname={'gear'} />,
-  {
-    notes: { markdown: notes }
-  }
-  )
+  .add('Back icon', () => <Icon palette={'primary'} iconname={'hamburger'} />,
+    {notes: { markdown: notes }})
+
+  .add('Settings icon',() => <Icon palette={'primary'} iconname={'gear'} />,
+    {notes: { markdown: notes }})
+
+  .add('Group icon',() => <Icon palette={'primary'} iconname={'group'} />,
+    {notes: { markdown: notes }})
+
+  .add('Basket icon',() => <Icon palette={'primary'} iconname={'shopping_basket'} />,
+    {notes: { markdown: notes }})
+
+  .add('Group member icon',() => <Icon palette={'primary'} iconname={'person'} />,
+    {notes: { markdown: notes }})

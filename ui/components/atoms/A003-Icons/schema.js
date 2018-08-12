@@ -33,9 +33,9 @@ export default {
         'hamburger',
         'gear',
         'settings',
-        'basket',
-        'person',
-        'group'
+        'group',
+        'shopping_basket',
+        'person'
       ]
     }
   },
