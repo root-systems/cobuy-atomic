@@ -10,13 +10,7 @@ import schema from './schema'
 // Define Atom as JSX
 const M005 = props => {
   return (
-    <div>
-      <Paper style={{ width: 480 }}>
-        <Tab icon={<LeftIcon iconname={props.iconname}/>} label={props.label} />
-        <Tab icon={<LeftIcon iconname={props.iconname}/>} label={props.label} />
-        <Tab icon={<LeftIcon iconname={props.iconname}/>} label={props.label} />
-      </Paper>
-    </div>
+    <Tab icon={<Icon iconname={props.iconname}/>} label={props.label} />
   )
 }
 
