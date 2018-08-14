@@ -7,10 +7,10 @@ import notes from './readme.md'
 
 storiesOf('Particles|P001 - Icon', module)
   .addDecorator(withNotes)
-  .add('Back icon', () => <Icon palette={'primary'} iconname={'hamburger'} />,
+  .add('Menu icon', () => <Icon palette={'primary'} iconname={'menu'} />,
     {notes: { markdown: notes }})
 
-  .add('Settings icon',() => <Icon palette={'primary'} iconname={'gear'} />,
+  .add('Settings icon',() => <Icon palette={'primary'} iconname={'settings'} />,
     {notes: { markdown: notes }})
 
   .add('Group icon',() => <Icon palette={'primary'} iconname={'group'} />,
@@ -19,5 +19,5 @@ storiesOf('Particles|P001 - Icon', module)
   .add('Basket icon',() => <Icon palette={'primary'} iconname={'shopping_basket'} />,
     {notes: { markdown: notes }})
 
-  .add('Group member icon',() => <Icon palette={'primary'} iconname={'person'} />,
+  .add('Member icon',() => <Icon palette={'primary'} iconname={'person'} />,
     {notes: { markdown: notes }})

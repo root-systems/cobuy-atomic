@@ -15,8 +15,8 @@ const materialMap = {
   cancel: 'cancel',
   minus: 'minus',
   menu: 'menu',
-  gear: 'settings',
-  question: 'help',
+  settings: 'settings',
+  help: 'help',
   group: 'group',
   shopping_basket: 'shopping_basket',
   person: 'person'
