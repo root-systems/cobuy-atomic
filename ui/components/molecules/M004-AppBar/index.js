@@ -2,12 +2,8 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
 
-import { withStyles } from '@material-ui/core/styles';
-
 // Import from UI library
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import { AppBar, Toolbar, Typography } from '@material-ui/core';
 
 // Import JSON schema
 import schema from './schema'

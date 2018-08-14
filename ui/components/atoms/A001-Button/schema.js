@@ -1,14 +1,40 @@
 export default {
   $schema: 'http://json-schema.org/schema#',
-  type: 'object',
-  properties: {
-    color: {
-      type: 'string'
+  'type': 'object',
+  'properties': {
+    'color': {
+      'type': 'string',
+      'enum': [
+        'default',
+        'inherit',
+        'primary',
+        'secondary'
+      ]
     },
-    buttonTitle: {
-      type: 'string'
-    }
+    'disabled':{
+      'type': 'boolean'
+    },
+    'disabledFocusRipple':{
+      'type': 'boolean'
+    },
+    'disabledRipple':{
+      'type': 'boolean'
+    },
+    'fullWidth':{
+      'type': 'boolean'
+    },
+    'buttonTitle': {
+      'type': 'string'
+    },
+    'size': {
+      'type': 'string',
+      'enum': [
+        'small',
+        'medium',
+        'large',
+      ]
+    },
   },
-  required: ['color', 'buttonTitle']
+  'required': ['color', 'buttonTitle']
 }
 

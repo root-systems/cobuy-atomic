@@ -2,25 +2,23 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
 
-// Import from UI library
-import Button from '@material-ui/core/Button'
+import Tab from '@material-ui/core/Tab'
 
 // Import JSON schema
 import schema from './schema'
 
 // Import styles here - see example setup for styles at ui/example/components/atoms/checkbox
+import TabIcon from '../../particles/P001-Icon'
 
 // Define Atom as JSX
-const A001 = props => {
+const A005 = props => {
   return (
-    <Button variant='contained' color={props.color}>
-      {props.buttonTitle}
-    </Button>
+    <Tab icon={<TabIcon iconname={props.icon} />} />
   )
 }
 
 // Convert imported schema to Prop types
-A001.propTypes = createPropTypes(schema)
+A005.propTypes = createPropTypes(schema)
 
 // Export the Atom
-export default A001
+export default A005

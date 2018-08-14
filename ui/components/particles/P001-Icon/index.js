@@ -14,9 +14,12 @@ const materialMap = {
   add: 'add',
   cancel: 'cancel',
   minus: 'minus',
-  hamburger: 'menu',
-  gear: 'settings',
-  question: 'help'
+  menu: 'menu',
+  settings: 'settings',
+  help: 'help',
+  group: 'group',
+  shopping_basket: 'shopping_basket',
+  person: 'person'
 }
 
 const svgMap = {
@@ -35,7 +38,7 @@ const renderSvgPaths = (iconname) => {
   })
 }
 
-const A003 = props => {
+const P001 = props => {
   switch (uiMode) {
     case 'wired':
       return (
@@ -61,6 +64,6 @@ const A003 = props => {
   }
 }
 
-A003.propTypes = createPropTypes(schema)
+P001.propTypes = createPropTypes(schema)
 
-export default A003
+export default P001
