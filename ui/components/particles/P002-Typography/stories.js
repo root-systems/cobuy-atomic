@@ -6,7 +6,7 @@ import Typography from '.'
 
 import notes from './readme.md'
 
-storiesOf('Atoms|A006 - Typography', module)
+storiesOf('Particles|P002 - Typography', module)
 .addDecorator(withNotes)
 .add('Display 4', () => (
     <Typography title={'Display 4'} color={'primary'} variant={'display4'}/>

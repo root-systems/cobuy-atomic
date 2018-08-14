@@ -38,7 +38,7 @@ const renderSvgPaths = (iconname) => {
   })
 }
 
-const A003 = props => {
+const P001 = props => {
   switch (uiMode) {
     case 'wired':
       return (
@@ -64,6 +64,6 @@ const A003 = props => {
   }
 }
 
-A003.propTypes = createPropTypes(schema)
+P001.propTypes = createPropTypes(schema)
 
-export default A003
+export default P001

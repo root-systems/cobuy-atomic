@@ -5,7 +5,7 @@ import { withNotes } from '@storybook/addon-notes'
 import Icon from '.'
 import notes from './readme.md'
 
-storiesOf('Atoms|A003 - Icons', module)
+storiesOf('Particles|P001 - Icon', module)
   .addDecorator(withNotes)
   .add('Back icon', () => <Icon palette={'primary'} iconname={'hamburger'} />,
     {notes: { markdown: notes }})
