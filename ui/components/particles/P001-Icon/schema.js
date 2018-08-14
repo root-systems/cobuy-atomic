@@ -30,7 +30,7 @@ export default {
         "minus",
         "delete",
         "question",
-        "hamburger",
+        "menu",
         "gear",
         "settings",
         "group",
