@@ -10,18 +10,18 @@ export default {
     },
     'icon': {
       'type': 'string'
-    }
+    },
   },
   'oneOf': [
     {
-        'required': [
-            'icon'
-        ]
+      'required': [
+          'icon'
+      ]
     },
     {
-        'required': [
-            'label'
-        ]
+      'required': [
+          'label'
+      ]
     },
     {
       'required': [

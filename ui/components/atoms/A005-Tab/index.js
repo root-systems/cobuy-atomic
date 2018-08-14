@@ -8,12 +8,12 @@ import Tab from '@material-ui/core/Tab'
 import schema from './schema'
 
 // Import styles here - see example setup for styles at ui/example/components/atoms/checkbox
-import Icon from '../../particles/P001-Icon'
+import TabIcon from '../../particles/P001-Icon'
 
 // Define Atom as JSX
 const A005 = props => {
   return (
-    <Tab icon={props.icon} />
+    <Tab icon={<TabIcon iconname={props.icon} />} />
   )
 }
 
