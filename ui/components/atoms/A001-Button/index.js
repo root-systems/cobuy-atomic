@@ -4,6 +4,7 @@ import createPropTypes from 'json-schema-prop-types'
 
 // Import from UI library
 import Button from '@material-ui/core/Button'
+import Icon from '../../particles/P001-Icon'
 
 // Import JSON schema
 import schema from './schema'
@@ -13,7 +14,7 @@ import schema from './schema'
 // Define Atom as JSX
 const A001 = props => {
   return (
-    <Button variant={'contained'} color={props.color}>
+    <Button variant={props.variant} color={props.color}>
       {props.buttonTitle}
     </Button>
   )

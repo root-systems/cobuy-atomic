@@ -6,12 +6,9 @@ import Button from '.'
 
 // List of stories of use cases for atom
 storiesOf('Atoms|A001 - Button', module)
-  .add('Default', () => (
-    <Button buttonTitle={'default button'} color={'default'} />
+  .add('Ok Button', () => (
+    <Button buttonTitle={'Ok'} color={'default'} variant={'contained'} />
   ))
-  .add('Primary', () => (
-    <Button buttonTitle={'primary button'} color={'primary'} />
-  ))
-  .add('Secondary', () => (
-    <Button buttonTitle={'secondary button'} color={'secondary'} />
+  .add('Participate Order Button', () => (
+    <Button buttonTitle={'Participate Order'} color={'default'} variant={'contained'} />
   ))
