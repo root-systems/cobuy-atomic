@@ -11,12 +11,7 @@ storiesOf('@example|atoms/Button', module)
     <Button {...eventsFromButtons} title={'Search'} elevation={1} />
   ))
   .add('Disabled Elevation 3', () => (
-    <Button
-      {...eventsFromButtons}
-      title={'Disabled'}
-      disabled
-      elevation={3}
-    />
+    <Button {...eventsFromButtons} title={'Disabled'} disabled elevation={3} />
   ))
   .add('Elevation 5', () => (
     <Button {...eventsFromButtons} title={'Elevation 5'} elevation={5} />
