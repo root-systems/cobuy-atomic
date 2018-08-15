@@ -8,6 +8,6 @@ import notes from './notes.md'
 storiesOf('@example|atoms/IconButton', module)
   .addDecorator(withNotes)
   .add('Big Red', () => <IconButton />, { notes: { markdown: notes } })
-  .add('disabled', () => <IconButton disabled={true} />, {
+  .add('disabled', () => <IconButton disabled />, {
     notes: { markdown: notes }
   })

@@ -11,12 +11,12 @@ storiesOf('@example|atoms/Checkbox', module)
   .add('checkbox', () => <Checkbox text={'Orange Lorry'} />, {
     notes: { markdown: notes }
   })
-  .add('checked', () => <Checkbox checked={true} text={'Blue Lorry'} />, {
+  .add('checked', () => <Checkbox checked text={'Blue Lorry'} />, {
     notes: { markdown: notes }
   })
-  .add('disabled', () => <Checkbox disabled={true} text={'Yellow Lorry'} />, {
+  .add('disabled', () => <Checkbox disabled text={'Yellow Lorry'} />, {
     notes: { markdown: notes }
   })
-  .add('with color', () => <Checkbox error={true} text={'Red Lorry'} />, {
+  .add('with color', () => <Checkbox error text={'Red Lorry'} />, {
     notes: { markdown: notes }
   })

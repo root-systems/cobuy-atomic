@@ -23,6 +23,6 @@ storiesOf('@example|atoms/Select', module)
   .add('select', () => <Select options={items} />, {
     notes: { markdown: notes }
   })
-  .add('disabled', () => <Select options={items} disabled={true} />, {
+  .add('disabled', () => <Select options={items} disabled />, {
     notes: { markdown: notes }
   })

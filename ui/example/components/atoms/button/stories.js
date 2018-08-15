@@ -14,7 +14,7 @@ storiesOf('@example|atoms/Button', module)
     <Button
       {...eventsFromButtons}
       title={'Disabled'}
-      disabled={true}
+      disabled
       elevation={3}
     />
   ))
