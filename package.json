@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/root-systems/cobuy-atomic#readme",
   "scripts": {
-    "test": "test",
+    "test": "echo 'one day tests will exist'",
     "start": "start-storybook -p 9001 -c .storybook",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c ./ -s built-storybooks",
