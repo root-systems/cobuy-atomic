@@ -38,10 +38,6 @@
       "standard",
       "git add"
     ],
-    "ux/**/**/**/**/**/*.js": [
-      "standard",
-      "git add"
-    ],
     "domains/**/**/**/**/**/*.js": [
       "standard",
       "git add"
