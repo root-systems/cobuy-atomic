@@ -1,5 +1,3 @@
-import theme from '../../../../theme'
-
 // export a function that has the current theme injected into it
 export default theme => ({
   error: {
