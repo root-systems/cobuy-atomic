@@ -1,22 +1,22 @@
 export default {
-  "$schema": "http://json-schema.org/schema#",
-  "type": "object",
-  "properties": {
-    "checked": {
-      "type": "boolean"
+  $schema: 'http://json-schema.org/schema#',
+  type: 'object',
+  properties: {
+    checked: {
+      type: 'boolean'
     },
-    "disabled": {
-      "type": "boolean"
+    disabled: {
+      type: 'boolean'
     },
-    "text": {
-      "type": "string"
+    text: {
+      type: 'string'
     },
-    "error": {
-      "type": "boolean"
+    error: {
+      type: 'boolean'
     },
-    "onChange": {
-      "instanceOf": "function"
+    onChange: {
+      instanceOf: 'function'
     }
   },
-  "required": ["text"]
+  required: ['text']
 }

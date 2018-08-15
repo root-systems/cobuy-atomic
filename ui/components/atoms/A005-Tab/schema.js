@@ -1,33 +1,26 @@
 export default {
   $schema: 'http://json-schema.org/schema#',
-  'type': 'object',
-  'properties': {
-    'label': {
-      'type': 'string'
+  type: 'object',
+  properties: {
+    label: {
+      type: 'string'
     },
-    'disabled': {
-      'type': 'boolean'
+    disabled: {
+      type: 'boolean'
     },
-    'icon': {
-      'type': 'string'
-    },
+    icon: {
+      type: 'string'
+    }
   },
-  'oneOf': [
+  oneOf: [
     {
-      'required': [
-          'icon'
-      ]
+      required: ['icon']
     },
     {
-      'required': [
-          'label'
-      ]
+      required: ['label']
     },
     {
-      'required': [
-        'label',
-        'icon'
-      ]  
+      required: ['label', 'icon']
     }
   ]
 }

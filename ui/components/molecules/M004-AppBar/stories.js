@@ -5,7 +5,6 @@ import { storiesOf } from '@storybook/react'
 import Button from '.'
 
 // List of stories of use cases for atom
-storiesOf('Molecules|M004 - AppBar', module)
-  .add('Default', () => (
-    <Button buttonTitle={'default button'} color={'default'} />
-  ))
+storiesOf('Molecules|M004 - AppBar', module).add('Default', () => (
+  <Button buttonTitle={'default button'} color={'default'} />
+))

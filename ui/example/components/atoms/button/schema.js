@@ -1,21 +1,21 @@
 export default {
-  "$schema": "http://json-schema.org/schema#",
-  "type": "object",
-  "properties": {
-    "title": {
-      "type": "string"
+  $schema: 'http://json-schema.org/schema#',
+  type: 'object',
+  properties: {
+    title: {
+      type: 'string'
     },
-    "disabled": {
-      "type": "boolean"
+    disabled: {
+      type: 'boolean'
     },
-    "elevation": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 5
+    elevation: {
+      type: 'integer',
+      minimum: 1,
+      maximum: 5
     },
-    "onClick": {
-      "instanceOf": "function"
+    onClick: {
+      instanceOf: 'function'
     }
   },
-  "required": ["title"]
+  required: ['title']
 }

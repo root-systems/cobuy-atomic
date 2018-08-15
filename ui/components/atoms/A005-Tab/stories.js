@@ -5,11 +5,10 @@ import { storiesOf } from '@storybook/react'
 import Tab from '.'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A005 - Tab', module)
-  .add('Groups domain Tab', () => (
-      <div>
-        <Tab icon={'group'} />
-        <Tab icon={'person'} />
-        <Tab icon={'shopping_basket'} />
-      </div>
-  ))
+storiesOf('Atoms|A005 - Tab', module).add('Groups domain Tab', () => (
+  <div>
+    <Tab icon={'group'} />
+    <Tab icon={'person'} />
+    <Tab icon={'shopping_basket'} />
+  </div>
+))

@@ -6,7 +6,7 @@ import schema from './schema'
 
 const A005 = props => {
   return (
-    <Typography variant="title" align={props.alignment} color={props.color}>
+    <Typography variant='title' align={props.alignment} color={props.color}>
       {props.title}
     </Typography>
   )

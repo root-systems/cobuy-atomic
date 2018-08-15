@@ -1,10 +1,10 @@
 export default {
-  "$schema": "http://json-schema.org/schema#",
-  "type": "object",
-  "properties": {
-    "label": {
-      "type": "string"
+  $schema: 'http://json-schema.org/schema#',
+  type: 'object',
+  properties: {
+    label: {
+      type: 'string'
     }
   },
-  "required": ["label"]
+  required: ['label']
 }

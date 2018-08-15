@@ -15,7 +15,7 @@ storiesOf('Atoms|A002 - Floating Button', module)
   .add(
     'Group',
     () => <Button color='primary' icon={<Icon>group_icon</Icon>} />,
-  {
-    notes: { markdown: notes }
-  }
+    {
+      notes: { markdown: notes }
+    }
   )

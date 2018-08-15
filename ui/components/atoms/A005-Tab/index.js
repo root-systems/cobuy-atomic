@@ -12,9 +12,7 @@ import TabIcon from '../../particles/P001-Icon'
 
 // Define Atom as JSX
 const A005 = props => {
-  return (
-    <Tab icon={<TabIcon iconname={props.icon} />} />
-  )
+  return <Tab icon={<TabIcon iconname={props.icon} />} />
 }
 
 // Convert imported schema to Prop types

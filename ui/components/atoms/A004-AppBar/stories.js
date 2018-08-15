@@ -9,7 +9,11 @@ import Button from '.'
 import notes from './readme.md'
 
 storiesOf('Atoms|A004 - AppBar', module)
-.addDecorator(withNotes)
-.add('App bar', () => (
-  <AppBar position='static' color='default' appBarTitle='App bar title' />
-), { notes: { markdown: notes } })
+  .addDecorator(withNotes)
+  .add(
+    'App bar',
+    () => (
+      <AppBar position='static' color='default' appBarTitle='App bar title' />
+    ),
+    { notes: { markdown: notes } }
+  )

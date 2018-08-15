@@ -8,9 +8,7 @@ import Icon from '../../atoms/A003-Icons'
 const styles = {}
 
 const M001 = props => {
-  return (
-    <Icon iconname='hamburger' />
-  )
+  return <Icon iconname='hamburger' />
 }
 
 M001.propTypes = createPropTypes(schema)

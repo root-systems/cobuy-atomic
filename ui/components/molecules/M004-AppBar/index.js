@@ -3,7 +3,7 @@ import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
 
 // Import from UI library
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, Typography } from '@material-ui/core'
 
 // Import JSON schema
 import schema from './schema'
@@ -14,9 +14,9 @@ import schema from './schema'
 const A008 = props => {
   return (
     <div>
-      <AppBar position="static">
+      <AppBar position='static'>
         <Toolbar>
-          <Typography variant="title" color="inherit">
+          <Typography variant='title' color='inherit'>
             Page title
           </Typography>
         </Toolbar>

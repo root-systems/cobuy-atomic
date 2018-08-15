@@ -27,13 +27,13 @@ const svgMap = {
 }
 
 // Takes an SVG React Element and returns its child Elements (Paths)
-const renderSvgPaths = (iconname) => {
-  if (svgMap[iconname] === undefined) { 
-    console.error('iconname not found in the key of svgMap') 
+const renderSvgPaths = iconname => {
+  if (svgMap[iconname] === undefined) {
+    console.error('iconname not found in the key of svgMap')
     return null
   }
   const svgELement = svgMap[iconname]()
-  return React.Children.map(svgELement.props.children, (childElement) => {
+  return React.Children.map(svgELement.props.children, childElement => {
     return childElement
   })
 }
@@ -41,26 +41,13 @@ const renderSvgPaths = (iconname) => {
 const P001 = props => {
   switch (uiMode) {
     case 'wired':
-      return (
-        <Icon color={props.variant}>
-          {materialMap[props.iconname]}
-        </Icon>
-      )
+      return <Icon color={props.variant}>{materialMap[props.iconname]}</Icon>
 
     case 'svg':
-      return (
-        <SvgIcon {...props}>
-          {renderSvgPaths(props.iconname)}
-        </SvgIcon>
-
-      )
+      return <SvgIcon {...props}>{renderSvgPaths(props.iconname)}</SvgIcon>
 
     default:
-      return (
-        <Icon color={props.palette}>
-          {materialMap[props.iconname]}
-        </Icon>
-      )
+      return <Icon color={props.palette}>{materialMap[props.iconname]}</Icon>
   }
 }
 

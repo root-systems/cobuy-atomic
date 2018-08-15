@@ -1,13 +1,13 @@
 export default {
-  "$schema": "http://json-schema.org/schema#",
-  "type": "object",
-  "properties": {
-    "nav": {
-      "type": "element"
+  $schema: 'http://json-schema.org/schema#',
+  type: 'object',
+  properties: {
+    nav: {
+      type: 'element'
     },
-    "main": {
-      "type": "element"
+    main: {
+      type: 'element'
     }
   },
-  "required": ["nav", "main"]
+  required: ['nav', 'main']
 }

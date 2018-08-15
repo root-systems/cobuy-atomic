@@ -9,17 +9,15 @@ import LeftIcon from '../../particles/P001-Icon'
 import PageTitle from '../../atoms/A005-PageTitle'
 import RightMenu from '../../molecules/M002'
 
-
 const O001 = props => {
   return (
     <div>
       <Appbar>
-        <LeftIcon iconname='menu' className='menuButton'/>
-        <PageTitle title={props.title} variant="title"/>
+        <LeftIcon iconname='menu' className='menuButton' />
+        <PageTitle title={props.title} variant='title' />
         <RightMenu />
       </Appbar>
     </div>
-
   )
 }
 
