@@ -6,7 +6,7 @@ import schema from './schema'
 
 const A004 = props => {
   return (
-    <AppBar position={props.position} color='primary' position='static'>
+    <AppBar color='primary' position='static'>
       <Toolbar>
         <Typography variant='title' color='inherit'>
           {props.children}

@@ -2,10 +2,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withNotes } from '@storybook/addon-notes'
 
-import Icon from '@material-ui/core/Icon'
-import AppBar from '@material-ui/core/AppBar'
+import AppBar from '.'
 
-import Button from '.'
 import notes from './readme.md'
 
 storiesOf('Atoms|A004 - AppBar', module)
@@ -13,7 +11,7 @@ storiesOf('Atoms|A004 - AppBar', module)
   .add(
     'App bar',
     () => (
-      <AppBar position='static' color='default' appBarTitle='App bar title' />
+      <AppBar color='default' appBarTitle='App bar title' />
     ),
     { notes: { markdown: notes } }
   )
