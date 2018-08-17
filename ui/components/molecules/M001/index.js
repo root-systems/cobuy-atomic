@@ -3,14 +3,10 @@ import createPropTypes from 'json-schema-prop-types'
 
 import schema from './schema'
 
-import Icon from '../../atoms/A003-Icons'
-
-const styles = {}
+import Icon from '../../particles/P001-Icon'
 
 const M001 = props => {
-  return (
-    <Icon iconname='hamburger' />
-  )
+  return <Icon iconname='hamburger' />
 }
 
 M001.propTypes = createPropTypes(schema)

@@ -1,30 +1,18 @@
 export default {
-  '$schema': 'http://json-schema.org/schema#',
-  'type': 'object',
-  'properties': {
-    'palette': {
-      'type': 'string',
-      'enum': [
-        'primary',
-        'seconadry',
-        'inherit',
-        'error'
-      ]
+  $schema: 'http://json-schema.org/schema#',
+  type: 'object',
+  properties: {
+    palette: {
+      type: 'string',
+      enum: ['primary', 'seconadry', 'inherit', 'error']
     },
-    'variant': {
-      'type': 'string',
-      'enum': [
-        'Filled',
-        'Outlined',
-        'Rounded',
-        'Two Tone',
-        'Sharp',
-        'Edge-cases'
-      ]
+    variant: {
+      type: 'string',
+      enum: ['Filled', 'Outlined', 'Rounded', 'Two Tone', 'Sharp', 'Edge-cases']
     },
-    'iconname': {
-      'type': 'string',
-      'enum': [
+    iconname: {
+      type: 'string',
+      enum: [
         'add',
         'cancel',
         'minus',
@@ -39,5 +27,5 @@ export default {
       ]
     }
   },
-  'required': ['iconname']
+  required: ['iconname']
 }

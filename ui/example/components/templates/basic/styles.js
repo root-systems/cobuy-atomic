@@ -1,7 +1,5 @@
 export default {
-  page: {
-
-  },
+  page: {},
   navWrapper: {
     position: 'fixed',
     top: '0'

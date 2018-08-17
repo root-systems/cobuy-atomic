@@ -4,7 +4,7 @@ import Button from '../../atoms/button'
 import Label from '../../atoms/label'
 import Input from '../../atoms/input'
 
-const search = (props) => {
+const search = props => {
   const { label, title } = props
 
   return (

@@ -24,7 +24,7 @@ export default {
       type: 'string',
       enum: [
         'display4',
-        'display3', 
+        'display3',
         'display2',
         'display1',
         'headline',
@@ -35,7 +35,7 @@ export default {
         'caption',
         'button'
       ]
-    },
+    }
   },
   required: ['title']
 }

@@ -9,9 +9,7 @@ import Button from '../../atoms/A001-Button'
 const styles = {}
 
 const M003 = props => {
-  return (
-    <Button title={props.title} color={'primary'} />
-  )
+  return <Button title={props.title} color={'primary'} />
 }
 
 M003.propTypes = createPropTypes(schema)

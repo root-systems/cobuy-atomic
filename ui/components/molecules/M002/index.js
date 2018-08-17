@@ -11,8 +11,8 @@ const styles = {}
 const M002 = props => {
   return (
     <div>
-      <Icon iconname='help'/>
-      <Icon iconname='settings'/>
+      <Icon iconname='help' />
+      <Icon iconname='settings' />
     </div>
   )
 }

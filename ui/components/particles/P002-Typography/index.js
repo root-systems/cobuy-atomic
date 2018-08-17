@@ -5,11 +5,7 @@ import { Typography } from '@material-ui/core'
 import schema from './schema'
 
 const P002 = props => {
-  return (
-    <Typography variant={props.variant}>
-      {props.title}
-    </Typography>
-  )
+  return <Typography variant={props.variant}>{props.title}</Typography>
 }
 
 P002.propTypes = createPropTypes(schema)

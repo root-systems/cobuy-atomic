@@ -1,10 +1,10 @@
 export default {
-  "$schema": "http://json-schema.org/schema#",
-  "type": "object",
-  "properties": {
-    "color": {
-      "type": "string"
+  $schema: 'http://json-schema.org/schema#',
+  type: 'object',
+  properties: {
+    color: {
+      type: 'string'
     }
   },
-  "required": ["color"]
+  required: ['color']
 }
