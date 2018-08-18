@@ -9,16 +9,10 @@ export default {
     disabled: {
       type: 'boolean'
     },
-    disabledFocusRipple: {
-      type: 'boolean'
-    },
-    disabledRipple: {
-      type: 'boolean'
-    },
     fullWidth: {
       type: 'boolean'
     },
-    buttonTitle: {
+    text: {
       type: 'string'
     },
     size: {
@@ -26,5 +20,5 @@ export default {
       enum: ['small', 'medium', 'large']
     }
   },
-  required: ['color', 'buttonTitle']
+  required: ['color', 'text']
 }
