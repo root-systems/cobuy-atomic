@@ -8,19 +8,19 @@ export default {
     disabled: {
       type: 'boolean'
     },
-    icon: {
+    iconname: {
       type: 'string'
     }
   },
   oneOf: [
     {
-      required: ['icon']
+      required: ['iconname']
     },
     {
       required: ['label']
     },
     {
-      required: ['label', 'icon']
+      required: ['label', 'iconname']
     }
   ]
 }
