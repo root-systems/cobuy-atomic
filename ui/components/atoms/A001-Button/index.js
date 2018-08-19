@@ -13,8 +13,15 @@ import schema from './schema'
 // Define Atom as JSX
 const A001 = props => {
   return (
-    <Button variant='contained' color={props.color}>
-      {props.buttonTitle}
+    <Button
+      variant='contained'
+      color={props.color}
+      disabled={props.disabled}
+      fullWidth={props.fullWidth}
+      size={props.size}
+      aria-label={props.ariaLabel}
+    >
+      {props.text}
     </Button>
   )
 }
