@@ -10,8 +10,6 @@ storiesOf('Atoms|A004 - AppBar', module)
   .addDecorator(withNotes)
   .add(
     'App bar',
-    () => (
-      <AppBar color='default' appBarTitle='App bar title' />
-    ),
+    () => <AppBar color='default' appBarTitle='App bar title' />,
     { notes: { markdown: notes } }
   )
