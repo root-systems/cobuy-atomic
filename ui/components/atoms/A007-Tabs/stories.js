@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 // Import index.js from the same folder
 import Tabs from '.'
-import Tab from '../A005-Tab'
+import Tab from '../A006-Tab'
 
 // List of stories of use cases for atom
 storiesOf('Atoms|A007 - Tabs', module)
