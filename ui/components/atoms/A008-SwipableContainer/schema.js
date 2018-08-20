@@ -6,7 +6,7 @@ export default {
       type: 'integer'
     },
     handleChangeIndex: {
-      type: 'function'
+      instanceOf: 'function'
     },
     axis: {
       type: 'string',
