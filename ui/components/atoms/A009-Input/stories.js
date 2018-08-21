@@ -7,9 +7,9 @@ import Input from '.'
 // List of stories of use cases for atom
 storiesOf('Atoms|A009 - Input', module).add('Input', () => (
   <Input
-    id='inputId'
+    id='1'
     type='text'
-    name='inputName'
-    placeholder='this is a place holder'
+    name='fullName'
+    placeholder='Fullname'
   />
 ))
