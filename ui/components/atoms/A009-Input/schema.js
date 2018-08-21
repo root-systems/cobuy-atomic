@@ -24,14 +24,14 @@ export default {
     disabled: {
       type: 'boolean'
     },
-    error: {
-      type: 'boolean'
-    },
     name: {
       type: 'string'
     },
     helperText: {
       type: 'string'
+    },
+    helpError: {
+      type: 'boolean'
     },
     placeholder: {
       type: 'string'
