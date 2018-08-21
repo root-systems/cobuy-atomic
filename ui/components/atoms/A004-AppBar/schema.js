@@ -5,9 +5,15 @@ export default {
     color: {
       type: 'string'
     },
-    appBarTitle: {
-      type: 'string'
+    position: {
+      type: 'string',
+      enum: ['fixed', 'absolute', 'sticky', 'static']
+    },
+    variant: {
+      variant: 'string',
+      enum: ['regular', 'dense']
     }
+
   },
-  required: ['color']
+  required: ['position']
 }
