@@ -2,41 +2,44 @@ export default {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
   properties: {
-    autoFocus: {
-      type: 'boolean'
+    id: {
+      type: 'string'
+    },
+    value: {
+      'anyOf': [
+        {
+          type: 'string'
+        },
+        {
+          type: 'number'
+        }
+      ]
+    },
+    type: {
+      type: 'string'
+    },
+    required: {
+      type: 'string'
     },
     disabled: {
-      type: 'boolean'
-    },
-    disableUnderline: {
       type: 'boolean'
     },
     error: {
       type: 'boolean'
     },
-    fullWidth: {
-      type: 'boolean'
-    },
-    id: {
+    name: {
       type: 'string'
     },
-    margin: {
-      type: 'string',
-      enum: ['dense', 'none']
-    },
-    multiline: {
-      type: 'boolean'
-    },
-    name: {
+    helperText: {
       type: 'string'
     },
     placeholder: {
       type: 'string'
     },
-    readOnly: {
-      type: 'boolean'
+    onChange: {
+      instanceOf: 'function'
     },
-    type: {
+    readOnly: {
       type: 'string'
     }
   },
