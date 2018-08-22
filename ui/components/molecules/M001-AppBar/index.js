@@ -1,4 +1,3 @@
-// List Libraries being used
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
 
@@ -6,7 +5,6 @@ import AppBar from '../../atoms/A004-AppBar'
 import Typography from '../../particles/P002-Typography'
 import IconButton from '../../atoms/A011-IconButton'
 
-// Import JSON schema
 import schema from './schema'
 
 const M001 = props => {
@@ -15,7 +13,7 @@ const M001 = props => {
       <AppBar position='fixed'>
         <IconButton aria-label='Menu' iconname='menu' handleClick={props.menuClick} />
         <Typography variant='title' color='inherit'>
-            Page title
+          {props.pageTitle}
         </Typography>
         <IconButton aria-label='Profile' iconname='person' handleClick={props.profileClick} />
       </AppBar>

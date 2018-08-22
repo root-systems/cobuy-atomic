@@ -2,12 +2,15 @@ export default {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
   properties: {
-    color: {
-      type: 'string'
-    },
     pageTitle: {
       type: 'string'
+    },
+    menuClick: {
+      instanceOf: 'function'
+    },
+    profileClick: {
+      instanceOf: 'function'
     }
   },
-  required: ['color', 'pageTitle']
+  required: ['pageTitle']
 }

@@ -6,5 +6,5 @@ import AppBar from '.'
 
 // List of stories of use cases for atom
 storiesOf('Molecules|M001 - AppBar', module).add('Default', () => (
-  <AppBar />
+  <AppBar pageTitle='Cobuy' menuClick={console.log('menu click')} profileClick={console.log('profile click')} />
 ))
