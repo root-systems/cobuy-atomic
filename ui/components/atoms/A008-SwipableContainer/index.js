@@ -6,11 +6,15 @@ import SwipeableViews from 'react-swipeable-views'
 import schema from './schema'
 
 const A008 = props => {
-  return <SwipeableViews
-    axis={props.axis}
-    index={props.index}
-    onChangeIndex={props.handleChangeIndex}
-  >{props.children}</SwipeableViews>
+  return (
+    <SwipeableViews
+      axis={props.axis}
+      index={props.index}
+      onChangeIndex={props.handleChangeIndex}
+    >
+      {props.children}
+    </SwipeableViews>
+  )
 }
 
 A008.propTypes = createPropTypes(schema)

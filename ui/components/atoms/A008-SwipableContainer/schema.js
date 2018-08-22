@@ -13,7 +13,7 @@ export default {
       enum: ['x', 'x-reverse', 'y', 'y-reverse']
     },
     children: {
-      'anyOf': [
+      anyOf: [
         {
           type: 'array',
           items: {
