@@ -8,8 +8,6 @@ import notes from './readme.md'
 
 storiesOf('Atoms|A004 - AppBar', module)
   .addDecorator(withNotes)
-  .add(
-    'App bar',
-    () => <AppBar position='fixed' />,
-    { notes: { markdown: notes } }
-  )
+  .add('App bar', () => <AppBar position='fixed' />, {
+    notes: { markdown: notes }
+  })
