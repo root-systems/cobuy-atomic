@@ -33,6 +33,9 @@ export default {
     helpError: {
       type: 'boolean'
     },
+    error: {
+      type: 'boolean'
+    },
     placeholder: {
       type: 'string'
     },

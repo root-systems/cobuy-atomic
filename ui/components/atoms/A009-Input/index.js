@@ -12,11 +12,13 @@ const A009 = props => {
       value={props.value}
       type={props.type}
       required={props.required}
+      label={props.label}
       disabled={props.disabled}
       name={props.name}
       helperText={props.helperText}
       placeholder={props.placeholder}
       onChange={props.handleChange}
+      error={props.error}
       margin='normal'
       InputProps={{
         readOnly: props.readOnly
