@@ -7,9 +7,7 @@ import schema from './schema'
 const A004 = props => {
   return (
     <AppBar color='primary' position={props.position}>
-      <Toolbar variant='regular'>
-        {props.children}
-      </Toolbar>
+      <Toolbar variant='regular'>{props.children}</Toolbar>
     </AppBar>
   )
 }

@@ -19,7 +19,7 @@ export default {
       type: 'integer'
     },
     children: {
-      'anyOf': [
+      anyOf: [
         {
           type: 'array',
           items: {

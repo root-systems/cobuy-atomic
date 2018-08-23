@@ -2,10 +2,7 @@ export default {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
   properties: {
-    alignment: {
-      type: 'string'
-    },
-    title: {
+    align: {
       type: 'string'
     },
     color: {
@@ -36,6 +33,5 @@ export default {
         'button'
       ]
     }
-  },
-  required: ['title']
+  }
 }
