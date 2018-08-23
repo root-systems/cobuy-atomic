@@ -8,11 +8,10 @@ import schema from './schema'
 const A011 = props => {
   return (
     <Checkbox
+      id={props.id}
       color={props.color}
       checked={props.checked}
       disabled={props.disabled}
-      disableRipple={props.disableRipple}
-      value={props.value}
       indeterminate={props.indeterminate}
     />
   )

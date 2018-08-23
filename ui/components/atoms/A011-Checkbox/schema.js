@@ -12,9 +12,6 @@ export default {
     disabled: {
       type: 'boolean'
     },
-    disabledRipple: {
-      type: 'boolean'
-    },
     id: {
       type: 'string'
     },
@@ -22,9 +19,6 @@ export default {
       type: 'boolean'
     },
     value: {
-      type: 'string'
-    },
-    type: {
       type: 'string'
     }
   },
