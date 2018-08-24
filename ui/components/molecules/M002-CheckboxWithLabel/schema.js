@@ -11,6 +11,9 @@ export default {
     },
     disabled: {
       type: 'boolean'
+    },
+    checked: {
+      type: 'boolean'
     }
   }
 }
