@@ -13,6 +13,7 @@ const A011 = props => {
       checked={props.checked}
       disabled={props.disabled}
       indeterminate={props.indeterminate}
+      value={props.value}
     />
   )
 }
