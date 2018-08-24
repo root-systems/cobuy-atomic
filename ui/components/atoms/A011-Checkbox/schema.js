@@ -20,7 +20,10 @@ export default {
     },
     value: {
       type: 'string'
+    },
+    ariaLabel: {
+      type: 'string'
     }
   },
-  required: ['value']
+  required: ['value', 'id', 'ariaLabel']
 }
