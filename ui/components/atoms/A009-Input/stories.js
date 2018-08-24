@@ -5,14 +5,10 @@ import { storiesOf } from '@storybook/react'
 import TextField from '.'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A009 - Input (TextField)', module).add('Input', () => (
-  <TextField
-    id='1'
-    type='text'
-    name='name'
-    placeholder='placeholder'
-  />
-))
+storiesOf('Atoms|A009 - Input', module)
+  .add('Input', () => (
+    <TextField id='1' type='text' name='name' placeholder='placeholder' />
+  ))
   .add('Input with label', () => (
     <TextField
       id='1'
