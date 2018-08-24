@@ -14,6 +14,7 @@ const A011 = props => {
       disabled={props.disabled}
       indeterminate={props.indeterminate}
       aria-label={props.ariaLabel}
+      value={props.value}
     />
   )
 }
