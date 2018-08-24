@@ -6,7 +6,7 @@ import { actions } from '@storybook/addon-actions'
 import IconButton from '.'
 import notes from './readme.md'
 
-storiesOf('Atoms|A011 - Icon Button', module)
+storiesOf('Atoms|A013 - Icon Button', module)
   .addDecorator(withNotes)
   .add(
     'Add',
