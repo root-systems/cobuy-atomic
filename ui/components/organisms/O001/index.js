@@ -6,7 +6,7 @@ import schema from './schema'
 import Appbar from '../../atoms/A004-AppBar'
 import LeftIcon from '../../particles/P001-Icon'
 import PageTitle from '../../atoms/A005-PageTitle'
-import RightMenu from '../../molecules/M002'
+// import RightMenu from '../../molecules/M002'
 
 const O001 = props => {
   return (
@@ -14,7 +14,7 @@ const O001 = props => {
       <Appbar>
         <LeftIcon iconname='menu' className='menuButton' />
         <PageTitle title={props.title} variant='title' />
-        <RightMenu />
+        {/* <RightMenu /> */}
       </Appbar>
     </div>
   )
