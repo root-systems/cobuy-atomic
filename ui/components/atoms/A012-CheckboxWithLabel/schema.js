@@ -2,6 +2,13 @@ export default {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
   properties: {
+    label: {
+      type: 'string'
+    },
+    labelPlacement: {
+      type: 'string',
+      enum: ['end', 'start']
+    },
     checked: {
       type: 'boolean'
     },
@@ -25,5 +32,5 @@ export default {
       type: 'string'
     }
   },
-  required: ['value', 'id', 'ariaLabel']
+  required: ['value', 'label', 'id', 'ariaLabel']
 }

@@ -7,13 +7,19 @@ import Checkbox from '.'
 import notes from './readme.md'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A011 - Checkbox', module)
+storiesOf('Atoms|A012 - Checkbox with label', module)
   .addDecorator(withNotes)
   .add('Default Checkbox', () => (
-    <Checkbox value='checkboxValue' id='check1' ariaLabel='Check Default' />
+    <Checkbox
+      label='Checkers'
+      value='checkboxValue'
+      id='check1'
+      ariaLabel='Check Default'
+    />
   ))
   .add('Checkbox Checked', () => (
     <Checkbox
+      label='I have a dog'
       value='checkboxValue'
       id='check2'
       ariaLabel='Check your check'
@@ -22,6 +28,7 @@ storiesOf('Atoms|A011 - Checkbox', module)
   ))
   .add('Checkbox Disabled', () => (
     <Checkbox
+      label='But I love cats'
       value='checkboxValue'
       id='check3'
       ariaLabel='Disabled Check'
@@ -32,6 +39,7 @@ storiesOf('Atoms|A011 - Checkbox', module)
     'Checkbox Minus',
     () => (
       <Checkbox
+        label='The possibilities are unclear'
         value='open'
         id='menu1'
         ariaLabel='Close menu'

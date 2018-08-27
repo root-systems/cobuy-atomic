@@ -6,7 +6,7 @@ export default {
       type: 'string'
     },
     value: {
-      'anyOf': [
+      anyOf: [
         {
           type: 'string'
         },
