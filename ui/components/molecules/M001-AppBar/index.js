@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles'
 
 import AppBar from '../../atoms/A004-AppBar'
 import Typography from '../../particles/P002-Typography'
-import IconButton from '../../atoms/A011-IconButton'
+import IconButton from '../../atoms/A013-IconButton'
 
 import schema from './schema'
 import styles from './styles'
