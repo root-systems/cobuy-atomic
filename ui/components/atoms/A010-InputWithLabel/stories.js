@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react'
 import Input from '.'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A0010 - Input With Label', module).add('Input', () => (
+storiesOf('Atoms|A010 - Input:Label', module).add('Input', () => (
   <Input
     id='1'
     type='text'
