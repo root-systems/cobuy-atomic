@@ -8,9 +8,14 @@ export default {
     src: {
       type: 'string'
     },
-    children: {
-      type: 'object'
+    srcSet: {
+      type: 'string'
+    },
+    text: {
+      type: 'string'
+    },
+    iconname: {
+      type: 'string'
     }
-  },
-  required: ['alt', 'src']
+  }
 }
