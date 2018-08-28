@@ -7,7 +7,7 @@ import Checkbox from '.'
 import notes from './readme.md'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A012 - Checkbox with label', module)
+storiesOf('Atoms|A012 - Checkbox:Label', module)
   .addDecorator(withNotes)
   .add('Default Checkbox', () => (
     <Checkbox
