@@ -1,12 +1,8 @@
-// export default {
-//   root: {
-//     flexGrow: 1
-//   },
-//   flex: {
-//     flexGrow: 1
-//   },
-//   menuButton: {
-//     marginLeft: -12,
-//     marginRight: 20
-//   }
-// }
+export default {
+  paper: {
+    marginTop: 10,
+    marginBottom: 10,
+    padding: 20,
+    width: 200
+  }
+}
