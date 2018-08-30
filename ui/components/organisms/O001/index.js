@@ -1,22 +1,21 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
 
+import { Paper } from '@material-ui/core'
+
 import schema from './schema'
 
-import Appbar from '../../atoms/A004-AppBar'
-import LeftIcon from '../../particles/P001-Icon'
-import PageTitle from '../../atoms/A005-PageTitle'
-// import RightMenu from '../../molecules/M002'
+import Appbar from '../../molecules/M001-AppBar'
+import ResponsiveDrawer from '../../molecules/M003-ResponsiveDrawer'
 
 const O001 = props => {
   return (
-    <div>
-      <Appbar>
-        <LeftIcon iconname='menu' className='menuButton' />
-        <PageTitle title={props.title} variant='title' />
-        {/* <RightMenu /> */}
-      </Appbar>
-    </div>
+    <Paper>
+      <Appbar
+        pageTitle='Cobuy'
+      />
+      <ResponsiveDrawer />
+    </Paper>
   )
 }
 
