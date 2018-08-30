@@ -19,7 +19,8 @@ const materialMap = {
   help: 'help',
   group: 'group',
   shopping_basket: 'shopping_basket',
-  person: 'person'
+  person: 'person',
+  flower: 'filter_vintage'
 }
 
 const svgMap = {
