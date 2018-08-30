@@ -19,7 +19,7 @@ export default {
       type: 'string'
     },
     required: {
-      type: 'string'
+      type: 'boolean'
     },
     disabled: {
       type: 'boolean'
