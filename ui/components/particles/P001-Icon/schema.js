@@ -23,7 +23,8 @@ export default {
         'settings',
         'group',
         'shopping_basket',
-        'person'
+        'person',
+        'flower'
       ]
     }
   },
