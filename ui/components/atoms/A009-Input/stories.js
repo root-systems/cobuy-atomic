@@ -75,8 +75,8 @@ storiesOf('Atoms|A009 - Input', module)
       name='Multiline'
       placeholder='Multiline'
       multiline
-      rowsmax='10'
-      value="When things happen - enjoy them. \n\n They're little gifts."
+      rows='10'
+      value='When things happen - enjoy them. \n\nThey are little gifts.'
     />,
   {notes: { markdown: notes }
   })

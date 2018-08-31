@@ -21,7 +21,7 @@ const A009 = props => {
       error={props.error}
       margin='normal'
       multiline={props.multiline}
-      rowsMax={props.rowsmax}
+      rows={props.rowsmax}
       InputProps={{
         readOnly: props.readOnly
       }}

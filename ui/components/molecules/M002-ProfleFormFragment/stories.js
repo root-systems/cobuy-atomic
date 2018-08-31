@@ -21,7 +21,8 @@ storiesOf('Molecules|M002 - Group Profile', module)
       descriptionField={{
         value: text('Description', `Asimov: "The saddest aspect of life right now is that science fiction gathers knowledge faster than society gathers wisdom."
 - Barbara Walters: "But what would you do if the doctor gave you only six months to live?"
-- Asimov: "Type faster"`)
+- Asimov: "Type faster"`),
+        multiline: boolean('multiline', true)
       }}
       websiteField={{
         value: text('Website Url', 'rootsystems.nz'),

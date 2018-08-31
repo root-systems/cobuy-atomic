@@ -26,8 +26,8 @@ storiesOf('Atoms|A010 - Input:Label', module)
       name='fullName'
       label='Your wonderful thought'
       multiline
-      rowsmax='10'
-      value="When things happen - enjoy them. \n\nThey're little gifts."
+      rows='10'
+      value='When things happen - enjoy them. \n\nThey are little gifts.'
     />,
   {notes: { markdown: notes }
   })

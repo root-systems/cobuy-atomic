@@ -40,6 +40,7 @@ const M002 = props => {
           value={props.descriptionField.value}
           placeholder='There once was a little group that wished to buy together...'
           type='text'
+          multiline={props.descriptionField.multiline}
         />
       </Grid>
       <Grid item xs={6} sm={12}>

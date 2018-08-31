@@ -29,6 +29,9 @@ export default {
       properties: {
         value: {
           type: 'string'
+        },
+        multiline: {
+          type: 'boolean'
         }
       }
     },
