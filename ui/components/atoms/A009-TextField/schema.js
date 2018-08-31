@@ -30,9 +30,6 @@ export default {
     helperText: {
       type: 'string'
     },
-    helpError: {
-      type: 'boolean'
-    },
     error: {
       type: 'boolean'
     },
@@ -44,12 +41,6 @@ export default {
     },
     readOnly: {
       type: 'string'
-    },
-    multiline: {
-      type: 'boolean'
-    },
-    rowsMax: {
-      type: 'number'
     }
   },
   required: ['id', 'type', 'name']

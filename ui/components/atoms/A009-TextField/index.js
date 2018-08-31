@@ -14,19 +14,17 @@ const A009 = props => {
       required={props.required}
       disabled={props.disabled}
       name={props.name}
-      helperText={props.helperText}
       placeholder={props.placeholder}
       onChange={props.handleChange}
+      helperText={props.helperText}
       error={props.error}
-      margin='normal'
-      multiline={props.multiline}
-      rowsMax={props.rowsMax}
+      FormHelperTextProps={{
+        error: props.error
+      }}
       InputProps={{
         readOnly: props.readOnly
       }}
-      FormHelperTextProps={{
-        error: props.helpError
-      }}
+      margin='normal'
     />
   )
 }

@@ -9,25 +9,18 @@ import notes from './readme.md'
 // List of stories of use cases for atom
 storiesOf('Atoms|A009 - TextField', module)
   .addDecorator(withNotes)
-  .add('Without label', () =>
-    <TextField id='1' type='text' name='name' placeholder='placeholder' />,
-  {notes: { markdown: notes }
-  })
-  .add('With helper text', () =>
+  .add('Default', () =>
     <TextField
       id='1'
-      label='this is a label'
       type='text'
       name='name'
       placeholder='placeholder'
-      helperText='This is a helper text'
     />,
   {notes: { markdown: notes }
   })
   .add('Required', () =>
     <TextField
       id='1'
-      label='this is a label'
       type='text'
       name='name'
       placeholder='placeholder'
@@ -35,10 +28,9 @@ storiesOf('Atoms|A009 - TextField', module)
     />,
   {notes: { markdown: notes }
   })
-  .add('Error', () =>
+  .add('HelpText & Error', () =>
     <TextField
       id='1'
-      label='this is a label'
       type='text'
       name='name'
       placeholder='placeholder'
@@ -50,22 +42,9 @@ storiesOf('Atoms|A009 - TextField', module)
   .add('Password type', () =>
     <TextField
       id='1'
-      label='this is a label'
       type='password'
       name='name'
       placeholder='placeholder'
-    />,
-  {notes: { markdown: notes }
-  })
-  .add('Multiline', () =>
-    <TextField
-      id='1'
-      type='text'
-      name='multiline'
-      placeholder='Multiline'
-      multiline
-      rowsMax='10'
-      value='When things happen - enjoy them. \n\nThey are little gifts.'
     />,
   {notes: { markdown: notes }
   })
