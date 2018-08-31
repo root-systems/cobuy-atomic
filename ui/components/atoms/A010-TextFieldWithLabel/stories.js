@@ -3,14 +3,14 @@ import { storiesOf } from '@storybook/react'
 import { withNotes } from '@storybook/addon-notes'
 
 // Import index.js from the same folder
-import Input from '.'
+import TextField from '.'
 import notes from './readme.md'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A010 - Input:Label', module)
+storiesOf('Atoms|A010 - TextField:Label', module)
   .addDecorator(withNotes)
-  .add('Input', () =>
-    <Input
+  .add('TextField', () =>
+    <TextField
       id='1'
       type='text'
       name='fullName'
