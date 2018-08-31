@@ -21,7 +21,7 @@ setOptions({
 })
 
 configureViewport({
-  defaultViewport: 'responsive',
+  defaultViewport: 'iphone5',
   viewports: {
     ...INITIAL_VIEWPORTS,
     ...extraViewports,
