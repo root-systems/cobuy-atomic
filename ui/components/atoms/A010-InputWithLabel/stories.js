@@ -19,3 +19,15 @@ storiesOf('Atoms|A010 - Input:Label', module)
     />,
   {notes: { markdown: notes }
   })
+  .add('Input : Multiline', () =>
+    <Input
+      id='1'
+      type='text'
+      name='fullName'
+      label='Your wonderful thought'
+      multiline
+      rowsmax='10'
+      value="When things happen - enjoy them. \n\nThey're little gifts."
+    />,
+  {notes: { markdown: notes }
+  })
