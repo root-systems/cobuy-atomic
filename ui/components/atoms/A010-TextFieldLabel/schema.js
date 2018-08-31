@@ -27,6 +27,9 @@ export default {
     label: {
       type: 'string'
     },
+    helperText: {
+      type: 'string'
+    },
     error: {
       type: 'boolean'
     },
@@ -41,12 +44,6 @@ export default {
     },
     readOnly: {
       type: 'string'
-    },
-    multiline: {
-      type: 'boolean'
-    },
-    rowsMax: {
-      type: 'number'
     }
   },
   required: ['id', 'type', 'name', 'label']

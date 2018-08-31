@@ -3,14 +3,14 @@ import { storiesOf } from '@storybook/react'
 import { withNotes } from '@storybook/addon-notes'
 
 // Import index.js from the same folder
-import Input from '.'
+import TextFieldLabel from '.'
 import notes from './readme.md'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A010 - TextField:Label', module)
+storiesOf('Atoms|A010 - TextFieldLabel', module)
   .addDecorator(withNotes)
   .add('Default', () =>
-    <Input
+    <TextFieldLabel
       id='1'
       type='text'
       name='fullName'
@@ -19,14 +19,15 @@ storiesOf('Atoms|A010 - TextField:Label', module)
     />,
   {notes: { markdown: notes }
   })
-  .add('Multiline', () =>
-    <Input
+  .add('HelpText & Error', () =>
+    <TextFieldLabel
       id='1'
       type='text'
-      name='multiline'
-      label='Your wonderful thought'
-      multiline
-      rowsMax='10'
+      name='favouriteTea'
+      placeholder='assam, green, jasmine...'
+      label='Favourite tea'
+      error
+      helperText='Fillout your description!!!'
     />,
   {notes: { markdown: notes }
   })
