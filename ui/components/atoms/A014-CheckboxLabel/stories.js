@@ -3,22 +3,22 @@ import { storiesOf } from '@storybook/react'
 import { withNotes } from '@storybook/addon-notes'
 
 // Import index.js from the same folder
-import Checkbox from '.'
+import CheckboxLabel from '.'
 import notes from './readme.md'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A012 - Checkbox:Label', module)
+storiesOf('Atoms|A014 - CheckboxLabel', module)
   .addDecorator(withNotes)
-  .add('Default Checkbox', () => (
-    <Checkbox
+  .add('Default', () => (
+    <CheckboxLabel
       label='Checkers'
       value='checkboxValue'
       id='check1'
       ariaLabel='Check Default'
     />
   ))
-  .add('Checkbox Checked', () => (
-    <Checkbox
+  .add('Checked', () => (
+    <CheckboxLabel
       label='I have a dog'
       value='checkboxValue'
       id='check2'
@@ -26,8 +26,18 @@ storiesOf('Atoms|A012 - Checkbox:Label', module)
       checked
     />
   ))
-  .add('Checkbox Disabled', () => (
-    <Checkbox
+  .add('Label Left', () => (
+    <CheckboxLabel
+      label='I have a dog'
+      value='checkboxValue'
+      id='check2'
+      ariaLabel='Check your check'
+      checked
+      labelPlacement='start'
+    />
+  ))
+  .add('Disabled', () => (
+    <CheckboxLabel
       label='But I love cats'
       value='checkboxValue'
       id='check3'
@@ -36,9 +46,9 @@ storiesOf('Atoms|A012 - Checkbox:Label', module)
     />
   ))
   .add(
-    'Checkbox Minus',
+    'Minus',
     () => (
-      <Checkbox
+      <CheckboxLabel
         label='The possibilities are unclear'
         value='open'
         id='menu1'

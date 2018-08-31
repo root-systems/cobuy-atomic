@@ -6,7 +6,7 @@ import Checkbox from '@material-ui/core/Checkbox'
 
 import schema from './schema'
 
-const A012 = props => {
+const A014 = props => {
   return (
     <FormControlLabel
       label={props.label}
@@ -26,6 +26,6 @@ const A012 = props => {
   )
 }
 
-A012.propTypes = createPropTypes(schema)
+A014.propTypes = createPropTypes(schema)
 
-export default A012
+export default A014
