@@ -59,6 +59,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-rc.1",
+    "@sambego/storybook-state": "^1.2.0",
     "@storybook/addon-a11y": "4.0.0-alpha.16",
     "@storybook/addon-actions": "4.0.0-alpha.16",
     "@storybook/addon-centered": "4.0.0-alpha.16",
