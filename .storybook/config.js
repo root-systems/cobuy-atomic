@@ -21,7 +21,7 @@ setOptions({
 })
 
 configureViewport({
-  // defaultViewport: 'iphone5',
+  defaultViewport: 'iphone5',
   viewports: {
     ...INITIAL_VIEWPORTS,
     ...extraViewports,
