@@ -7,13 +7,13 @@ import TextField from '.'
 import notes from './readme.md'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A009 - Input', module)
+storiesOf('Atoms|A009 - TextField', module)
   .addDecorator(withNotes)
-  .add('Input', () =>
+  .add('TextField', () =>
     <TextField id='1' type='text' name='name' placeholder='placeholder' />,
   {notes: { markdown: notes }
   })
-  .add('Input with label', () =>
+  .add('TextField with label', () =>
     <TextField
       id='1'
       label='this is a label'
@@ -23,7 +23,7 @@ storiesOf('Atoms|A009 - Input', module)
     />,
   {notes: { markdown: notes }
   })
-  .add('Input - With Text helper', () =>
+  .add('TextField - With Text helper', () =>
     <TextField
       id='1'
       label='this is a label'
@@ -34,7 +34,7 @@ storiesOf('Atoms|A009 - Input', module)
     />,
   {notes: { markdown: notes }
   })
-  .add('Input - Required', () =>
+  .add('TextField - Required', () =>
     <TextField
       id='1'
       label='this is a label'
@@ -45,7 +45,7 @@ storiesOf('Atoms|A009 - Input', module)
     />,
   {notes: { markdown: notes }
   })
-  .add('Input - Error', () =>
+  .add('TextField - Error', () =>
     <TextField
       id='1'
       label='this is a label'
@@ -57,7 +57,7 @@ storiesOf('Atoms|A009 - Input', module)
     />,
   {notes: { markdown: notes }
   })
-  .add('Input - Password type', () =>
+  .add('TextField - Password type', () =>
     <TextField
       id='1'
       label='this is a label'
