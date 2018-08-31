@@ -7,9 +7,9 @@ import Input from '.'
 import notes from './readme.md'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A010 - Input:Label', module)
+storiesOf('Atoms|A010 - TextField:Label', module)
   .addDecorator(withNotes)
-  .add('Input', () =>
+  .add('Default', () =>
     <Input
       id='1'
       type='text'
@@ -19,7 +19,7 @@ storiesOf('Atoms|A010 - Input:Label', module)
     />,
   {notes: { markdown: notes }
   })
-  .add('Input : Multiline', () =>
+  .add('Multiline', () =>
     <Input
       id='1'
       type='text'
@@ -27,7 +27,6 @@ storiesOf('Atoms|A010 - Input:Label', module)
       label='Your wonderful thought'
       multiline
       rowsMax='10'
-      value='When things happen - enjoy them. \n\nThey are little gifts.'
     />,
   {notes: { markdown: notes }
   })

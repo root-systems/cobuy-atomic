@@ -3,7 +3,7 @@ import createPropTypes from 'json-schema-prop-types'
 
 import { Grid } from '@material-ui/core/'
 
-import TextLabel from '../../atoms/A010-InputWithLabel'
+import TextLabel from '../../atoms/A010-TextFieldWithLabel'
 import Avatar from '../../atoms/A014-Avatar'
 
 import schema from './schema'

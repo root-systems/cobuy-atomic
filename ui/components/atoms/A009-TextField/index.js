@@ -1,7 +1,7 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
 
-import TextField from '@material-ui/core/TextField'
+import {TextField} from '@material-ui/core'
 
 import schema from './schema'
 
