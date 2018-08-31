@@ -20,7 +20,7 @@ const A010 = props => {
       onChange={props.handleChange}
       margin='normal'
       multiline={props.multiline}
-      rows={props.rowsmax}
+      rowsMax={props.rowsMax}
       InputProps={{
         readOnly: props.readOnly
       }}

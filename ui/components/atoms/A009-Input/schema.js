@@ -47,6 +47,9 @@ export default {
     },
     multiline: {
       type: 'boolean'
+    },
+    rowsMax: {
+      type: 'number'
     }
   },
   required: ['id', 'type', 'name']
