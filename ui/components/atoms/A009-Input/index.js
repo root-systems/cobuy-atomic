@@ -12,7 +12,6 @@ const A009 = props => {
       value={props.value}
       type={props.type}
       required={props.required}
-      label={props.label}
       disabled={props.disabled}
       name={props.name}
       helperText={props.helperText}
@@ -21,7 +20,7 @@ const A009 = props => {
       error={props.error}
       margin='normal'
       multiline={props.multiline}
-      rows={props.rowsmax}
+      rowsMax={props.rowsMax}
       InputProps={{
         readOnly: props.readOnly
       }}
