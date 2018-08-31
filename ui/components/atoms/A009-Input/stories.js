@@ -13,22 +13,12 @@ storiesOf('Atoms|A009 - Input', module)
     <TextField id='1' type='text' name='name' placeholder='placeholder' />,
   {notes: { markdown: notes }
   })
-  .add('Input : With label', () =>
-    <TextField
-      id='1'
-      label='this is a label'
-      type='text'
-      name='Name'
-      placeholder='placeholder'
-    />,
-  {notes: { markdown: notes }
-  })
   .add('Input : With helper text', () =>
     <TextField
       id='1'
       label='this is a label'
       type='text'
-      name='Name'
+      name='name'
       placeholder='placeholder'
       helperText='This is a helper text'
     />,
@@ -39,7 +29,7 @@ storiesOf('Atoms|A009 - Input', module)
       id='1'
       label='this is a label'
       type='text'
-      name='Name'
+      name='name'
       placeholder='placeholder'
       required
     />,
@@ -50,7 +40,7 @@ storiesOf('Atoms|A009 - Input', module)
       id='1'
       label='this is a label'
       type='text'
-      name='Name'
+      name='name'
       placeholder='placeholder'
       error
       helperText='This is an error helper text'
@@ -62,7 +52,7 @@ storiesOf('Atoms|A009 - Input', module)
       id='1'
       label='this is a label'
       type='password'
-      name='Name'
+      name='name'
       placeholder='placeholder'
     />,
   {notes: { markdown: notes }
@@ -70,12 +60,11 @@ storiesOf('Atoms|A009 - Input', module)
   .add('Input : Multiline', () =>
     <TextField
       id='1'
-      label='this is a label'
       type='text'
-      name='Multiline'
+      name='multiline'
       placeholder='Multiline'
       multiline
-      rows='10'
+      rowsMax='10'
       value='When things happen - enjoy them. \n\nThey are little gifts.'
     />,
   {notes: { markdown: notes }
