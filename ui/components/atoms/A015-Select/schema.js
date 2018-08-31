@@ -6,16 +6,6 @@ export default {
       type: 'string'
     },
     value: {
-      anyOf: [
-        {
-          type: 'string'
-        },
-        {
-          type: 'number'
-        }
-      ]
-    },
-    type: {
       type: 'string'
     },
     required: {
@@ -24,16 +14,7 @@ export default {
     disabled: {
       type: 'boolean'
     },
-    label: {
-      type: 'string'
-    },
-    error: {
-      type: 'boolean'
-    },
     name: {
-      type: 'string'
-    },
-    placeholder: {
       type: 'string'
     },
     onChange: {
@@ -42,12 +23,22 @@ export default {
     readOnly: {
       type: 'string'
     },
-    multiline: {
+    error: {
       type: 'boolean'
     },
-    rowsMax: {
-      type: 'number'
+    children: {
+      anyOf: [
+        {
+          type: 'array',
+          items: {
+            type: 'object'
+          }
+        },
+        {
+          type: 'object'
+        }
+      ]
     }
   },
-  required: ['id', 'type', 'name', 'label']
+  required: ['id', 'value', 'name', 'onChange', 'children']
 }

@@ -1,36 +1,38 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
 
-import TextField from '@material-ui/core/TextField'
+import { TextField } from '@material-ui/core'
 
 import schema from './schema'
 
-const A009 = props => {
+const A012 = props => {
   return (
     <TextField
       id={props.id}
       value={props.value}
-      type={props.type}
       required={props.required}
       disabled={props.disabled}
       name={props.name}
-      helperText={props.helperText}
+      label={props.label}
       placeholder={props.placeholder}
       onChange={props.handleChange}
+      helperText={props.helperText}
       error={props.error}
-      margin='normal'
-      multiline={props.multiline}
-      rowsMax={props.rowsMax}
+      FormHelperTextProps={{
+        error: props.error
+      }}
       InputProps={{
         readOnly: props.readOnly
       }}
-      FormHelperTextProps={{
-        error: props.helpError
-      }}
+      multiline
+      rows={3}
+      rowsMax={10}
+      type={'text'}
+      margin='normal'
     />
   )
 }
 
-A009.propTypes = createPropTypes(schema)
+A012.propTypes = createPropTypes(schema)
 
-export default A009
+export default A012

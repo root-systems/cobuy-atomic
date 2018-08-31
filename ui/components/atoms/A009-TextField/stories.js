@@ -7,27 +7,20 @@ import TextField from '.'
 import notes from './readme.md'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A009 - Input', module)
+storiesOf('Atoms|A009 - TextField', module)
   .addDecorator(withNotes)
-  .add('Input : Without label', () =>
-    <TextField id='1' type='text' name='name' placeholder='placeholder' />,
-  {notes: { markdown: notes }
-  })
-  .add('Input : With helper text', () =>
+  .add('Default', () =>
     <TextField
       id='1'
-      label='this is a label'
       type='text'
       name='name'
       placeholder='placeholder'
-      helperText='This is a helper text'
     />,
   {notes: { markdown: notes }
   })
-  .add('Input : Required', () =>
+  .add('Required', () =>
     <TextField
       id='1'
-      label='this is a label'
       type='text'
       name='name'
       placeholder='placeholder'
@@ -35,10 +28,9 @@ storiesOf('Atoms|A009 - Input', module)
     />,
   {notes: { markdown: notes }
   })
-  .add('Input : Error', () =>
+  .add('HelpText & Error', () =>
     <TextField
       id='1'
-      label='this is a label'
       type='text'
       name='name'
       placeholder='placeholder'
@@ -47,25 +39,12 @@ storiesOf('Atoms|A009 - Input', module)
     />,
   {notes: { markdown: notes }
   })
-  .add('Input : Password type', () =>
+  .add('Password type', () =>
     <TextField
       id='1'
-      label='this is a label'
       type='password'
       name='name'
       placeholder='placeholder'
-    />,
-  {notes: { markdown: notes }
-  })
-  .add('Input : Multiline', () =>
-    <TextField
-      id='1'
-      type='text'
-      name='multiline'
-      placeholder='Multiline'
-      multiline
-      rowsMax='10'
-      value='When things happen - enjoy them. \n\nThey are little gifts.'
     />,
   {notes: { markdown: notes }
   })

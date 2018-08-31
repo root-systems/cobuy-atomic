@@ -5,7 +5,7 @@ import Checkbox from '@material-ui/core/Checkbox'
 
 import schema from './schema'
 
-const A011 = props => {
+const A013 = props => {
   return (
     <Checkbox
       id={props.id}
@@ -19,6 +19,6 @@ const A011 = props => {
   )
 }
 
-A011.propTypes = createPropTypes(schema)
+A013.propTypes = createPropTypes(schema)
 
-export default A011
+export default A013

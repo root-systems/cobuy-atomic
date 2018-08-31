@@ -6,7 +6,7 @@ import { withKnobs, text, boolean } from '@storybook/addon-knobs'
 import ProfleFormFragment from '.'
 
 // List of stories of use cases for atom
-storiesOf('Molecules|M002 - Group Profile', module)
+storiesOf('Molecules|M002 - Profile Form Fragment', module)
   .addDecorator(withKnobs)
   .add('Default', () => (
     <ProfleFormFragment

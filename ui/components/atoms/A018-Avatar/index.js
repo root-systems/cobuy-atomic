@@ -9,7 +9,7 @@ import schema from './schema'
 
 const isNothing = (arg) => isNil(arg) || isEmpty(arg)
 
-const A014 = props => {
+const A018 = props => {
   return (
     <Fragment>
       { isNothing(props.src) && isNil(props.text) ? (
@@ -25,6 +25,6 @@ const A014 = props => {
   )
 }
 
-A014.propTypes = createPropTypes(schema)
+A018.propTypes = createPropTypes(schema)
 
-export default A014
+export default A018

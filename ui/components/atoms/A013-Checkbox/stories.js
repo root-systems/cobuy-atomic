@@ -7,7 +7,7 @@ import Checkbox from '.'
 import notes from './readme.md'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A011 - Checkbox', module)
+storiesOf('Atoms|A013 - Checkbox', module)
   .addDecorator(withNotes)
   .add('Default Checkbox', () => (
     <Checkbox value='checkboxValue' id='check1' ariaLabel='Check Default' />
