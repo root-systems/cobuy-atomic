@@ -41,6 +41,12 @@ export default {
     },
     readOnly: {
       type: 'string'
+    },
+    multiline: {
+      type: 'boolean'
+    },
+    rowsMax: {
+      type: 'number'
     }
   },
   required: ['id', 'type', 'name', 'label']

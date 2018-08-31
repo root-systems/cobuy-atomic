@@ -19,6 +19,8 @@ const A010 = props => {
       placeholder={props.placeholder}
       onChange={props.handleChange}
       margin='normal'
+      multiline={props.multiline}
+      rowsMax={props.rowsMax}
       InputProps={{
         readOnly: props.readOnly
       }}
