@@ -3,8 +3,8 @@ import createPropTypes from 'json-schema-prop-types'
 
 import { Grid } from '@material-ui/core/'
 
-import TextLabel from '../../atoms/A010-TextFieldWithLabel'
-import Avatar from '../../atoms/A014-Avatar'
+import TextFieldLabel from '../../atoms/A010-TextFieldLabel'
+import Avatar from '../../atoms/A018-Avatar'
 
 import schema from './schema'
 
@@ -20,7 +20,7 @@ const M002 = props => {
         />
       </Grid>
       <Grid item xs={12}>
-        <TextLabel
+        <TextFieldLabel
           id='name'
           name='name'
           label='Name'
@@ -33,7 +33,7 @@ const M002 = props => {
       </Grid>
       <Grid item xs={12}>
         {/* TODO: make multiline textfield with label and update this to it */}
-        <TextLabel
+        <TextFieldLabel
           id='description'
           name='description'
           label='Description'
@@ -44,7 +44,7 @@ const M002 = props => {
         />
       </Grid>
       <Grid item xs={12}>
-        <TextLabel
+        <TextFieldLabel
           id='website'
           name='website'
           label='Website address'
@@ -55,7 +55,7 @@ const M002 = props => {
         />
       </Grid>
       <Grid item xs={12}>
-        <TextLabel
+        <TextFieldLabel
           id='email'
           name='email'
           label='Email address'
