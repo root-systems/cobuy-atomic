@@ -23,10 +23,10 @@ storiesOf('Atoms|A010 - Input:Label', module)
     <Input
       id='1'
       type='text'
-      name='fullName'
+      name='multiline'
       label='Your wonderful thought'
       multiline
-      rows='10'
+      rowsMax='10'
       value='When things happen - enjoy them. \n\nThey are little gifts.'
     />,
   {notes: { markdown: notes }
