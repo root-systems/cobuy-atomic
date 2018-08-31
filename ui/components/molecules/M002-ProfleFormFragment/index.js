@@ -10,8 +10,8 @@ import schema from './schema'
 
 const M002 = props => {
   return (
-    <Grid container spacing={24}>
-      <Grid item xs={6} sm={12}>
+    <Grid container spacing={8}>
+      <Grid item xs={12}>
         {/* TODO: onclick(Avatar) open upload modal when avatar clicked */}
         <Avatar
           alt={props.avatar.alt}
@@ -19,7 +19,7 @@ const M002 = props => {
           iconname='flower'
         />
       </Grid>
-      <Grid item xs={6} sm={12}>
+      <Grid item xs={12}>
         <TextLabel
           id='name'
           name='name'
@@ -31,7 +31,7 @@ const M002 = props => {
           error={props.nameField.error}
         />
       </Grid>
-      <Grid item xs={6} sm={12}>
+      <Grid item xs={12}>
         {/* TODO: make multiline textfield with label and update this to it */}
         <TextLabel
           id='description'
@@ -42,7 +42,7 @@ const M002 = props => {
           type='text'
         />
       </Grid>
-      <Grid item xs={6} sm={12}>
+      <Grid item xs={12}>
         <TextLabel
           id='website'
           name='website'
@@ -53,7 +53,7 @@ const M002 = props => {
           error={props.websiteField.error}
         />
       </Grid>
-      <Grid item xs={6} sm={12}>
+      <Grid item xs={12}>
         <TextLabel
           id='email'
           name='email'
