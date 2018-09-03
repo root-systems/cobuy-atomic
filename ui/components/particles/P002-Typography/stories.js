@@ -11,7 +11,7 @@ storiesOf('Particles|P002 - Typography', module)
   .add(
     'Display 4',
     () => (
-      <Typography title={'Display 4'} color={'primary'} variant={'display4'} />
+      <Typography title={'Display 4'} color={'primary'} variant={'display4'} align={'center'} />
     ),
     { notes: { markdown: notes } }
   )

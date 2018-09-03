@@ -14,7 +14,7 @@ import styles from './styles'
 
 const M002 = props => {
   return (
-    <Paper className={props.classes.paper} elevation={1} square>
+    <Paper className={props.classes.paper} elevation={1}>
 
       <Typography variant='title' align='center'>
         Group Details
