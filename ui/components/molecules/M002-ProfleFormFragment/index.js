@@ -7,7 +7,7 @@ import TextFieldLabel from '../../atoms/A010-TextFieldLabel'
 import TextAreaLabel from '../../atoms/A012-TextAreaLabel'
 import Avatar from '../../atoms/A018-Avatar'
 import Button from '../../atoms/A001-Button'
-import Typography from '../../particles/P002-Typography'
+import PageTitle from '../../particles/P002-Typography'
 
 import schema from './schema'
 import styles from './styles'
@@ -16,9 +16,9 @@ const M002 = props => {
   return (
     <Paper className={props.classes.paper} elevation={1}>
 
-      <Typography variant='title' align='center'>
-        Group Details
-      </Typography>
+      <PageTitle variant='title' align={props.pageTitle.align}>
+        {props.pageTitle.title}
+      </PageTitle>
 
       <Grid container spacing={8}>
         <Grid item xs={12}>
@@ -51,6 +51,7 @@ const M002 = props => {
             placeholder='There once was a little group that wished to buy together...'
             type='text'
             multiline={props.descriptionField.multiline}
+            row={props.descriptionField.row}
           />
         </Grid>
         <Grid item xs={12}>

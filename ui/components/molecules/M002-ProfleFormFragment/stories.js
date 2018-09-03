@@ -19,10 +19,9 @@ storiesOf('Molecules|M002 - Profile Form Fragment', module)
         error: boolean('Name error', false)
       }}
       descriptionField={{
-        value: text('Description', `Asimov: "The saddest aspect of life right now is that science fiction gathers knowledge faster than society gathers wisdom."
-- Barbara Walters: "But what would you do if the doctor gave you only six months to live?"
-- Asimov: "Type faster"`),
-        multiline: boolean('multiline', true)
+        value: text('Description', `The saddest aspect of life right now is that science fiction gathers knowledge faster than society gathers wisdom.`),
+        multiline: boolean('multiline', true),
+        row: text('row', 10)
       }}
       websiteField={{
         value: text('Website Url', 'rootsystems.nz'),
@@ -36,6 +35,10 @@ storiesOf('Molecules|M002 - Profile Form Fragment', module)
         color: text('color', 'primary'),
         buttontitle: text('text', 'Ok'),
         square: boolean('square', true)
+      }}
+      pageTitle={{
+        title: text('title', 'Group Details'),
+        align: text('align', 'center')
       }}
     />
   ))
