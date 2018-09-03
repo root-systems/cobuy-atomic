@@ -19,7 +19,7 @@ storiesOf('Molecules|M002 - Profile Form Fragment', module)
         error: boolean('Name error', false)
       }}
       descriptionField={{
-        value: text('Description', `The saddest aspect of life right now is that science fiction gathers knowledge faster than society gathers wisdom.`),
+        value: text('Description', `The saddest aspect of life right now is that science fiction gathers knowledge faster than society gathers wisdom. - Isaac Asimov`),
         multiline: boolean('multiline', true),
         row: text('row', 10)
       }}
