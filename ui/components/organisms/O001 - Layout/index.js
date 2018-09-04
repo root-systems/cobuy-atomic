@@ -1,7 +1,5 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import createPropTypes from 'json-schema-prop-types'
-
-import { Paper } from '@material-ui/core'
 
 import schema from './schema'
 
@@ -10,12 +8,12 @@ import ResponsiveDrawer from '../../molecules/M003-ResponsiveDrawer'
 
 const O001 = props => {
   return (
-    <Paper>
+    <Fragment>
       <Appbar
         pageTitle='Cobuy'
       />
       <ResponsiveDrawer />
-    </Paper>
+    </Fragment>
   )
 }
 
