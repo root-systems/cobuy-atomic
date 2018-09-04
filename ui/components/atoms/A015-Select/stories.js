@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react'
 import { withNotes } from '@storybook/addon-notes'
 import { StateDecorator, Store } from '@sambego/storybook-state'
 
+// Import MenuItem for example children
 import { MenuItem } from '@material-ui/core'
 
-// Import index.js from the same folder
 import Select from '.'
 import notes from './readme.md'
 
@@ -24,12 +24,11 @@ const Countries = [
   }
 ]
 
-// TODDO DL Currently this is not working :(
+// TODO DL Currently this is not working :(
 const store = new Store({
   country: ''
 })
 
-// List of stories of use cases for atom
 storiesOf('Atoms|A015 - Select', module)
   .addDecorator(StateDecorator(store))
   .addDecorator(withNotes)
