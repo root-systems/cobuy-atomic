@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react'
 import { withNotes } from '@storybook/addon-notes'
 import { StateDecorator, Store } from '@sambego/storybook-state'
 
+// Import MenuItem for example children
 import { MenuItem } from '@material-ui/core'
 
-// Import index.js from the same folder
 import SelectLabel from '.'
 import notes from './readme.md'
 
@@ -24,12 +24,11 @@ const Countries = [
   }
 ]
 
-// TODDO DL Currently this is not working :(
+// TODO DL Currently this is not working :(
 const store = new Store({
   country: ''
 })
 
-// List of stories of use cases for atom
 storiesOf('Atoms|A016 - SelectLabel', module)
   .addDecorator(StateDecorator(store))
   .addDecorator(withNotes)
@@ -44,6 +43,7 @@ storiesOf('Atoms|A016 - SelectLabel', module)
         value={store.get('country')}
         onChange={event => store.set({ country: event.target.value })}
       >
+        {/* Add your MenuItems in here with a wrapper. This map is just for an example */}
         {Countries.map(option => (
           <MenuItem key={option.name} value={option.name}>
             {option.name}
@@ -67,6 +67,7 @@ storiesOf('Atoms|A016 - SelectLabel', module)
         onChange={event => store.set({ country: event.target.value })}
         error
       >
+        {/* Add your MenuItems in here with a wrapper. This map is just for an example */}
         {Countries.map(option => (
           <MenuItem key={option.name} value={option.name}>
             {option.name}

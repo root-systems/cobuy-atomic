@@ -22,9 +22,12 @@ export default {
         'gear',
         'settings',
         'group',
-        'shopping_basket',
+        'shoppingBasket',
         'person',
-        'flower'
+        'flower',
+        'chevronRight',
+        'chevronLeft'
+
       ]
     }
   },

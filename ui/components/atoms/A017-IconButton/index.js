@@ -9,7 +9,6 @@ import schema from './schema'
 const A017 = props => {
   return (
     <IconButton
-      className={props.class}
       color={props.color}
       disabled={props.disabled}
       onClick={props.handleClick}
