@@ -1,18 +1,18 @@
 import React, { Fragment } from 'react'
 import createPropTypes from 'json-schema-prop-types'
-import {isNil, isEmpty} from 'lodash'
+import { isNil, isEmpty } from 'lodash'
 
 import Avatar from '@material-ui/core/Avatar'
 import Icon from '../../particles/P001-Icon'
 
 import schema from './schema'
 
-const isNothing = (arg) => isNil(arg) || isEmpty(arg)
+const isNothing = arg => isNil(arg) || isEmpty(arg)
 
 const A018 = props => {
   return (
     <Fragment>
-      { isNothing(props.src) && isNil(props.text) ? (
+      {isNothing(props.src) && isNil(props.text) ? (
         <Avatar>
           <Icon iconname={props.iconname} />
         </Avatar>
