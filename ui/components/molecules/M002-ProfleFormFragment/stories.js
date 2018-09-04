@@ -33,14 +33,5 @@ storiesOf('Molecules|M002 - Profile Form Fragment', module)
         value: text('Email', 'hello@makebamboo.com'),
         error: boolean('Email error', false)
       }}
-      okButton={{
-        color: text('color', 'primary'),
-        buttontitle: text('text', 'Ok'),
-        square: boolean('square', true)
-      }}
-      pageTitle={{
-        title: text('title', 'Group Details'),
-        align: text('align', 'center')
-      }}
     />
   ))
