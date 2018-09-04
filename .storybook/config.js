@@ -1,8 +1,11 @@
-import { configure } from '@storybook/react'
+import { configure, addDecorator } from '@storybook/react'
 import { normal } from './theme'
 import { setOptions } from '@storybook/addon-options'
 import { configureViewport, INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import { configureActions } from '@storybook/addon-actions'
+import { muiTheme } from 'storybook-addon-material-ui'
+
+import CobuyMaterialTheme from '../ui/theme'
 
 import extraViewports from './extra-viewports.json'
 
@@ -32,6 +35,8 @@ configureActions({
   depth: 100,
   limit: 20,
 })
+
+// addDecorator(muiTheme([CobuyMaterialTheme]))
 
 function importAll(req) {
   req.keys().forEach(filename => req(filename));
