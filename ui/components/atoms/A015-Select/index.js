@@ -8,7 +8,18 @@ import schema from './schema'
 import styles from './styles'
 
 const A015 = props => {
-  const {id, value, required, disabled, name, handleChange, readOnly, error, classes, children} = props
+  const {
+    id,
+    value,
+    required,
+    disabled,
+    name,
+    handleChange,
+    readOnly,
+    error,
+    classes,
+    children
+  } = props
   const shownHelperText = error ? 'Select an option' : null
   return (
     <TextField

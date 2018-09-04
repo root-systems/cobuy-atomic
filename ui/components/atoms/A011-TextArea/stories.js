@@ -9,23 +9,33 @@ import notes from './readme.md'
 // List of stories of use cases for atom
 storiesOf('Atoms|A011 - TextArea', module)
   .addDecorator(withNotes)
-  .add('Default', () =>
-    <TextArea
-      id='1'
-      type='text'
-      name='multiline'
-      placeholder='Fill out some text here...'
-    />,
-  {notes: { markdown: notes }
-  })
-  .add('HelpText', () =>
-    <TextArea
-      id='1'
-      type='text'
-      name='multiline'
-      placeholder='Fill out some text here...'
-      helperText='Enter some text!'
-      error
-    />,
-  {notes: { markdown: notes }
-  })
+  .add(
+    'Default',
+    () => (
+      <TextArea
+        id='1'
+        type='text'
+        name='multiline'
+        placeholder='Fill out some text here...'
+      />
+    ),
+    {
+      notes: { markdown: notes }
+    }
+  )
+  .add(
+    'HelpText',
+    () => (
+      <TextArea
+        id='1'
+        type='text'
+        name='multiline'
+        placeholder='Fill out some text here...'
+        helperText='Enter some text!'
+        error
+      />
+    ),
+    {
+      notes: { markdown: notes }
+    }
+  )

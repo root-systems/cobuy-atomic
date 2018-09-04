@@ -3,10 +3,20 @@ export default {
   type: 'object',
   properties: {
     align: {
-      type: 'string'
+      type: 'string',
+      enum: ['inherit', 'left', 'center', 'right', 'justify']
     },
     color: {
-      type: 'string'
+      type: 'string',
+      enum: [
+        'default',
+        'error',
+        'inherit',
+        'primary',
+        'secondary',
+        'textPrimary',
+        'textSecondary'
+      ]
     },
     gutterBottom: {
       type: 'boolean'
