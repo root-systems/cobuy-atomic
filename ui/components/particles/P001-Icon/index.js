@@ -18,9 +18,11 @@ const materialMap = {
   settings: 'settings',
   help: 'help',
   group: 'group',
-  shopping_basket: 'shopping_basket',
+  shoppingBasket: 'shopping_basket',
   person: 'person',
-  flower: 'filter_vintage'
+  flower: 'filter_vintage',
+  chevronLeft: 'chevron_left',
+  chevronRight: 'chevron_right'
 }
 
 const svgMap = {
