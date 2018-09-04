@@ -4,28 +4,29 @@ import { withStyles } from '@material-ui/core/styles'
 
 import { Hidden } from '@material-ui/core'
 
-import Drawer from '../../atoms/A015-Drawer'
+import MobileDrawer from '../../atoms/A019-MobileDrawer'
+import DesktopDrawer from '../../atoms/A020-DesktopDrawer'
 
 import schema from './schema'
 import styles from './styles'
 
 const M003 = props => {
-  const {open, handleDrawerToggle} = this.props
+  const {open, handleDrawerToggle, children} = props
   return (
     <Fragment>
       <Hidden mdUp>
-        <Drawer
-          variant='temporary'
+        <MobileDrawer
           open={open}
           onClose={handleDrawerToggle}
-        />
+        >
+          {children}
+        </MobileDrawer>
       </Hidden>
-      {/* TODO Change to hidden implementation='css' if server side rendering */}
+      {/* TODO Change to Hidden implementation='css' if server side rendering */}
       <Hidden smDown>
-        <Drawer
-          variant='permanent'
-          open
-        />
+        <DesktopDrawer>
+          {children}
+        </DesktopDrawer>
       </Hidden>
     </Fragment>
   )
