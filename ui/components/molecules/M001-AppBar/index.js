@@ -14,7 +14,7 @@ const M001 = props => {
     <AppBar position='fixed'>
       <IconButton
         class={props.classes.menuButton}
-        ariaLabel='Menu'
+        ariaLabel='menu'
         iconname='menu'
         handleClick={props.menuClick}
       />
@@ -22,7 +22,7 @@ const M001 = props => {
         {props.pageTitle}
       </Typography>
       <IconButton
-        ariaLabel='Profile'
+        ariaLabel='profile'
         iconname='person'
         handleClick={props.profileClick}
       />
