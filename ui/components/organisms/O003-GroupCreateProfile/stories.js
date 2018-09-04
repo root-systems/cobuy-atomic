@@ -14,6 +14,9 @@ storiesOf('Organisms|O003 - Group: Create Profile Form', module)
         alt: 'Avatar Alt Text',
         src: text('Avatar image src', 'http://www.catgifpage.com/gifs/318.gif')
       }}
+      uploadAvatarField={{
+        error: boolean('Avatar error', false)
+      }}
       nameField={{
         value: text('Name', 'John Snow'),
         error: boolean('Name error', false)
@@ -33,8 +36,11 @@ storiesOf('Organisms|O003 - Group: Create Profile Form', module)
       }}
       okButton={{
         color: text('color', 'primary'),
-        buttontitle: text('text', 'Ok'),
-        square: boolean('square', true)
+        buttontitle: text('text', 'Ok')
+      }}
+      cancelButton={{
+        color: text('color', 'secondary'),
+        buttontitle: text('text', 'Cancel')
       }}
       pageTitle={{
         title: text('title', 'Enter new group details'),

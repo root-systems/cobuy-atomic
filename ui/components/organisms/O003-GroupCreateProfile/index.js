@@ -29,7 +29,14 @@ const O003 = props => {
             <Avatar
               alt={props.avatar.alt}
               src={props.avatar.src}
-              iconname='flower'
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextFieldLabel
+              id='uploadavatar'
+              name='uploadAvatar'
+              type='file'
+              error={props.uploadAvatarField.error}
             />
           </Grid>
           <Grid item xs={12}>
@@ -75,6 +82,10 @@ const O003 = props => {
             />
           </Grid>
           <Grid item xs={12}>
+            <Button variant='default'
+              color={props.cancelButton.color}
+              text={props.cancelButton.buttontitle}
+            />
             <Button variant='contained'
               color={props.okButton.color}
               text={props.okButton.buttontitle}
@@ -82,6 +93,7 @@ const O003 = props => {
           </Grid>
         </Grid>
       </Paper>
+      {/* TODO: Footer */}
     </Fragment>
   )
 }
