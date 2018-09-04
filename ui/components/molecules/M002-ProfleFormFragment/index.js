@@ -1,14 +1,13 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
 
-import { Grid, withStyles } from '@material-ui/core/'
+import { Grid } from '@material-ui/core/'
 
 import TextFieldLabel from '../../atoms/A010-TextFieldLabel'
 import TextAreaLabel from '../../atoms/A012-TextAreaLabel'
 import Avatar from '../../atoms/A018-Avatar'
 
 import schema from './schema'
-import styles from './styles'
 
 const M002 = props => {
   return (
@@ -71,4 +70,4 @@ const M002 = props => {
 
 M002.propTypes = createPropTypes(schema)
 
-export default withStyles(styles)(M002)
+export default M002
