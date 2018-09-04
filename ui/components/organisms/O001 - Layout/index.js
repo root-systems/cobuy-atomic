@@ -7,12 +7,18 @@ import Appbar from '../../molecules/M001-AppBar'
 import ResponsiveDrawer from '../../molecules/M003-ResponsiveDrawer'
 
 const O001 = props => {
+  const {open, handleDrawerToggle, children} = props
   return (
     <Fragment>
       <Appbar
         pageTitle='Cobuy'
       />
-      <ResponsiveDrawer />
+      <ResponsiveDrawer
+        open={open}
+        handleDrawerToggle={handleDrawerToggle}
+      >
+        {children}
+      </ResponsiveDrawer>
     </Fragment>
   )
 }

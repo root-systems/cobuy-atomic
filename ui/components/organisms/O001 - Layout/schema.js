@@ -2,24 +2,25 @@ export default {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
   properties: {
-    align: {
-      type: 'string'
-    },
-    title: {
-      type: 'string'
-    },
-    color: {
-      type: 'string'
-    },
-    gutterBottom: {
+    open: {
       type: 'boolean'
     },
-    noWrap: {
-      type: 'boolean'
+    handleDrawerToggle: {
+      instanceOf: 'function'
     },
-    paragraph: {
-      type: 'boolean'
+    children: {
+      anyOf: [
+        {
+          type: 'array',
+          items: {
+            type: 'object'
+          }
+        },
+        {
+          type: 'object'
+        }
+      ]
     }
   },
-  required: ['title']
+  required: ['open', 'handleDrawerToggle', 'children']
 }
