@@ -37,7 +37,7 @@ storiesOf('Organisms|O003 - Group: Create Profile Form', module)
         square: boolean('square', true)
       }}
       pageTitle={{
-        title: text('title', 'Group Details'),
+        title: text('title', 'Enter new group details'),
         align: text('align', 'center')
       }}
     />
