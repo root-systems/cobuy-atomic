@@ -34,7 +34,6 @@ const M002 = props => {
         />
       </Grid>
       <Grid item xs={12}>
-        {/* TODO: make multiline textfield with label and update this to it */}
         <TextAreaLabel
           id='description'
           name='description'
@@ -42,8 +41,6 @@ const M002 = props => {
           value={props.descriptionField.value}
           placeholder='There once was a little group that wished to buy together...'
           type='text'
-          multiline={props.descriptionField.multiline}
-          row={10}
         />
       </Grid>
       <Grid item xs={12}>
