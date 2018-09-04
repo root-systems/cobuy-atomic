@@ -4,16 +4,19 @@ export default {
   properties: {
     align: {
       type: 'string',
-      enum: [
-        'inherit',
-        'left',
-        'center',
-        'right',
-        'justify'
-      ]
+      enum: ['inherit', 'left', 'center', 'right', 'justify']
     },
     color: {
-      type: 'string'
+      type: 'string',
+      enum: [
+        'default',
+        'error',
+        'inherit',
+        'primary',
+        'secondary',
+        'textPrimary',
+        'textSecondary'
+      ]
     },
     gutterBottom: {
       type: 'boolean'
