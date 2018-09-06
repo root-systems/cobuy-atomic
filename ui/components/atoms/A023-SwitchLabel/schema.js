@@ -20,6 +20,13 @@ export default {
     },
     ariaLabel: {
       type: 'string'
+    },
+    label: {
+      type: 'string'
+    },
+    labelPlacement: {
+      type: 'string',
+      enum: ['end', 'start']
     }
   },
   required: ['value', 'id', 'ariaLabel']

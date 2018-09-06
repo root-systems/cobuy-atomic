@@ -1,1 +1,1 @@
-Switches wit label
+Switches with label
