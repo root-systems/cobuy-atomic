@@ -29,5 +29,5 @@ export default {
       enum: ['end', 'start']
     }
   },
-  required: ['value', 'id', 'ariaLabel']
+  required: ['value', 'id', 'ariaLabel', 'label']
 }
