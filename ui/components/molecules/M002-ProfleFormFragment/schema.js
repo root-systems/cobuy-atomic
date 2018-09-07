@@ -53,6 +53,9 @@ export default {
           type: 'boolean'
         }
       }
+    },
+    onChange: {
+      instanceOf: 'function'
     }
   }
 }
