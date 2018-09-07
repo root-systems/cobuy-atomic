@@ -2,60 +2,23 @@ export default {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
   properties: {
-    avatar: {
-      type: 'object',
-      properties: {
-        alt: {
-          type: 'string'
-        },
-        src: {
-          type: 'string'
-        }
-      }
+    avatarAlt: {
+      type: 'string'
     },
-    nameField: {
-      type: 'object',
-      properties: {
-        value: {
-          type: 'string'
-        },
-        error: {
-          type: 'boolean'
-        }
-      }
+    avatarSrc: {
+      type: 'string'
     },
-    descriptionField: {
-      type: 'object',
-      properties: {
-        value: {
-          type: 'string'
-        },
-        multiline: {
-          type: 'boolean'
-        }
-      }
+    name: {
+      type: 'string'
     },
-    websiteField: {
-      type: 'object',
-      properties: {
-        value: {
-          type: 'string'
-        },
-        error: {
-          type: 'boolean'
-        }
-      }
+    description: {
+      type: 'string'
     },
-    emailField: {
-      type: 'object',
-      properties: {
-        value: {
-          type: 'string'
-        },
-        error: {
-          type: 'boolean'
-        }
-      }
+    website: {
+      type: 'string'
+    },
+    email: {
+      type: 'string'
     }
   }
 }
