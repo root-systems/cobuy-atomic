@@ -18,17 +18,8 @@ const M007 = props => {
           placeholder='Address line 1'
           type='text'
           required
-          error={props.nameField.error}
-        />
-      </Grid>
-      <Grid item xs={12}>
-        <TextFieldLabel
-          id='addressline2'
-          name='addressline2'
-          label='Address line 2'
-          placeholder='Address line 2'
-          type='text'
-          error={props.nameField.error}
+          error={props.addressField01.error}
+          value={props.addressField01.value}
         />
       </Grid>
       <Grid item xs={12}>
@@ -38,7 +29,8 @@ const M007 = props => {
           label='Suburb'
           placeholder='Suburb'
           type='text'
-          error={props.nameField.error}
+          error={props.suburbField.error}
+          value={props.suburbField.value}
         />
       </Grid>
       <Grid item xs={12}>
@@ -48,28 +40,30 @@ const M007 = props => {
           label='City'
           placeholder='City'
           type='text'
-          required
-          error={props.nameField.error}
+          error={props.cityField.error}
+          value={props.cityField.value}
         />
       </Grid>
       <Grid item xs={12}>
         <TextFieldLabel
           id='postcode'
           name='postcode'
-          label='Postcode'
-          placeholder='Postcode'
+          label='Post code'
+          placeholder='Post code'
           type='text'
-          error={props.nameField.error}
+          error={props.postCodeField.error}
+          value={props.postCodeField.value}
         />
       </Grid>
-      <Grid item xs={12}> {/* Todo dropdown menu */}
+      <Grid item xs={12}>
         <TextFieldLabel
           id='country'
           name='country'
           label='Country'
           placeholder='Country'
           type='text'
-          error={props.nameField.error}
+          error={props.countryField.error}
+          value={props.countryField.value}
         />
       </Grid>
     </Grid>

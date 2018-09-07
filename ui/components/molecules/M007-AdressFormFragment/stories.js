@@ -10,24 +10,25 @@ storiesOf('Molecules|M007 - Address Form Fragment', module)
   .addDecorator(withKnobs)
   .add('Default', () => (
     <AddressFormFragment
-      nameField={{
-        value: text('Name', 'John Snow'),
-        error: boolean('Name error', false)
+      addressField01={{
+        value: text('addressField01 address01', 'Level 2, 275 Cuba Street'),
+        error: boolean('addressField01 error', false)
       }}
-      descriptionField={{
-        value: text(
-          'Description',
-          `The saddest aspect of life right now is that science fiction gathers knowledge faster than society gathers wisdom. - Isaac Asimov`
-        ),
-        multiline: boolean('multiline', true)
+      suburbField={{
+        value: text('suburbField suburb', 'Te Aro'),
+        error: boolean('suburbField error', false)
       }}
-      websiteField={{
-        value: text('Website Url', 'rootsystems.nz'),
-        error: boolean('Website error', false)
+      cityField={{
+        value: text('cityField city', 'Wellington'),
+        error: boolean('cityField error', false)
       }}
-      emailField={{
-        value: text('Email', 'hello@makebamboo.com'),
-        error: boolean('Email error', false)
+      postCodeField={{
+        value: text('postCodeField postcode', '6011'),
+        error: boolean('postCodeField error', false)
+      }}
+      countryField={{
+        value: text('countryField postcode', 'New Zealand'),
+        error: boolean('countryField error', false)
       }}
     />
   ))
