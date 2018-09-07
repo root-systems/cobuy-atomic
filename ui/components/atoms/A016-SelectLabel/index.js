@@ -14,13 +14,14 @@ const A016 = props => {
     required,
     disabled,
     name,
-    handleChange,
+    onChange,
     readOnly,
     error,
     classes,
     label,
     children
   } = props
+
   const shownHelperText = error ? 'Select an option' : null
   return (
     <TextField
@@ -29,7 +30,7 @@ const A016 = props => {
       required={required}
       disabled={disabled}
       name={name}
-      onChange={handleChange}
+      onChange={onChange}
       InputProps={{
         readOnly: readOnly
       }}

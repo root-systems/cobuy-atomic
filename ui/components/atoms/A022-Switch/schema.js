@@ -20,6 +20,9 @@ export default {
     },
     ariaLabel: {
       type: 'string'
+    },
+    onChange: {
+      instanceOf: 'function'
     }
   },
   required: ['value', 'id', 'ariaLabel']
