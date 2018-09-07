@@ -7,18 +7,31 @@ import Switch from '@material-ui/core/Switch'
 import schema from './schema'
 
 const A023 = props => {
+  const {
+    label,
+    labelPlacement,
+    id,
+    color,
+    checked,
+    disabled,
+    ariaLabel,
+    value,
+    onChange
+  } = props
+
   return (
     <FormControlLabel
-      label={props.label}
-      labelPlacement={props.labelPlacement}
+      label={label}
+      labelPlacement={labelPlacement}
       control={
         <Switch
-          id={props.id}
-          color={props.color}
-          checked={props.checked}
-          disabled={props.disabled}
-          aria-label={props.ariaLabel}
-          value={props.value}
+          id={id}
+          color={color}
+          checked={checked}
+          disabled={disabled}
+          aria-label={ariaLabel}
+          value={value}
+          onChange={onChange}
         />
       }
     />

@@ -6,22 +6,35 @@ import { TextField } from '@material-ui/core'
 import schema from './schema'
 
 const A011 = props => {
+  const {
+    id,
+    value,
+    required,
+    disabled,
+    name,
+    placeholder,
+    onChange,
+    helperText,
+    error,
+    readOnly
+  } = props
+
   return (
     <TextField
-      id={props.id}
-      value={props.value}
-      required={props.required}
-      disabled={props.disabled}
-      name={props.name}
-      placeholder={props.placeholder}
-      onChange={props.handleChange}
-      helperText={props.helperText}
-      error={props.error}
+      id={id}
+      value={value}
+      required={required}
+      disabled={disabled}
+      name={name}
+      placeholder={placeholder}
+      onChange={onChange}
+      helperText={helperText}
+      error={error}
       FormHelperTextProps={{
-        error: props.error
+        error: error
       }}
       InputProps={{
-        readOnly: props.readOnly
+        readOnly: readOnly
       }}
       multiline
       rows={3}
