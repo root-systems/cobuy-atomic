@@ -10,9 +10,17 @@ storiesOf('Molecules|M007 - Address Form Fragment', module)
   .addDecorator(withKnobs)
   .add('Default', () => (
     <AddressFormFragment
-      addressField01={{
-        value: text('addressField01 address01', 'Level 2, 275 Cuba Street'),
-        error: boolean('addressField01 error', false)
+      addressNameField={{
+        value: text('addressNameField addressname', 'c/o Enspiral Dev Academy'),
+        error: boolean('addressNameField error', false)
+      }}
+      addressLineOneField={{
+        value: text('addressLineOneField address01', 'Level 2, 275 Cuba Street'),
+        error: boolean('addressLineOneField error', false)
+      }}
+      addressLineTwoField={{
+        value: text('addressLineTwoField address02', ' '),
+        error: boolean('addressLineTwoField error', false)
       }}
       suburbField={{
         value: text('suburbField suburb', 'Te Aro'),

@@ -12,14 +12,36 @@ const M007 = props => {
     <Grid container spacing={8}>
       <Grid item xs={12}>
         <TextFieldLabel
+          id='addressName'
+          name='addressName'
+          label='Address name'
+          placeholder='c/o Enspiral Dev Academy'
+          type='text'
+          error={props.addressNameField.error}
+          value={props.addressNameField.value}
+        />
+      </Grid>
+      <Grid item xs={12}>
+        <TextFieldLabel
           id='addressline1'
           name='addressline1'
           label='Address line 1'
-          placeholder='Address line 1'
+          placeholder='Level 2, 275 Cuba Street'
           type='text'
           required
-          error={props.addressField01.error}
-          value={props.addressField01.value}
+          error={props.addressLineOneField.error}
+          value={props.addressLineOneField.value}
+        />
+      </Grid>
+      <Grid item xs={12}>
+        <TextFieldLabel
+          id='addressline2'
+          name='addressline2'
+          label='Address line 2'
+          placeholder=''
+          type='text'
+          error={props.addressLineTwoField.error}
+          value={props.addressLineTwoField.value}
         />
       </Grid>
       <Grid item xs={12}>
@@ -27,7 +49,7 @@ const M007 = props => {
           id='suburb'
           name='suburb'
           label='Suburb'
-          placeholder='Suburb'
+          placeholder='Te Aro'
           type='text'
           error={props.suburbField.error}
           value={props.suburbField.value}
@@ -38,7 +60,7 @@ const M007 = props => {
           id='city'
           name='city'
           label='City'
-          placeholder='City'
+          placeholder='Wellington'
           type='text'
           error={props.cityField.error}
           value={props.cityField.value}
@@ -49,7 +71,7 @@ const M007 = props => {
           id='postcode'
           name='postcode'
           label='Post code'
-          placeholder='Post code'
+          placeholder='6011'
           type='text'
           error={props.postCodeField.error}
           value={props.postCodeField.value}
@@ -60,7 +82,7 @@ const M007 = props => {
           id='country'
           name='country'
           label='Country'
-          placeholder='Country'
+          placeholder='New Zealand'
           type='text'
           error={props.countryField.error}
           value={props.countryField.value}
