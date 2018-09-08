@@ -6,16 +6,6 @@ export default {
       type: 'string'
     },
     value: {
-      anyOf: [
-        {
-          type: 'string'
-        },
-        {
-          type: 'number'
-        }
-      ]
-    },
-    type: {
       type: 'string'
     },
     required: {
@@ -27,20 +17,11 @@ export default {
     label: {
       type: 'string'
     },
-    helperText: {
-      type: 'string'
-    },
-    error: {
-      type: 'boolean'
-    },
     name: {
       type: 'string'
     },
     placeholder: {
       type: 'string'
-    },
-    onChange: {
-      instanceOf: 'function'
     },
     readOnly: {
       type: 'string'

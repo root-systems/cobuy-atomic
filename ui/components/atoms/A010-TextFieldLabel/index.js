@@ -1,46 +1,22 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
 
-import { TextField } from '@material-ui/core'
+import { Field } from 'formik'
+import { TextField } from 'formik-material-ui'
 
 import schema from './schema'
 
 const A010 = props => {
-  const {
-    id,
-    value,
-    type,
-    required,
-    disabled,
-    name,
-    placeholder,
-    onChange,
-    label,
-    helperText,
-    error,
-    readOnly
-  } = props
+  const { readOnly } = props
 
   return (
-    <TextField
-      id={id}
-      value={value}
-      type={type}
-      required={required}
-      disabled={disabled}
-      name={name}
-      placeholder={placeholder}
-      onChange={onChange}
-      label={label}
-      helperText={helperText}
-      error={error}
-      FormHelperTextProps={{
-        error: error
-      }}
+    <Field
+      component={TextField}
+      type='text'
       InputProps={{
         readOnly: readOnly
       }}
-      margin='normal'
+      {...props}
     />
   )
 }
