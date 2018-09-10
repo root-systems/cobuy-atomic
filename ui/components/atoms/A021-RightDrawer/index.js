@@ -22,7 +22,7 @@ const A021 = props => {
       >
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>
-            <Icon iconname='chevronLeft' />
+            <Icon iconname='chevron_left' />
           </IconButton>
         </div>
         {children}

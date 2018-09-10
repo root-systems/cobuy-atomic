@@ -24,11 +24,11 @@ export default {
         'group',
         'shopping_basket',
         'person',
-        'flower',
-        'chevronRight',
-        'chevronLeft',
-        'more_vert'
-
+        'filter_vintage',
+        'chevron_right',
+        'chevron_left',
+        'notifications',
+        'more_horiz'
       ]
     }
   },
