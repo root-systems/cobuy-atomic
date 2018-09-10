@@ -42,6 +42,7 @@ storiesOf('Atoms|A017 - Icon Button', module)
         color='primary'
         iconname='more_vert'
         ariaLabel='More menu'
+        handleClick={actions({ onClick: 'clicked' })}
       />
     ),
     {
