@@ -49,6 +49,13 @@ storiesOf('Particles|P001 - Icon', module)
     />,
   { notes: { markdown: notes }
   })
+  .add('Filter_vintage icon', () =>
+    <Icon
+      palette={'primary'}
+      iconname={'filter_vintage'}
+    />,
+  { notes: { markdown: notes }
+  })
   .add('Notifications icon', () =>
     <Icon
       palette={'primary'}

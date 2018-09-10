@@ -17,7 +17,7 @@ const M002 = props => {
         <Avatar
           alt={props.avatar.alt}
           src={props.avatar.src}
-          iconname='flower'
+          iconname='filter_vintage'
         />
       </Grid>
       <Grid item xs={12}>
