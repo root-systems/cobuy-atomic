@@ -1,1 +1,1 @@
-Switches with label
+Radio with label
