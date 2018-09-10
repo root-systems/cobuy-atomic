@@ -9,7 +9,7 @@ import notes from './readme.md'
 // List of stories of use cases for atom
 storiesOf('Atoms|A014 - CheckboxLabel', module)
   .addDecorator(withNotes)
-  .add('Default', () => (
+  .add('Checkbox Default', () => (
     <CheckboxLabel
       label='Checkers'
       value='checkboxValue'
@@ -17,7 +17,7 @@ storiesOf('Atoms|A014 - CheckboxLabel', module)
       ariaLabel='Check Default'
     />
   ))
-  .add('Checked', () => (
+  .add('Checkbox Checked', () => (
     <CheckboxLabel
       label='I have a dog'
       value='checkboxValue'
@@ -26,7 +26,7 @@ storiesOf('Atoms|A014 - CheckboxLabel', module)
       checked
     />
   ))
-  .add('Label Left', () => (
+  .add('Checkbox Label left', () => (
     <CheckboxLabel
       label='I have a dog'
       value='checkboxValue'
@@ -36,7 +36,7 @@ storiesOf('Atoms|A014 - CheckboxLabel', module)
       labelPlacement='start'
     />
   ))
-  .add('Disabled', () => (
+  .add('Checkbox Disabled', () => (
     <CheckboxLabel
       label='But I love cats'
       value='checkboxValue'
@@ -45,16 +45,14 @@ storiesOf('Atoms|A014 - CheckboxLabel', module)
       disabled
     />
   ))
-  .add(
-    'Minus',
-    () => (
-      <CheckboxLabel
-        label='The possibilities are unclear'
-        value='open'
-        id='menu1'
-        ariaLabel='Close menu'
-        indeterminate='true'
-      />
-    ),
-    { notes: { markdown: notes } }
+  .add('Checkbox Minus', () => (
+    <CheckboxLabel
+      label='The possibilities are unclear'
+      value='open'
+      id='menu1'
+      ariaLabel='Close menu'
+      indeterminate
+    />
+  ),
+  { notes: { markdown: notes } }
   )
