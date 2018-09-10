@@ -22,12 +22,13 @@ export default {
         'gear',
         'settings',
         'group',
-        'shoppingBasket',
+        'shopping_basket',
         'person',
-        'flower',
-        'chevronRight',
-        'chevronLeft'
-
+        'filter_vintage',
+        'chevron_right',
+        'chevron_left',
+        'notifications',
+        'more_horiz'
       ]
     }
   },
