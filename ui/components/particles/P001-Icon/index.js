@@ -21,8 +21,10 @@ const materialMap = {
   shoppingBasket: 'shopping_basket',
   person: 'person',
   flower: 'filter_vintage',
-  chevronLeft: 'chevron_left',
-  chevronRight: 'chevron_right'
+  chevron_left: 'chevron_left',
+  chevron_right: 'chevron_right',
+  notifications: 'notifications',
+  more_horiz: 'more_horiz'
 }
 
 const svgMap = {

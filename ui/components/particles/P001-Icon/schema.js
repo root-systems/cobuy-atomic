@@ -25,9 +25,10 @@ export default {
         'shoppingBasket',
         'person',
         'flower',
-        'chevronRight',
-        'chevronLeft'
-
+        'chevron_right',
+        'chevron_left',
+        'notifications',
+        'more_horiz'
       ]
     }
   },
