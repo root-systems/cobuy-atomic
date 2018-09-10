@@ -29,13 +29,12 @@ storiesOf('Atoms|A013 - Checkbox', module)
     />
   ))
   .add(
-    'Checkbox Minus',
-    () => (
+    'Checkbox Minus', () => (
       <Checkbox
         value='open'
         id='menu1'
         ariaLabel='Close menu'
-        indeterminate='true'
+        indeterminate
       />
     ),
     { notes: { markdown: notes } }
