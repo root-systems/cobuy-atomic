@@ -1,15 +1,30 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
+import { actions } from '@storybook/addon-actions'
+
+// Import MenuItem for example children
+import { MenuItem } from '@material-ui/core'
 
 // Import index.js from the same folder
 import Popper from '.'
 
+const options = [
+  'Edit',
+  'Delete',
+  'Participate in buying'
+]
+
 storiesOf('Atoms|A024 - Popper', module).add('Default', () => (
   <Popper
-    moreMenuClick={action('menu-click')}
-    ariaLabel='More menu'
-    iconname='more_vert'
     color='primary'
-  />
+    iconname='more_vert'
+    ariaLabel={'More right menu'}
+    handleClick={actions({ onClick: 'options' })}
+  >
+    {options.map(option => (
+      <MenuItem key={option} selected={option === 'Edit'}>
+        {option}
+      </MenuItem>
+    ))}
+  </Popper>
 ))

@@ -1,9 +1,6 @@
 export default {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
-  moreMenuClick: {
-    instanceOf: 'function'
-  },
   properties: {
     placement: {
       type: 'string',
@@ -25,7 +22,7 @@ export default {
     anchorEl: {
       type: 'string'
     },
-    transition: {
+    open: {
       type: 'boolean'
     },
     children: {
@@ -41,6 +38,5 @@ export default {
         }
       ]
     }
-  },
-  required: ['placement']
+  }
 }
