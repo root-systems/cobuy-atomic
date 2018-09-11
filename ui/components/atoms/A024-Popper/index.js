@@ -10,6 +10,7 @@ import schema from './schema'
 import styles from './styles'
 
 const A024 = props => {
+  console.log('PROPS', props)
   return (
     <div>
       <IconButton
@@ -20,7 +21,7 @@ const A024 = props => {
         ariaLabel={props.ariaLabel}
       />
       <Popper>
-        {props.Children}
+        {props.children}
       </Popper>
     </div>
   )
