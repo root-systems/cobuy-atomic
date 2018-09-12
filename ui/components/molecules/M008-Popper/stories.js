@@ -14,7 +14,7 @@ const options = [
   'Participate in buying'
 ]
 
-storiesOf('Atoms|A024 - Popper', module).add('Default', () => (
+storiesOf('Molecules|M008 - Popper', module).add('Default', () => (
   <Popper
     color='primary'
     iconname='more_vert'

@@ -9,7 +9,7 @@ import IconButton from '../../atoms/A017-IconButton'
 import schema from './schema'
 import styles from './styles'
 
-const A024 = props => {
+const M008 = props => {
   console.log('PROPS', props)
   return (
     <div>
@@ -27,6 +27,6 @@ const A024 = props => {
   )
 }
 
-A024.propTypes = createPropTypes(schema)
+M008.propTypes = createPropTypes(schema)
 
-export default withStyles(styles)(A024)
+export default withStyles(styles)(M008)
