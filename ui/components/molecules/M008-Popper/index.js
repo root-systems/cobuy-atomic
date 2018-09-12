@@ -19,6 +19,7 @@ const M008 = props => {
         handleClick={props.handleClick}
         iconname={props.iconname}
         ariaLabel={props.ariaLabel}
+        placement={props.placement}
       />
       <Popper>
         {props.children}
