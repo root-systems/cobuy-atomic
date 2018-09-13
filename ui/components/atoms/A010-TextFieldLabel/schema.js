@@ -8,17 +8,17 @@ export default {
     value: {
       type: 'string'
     },
+    name: {
+      type: 'string'
+    },
+    label: {
+      type: 'string'
+    },
     required: {
       type: 'boolean'
     },
     disabled: {
       type: 'boolean'
-    },
-    label: {
-      type: 'string'
-    },
-    name: {
-      type: 'string'
     },
     placeholder: {
       type: 'string'
