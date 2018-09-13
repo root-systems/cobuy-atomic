@@ -1,7 +1,7 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
 
-import { TextField } from '@material-ui/core'
+import { TextField } from 'formik-material-ui'
 
 import schema from './schema'
 
