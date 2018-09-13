@@ -1,28 +1,22 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
-import { withStyles } from '@material-ui/core/styles'
+import { withStyles, Paper } from '@material-ui/core'
 
 import Popper from '@material-ui/core/Popper'
-
-import IconButton from '../../atoms/A017-IconButton'
 
 import schema from './schema'
 import styles from './styles'
 
 const M008 = props => {
-  console.log('PROPS', props)
   return (
     <div>
-      <IconButton
-        color={props.color}
-        disabled={props.disabled}
-        handleClick={props.handleClick}
-        iconname={props.iconname}
-        ariaLabel={props.ariaLabel}
-        placement={props.placement}
-      />
-      <Popper>
-        {props.children}
+      <Popper
+        open
+        placement='bottom'
+      >
+        <Paper className={props.classes.paper} elevation={1}>
+          {props.children}
+        </Paper>
       </Popper>
     </div>
   )

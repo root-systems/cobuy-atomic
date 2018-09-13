@@ -2,27 +2,22 @@ export default {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
   properties: {
-    placement: {
-      type: 'string',
-      enum: [
-        'bottom-end',
-        'bottom-start',
-        'bottom',
-        'left-end',
-        'left-start',
-        'left',
-        'right-end',
-        'right-start',
-        'right',
-        'top-end',
-        'top-start',
-        'top'
-      ]
-    },
     anchorEl: {
       type: 'string'
     },
+    modifiers: {
+      type: 'object'
+    },
     open: {
+      type: 'boolean'
+    },
+    disablePortal: {
+      type: 'boolean'
+    },
+    keepMounted: {
+      type: 'boolean'
+    },
+    transition: {
       type: 'boolean'
     },
     children: {
