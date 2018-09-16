@@ -15,7 +15,10 @@ export default {
         }
       ]
     },
-    type: {
+    name: {
+      type: 'string'
+    },
+    label: {
       type: 'string'
     },
     required: {
@@ -24,24 +27,12 @@ export default {
     disabled: {
       type: 'boolean'
     },
-    name: {
-      type: 'string'
-    },
-    helperText: {
-      type: 'string'
-    },
-    error: {
-      type: 'boolean'
-    },
     placeholder: {
       type: 'string'
-    },
-    onChange: {
-      instanceOf: 'function'
     },
     readOnly: {
       type: 'string'
     }
   },
-  required: ['id', 'type', 'name']
+  required: ['id', 'name']
 }
