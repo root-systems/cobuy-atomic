@@ -87,7 +87,7 @@ storiesOf('Particles|P001 - Icon', module)
   .add('More vertical icon', () =>
     <Icon
       palette={'primary'}
-      iconname={'more_horiz'}
+      iconname={'more_vert'}
     />,
   { notes: { markdown: notes }
   })

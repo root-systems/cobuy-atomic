@@ -1,24 +1,35 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import createPropTypes from 'json-schema-prop-types'
-import { withStyles, Paper } from '@material-ui/core'
+import { Popper, withStyles, Paper } from '@material-ui/core'
 
-import Popper from '@material-ui/core/Popper'
+import IconButton from '../../atoms/A017-IconButton'
 
 import schema from './schema'
 import styles from './styles'
 
 const M008 = props => {
+  const {
+    ariaLabel,
+    iconname,
+    open,
+    children
+  } = props
+
   return (
-    <div>
+    <Fragment>
+      <IconButton
+        ariaLabel={ariaLabel}
+        iconname={iconname}
+      />
       <Popper
-        open
-        placement='bottom'
+        open={open}
+        placement='right-end'
       >
         <Paper className={props.classes.paper} elevation={1}>
-          {props.children}
+          {children}
         </Paper>
       </Popper>
-    </div>
+    </Fragment>
   )
 }
 

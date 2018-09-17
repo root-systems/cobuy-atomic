@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react'
 import { MenuItem } from '@material-ui/core'
 
 // Import index.js from the same folder
-import Popper from '.'
+import RightPopper from '.'
 
 const MenuOptions = [
   {
@@ -21,7 +21,9 @@ const MenuOptions = [
 
 storiesOf('Molecules|M008 - Popper', module)
   .add('Default', () => (
-    <Popper
+    <RightPopper
+      ariaLabel='More menu'
+      iconname='more_vert'
       open
     >
       {MenuOptions.map(option => (
@@ -29,4 +31,5 @@ storiesOf('Molecules|M008 - Popper', module)
           {option.menuOption}
         </MenuItem>
       ))}
-    </Popper>))
+    </RightPopper>
+  ))
