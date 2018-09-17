@@ -1,6 +1,7 @@
 import { configure, addDecorator } from '@storybook/react'
 import { normal } from './theme'
 import { setOptions } from '@storybook/addon-options'
+import centered from '@storybook/addon-centered'
 import { configureViewport, INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import { configureActions } from '@storybook/addon-actions'
 import { muiTheme } from 'storybook-addon-material-ui'
@@ -22,6 +23,8 @@ setOptions({
   enableShortcuts: false,
   theme: normal
 })
+
+addDecorator(centered)
 
 configureViewport({
   defaultViewport: 'iphone5',
