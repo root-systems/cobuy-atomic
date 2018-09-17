@@ -24,12 +24,15 @@ export default {
         'group',
         'shopping_basket',
         'person',
+        'flower',
         'filter_vintage',
         'chevron_right',
         'chevron_left',
         'notifications',
         'more_horiz',
-        'more_vert'
+        'more_vert',
+        'favorite',
+        'favorite_border'
       ]
     }
   },

@@ -2,23 +2,25 @@ export default {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
   properties: {
-    avatarAlt: {
+    ariaLabel: {
       type: 'string'
     },
-    avatarSrc: {
+    color: {
+      type: 'string',
+      enum: ['default', 'primary', 'secondary']
+    },
+    disabled: {
+      type: 'boolean'
+    },
+    id: {
       type: 'string'
     },
     name: {
       type: 'string'
     },
-    description: {
-      type: 'string'
-    },
-    website: {
-      type: 'string'
-    },
-    email: {
+    value: {
       type: 'string'
     }
-  }
+  },
+  required: ['id', 'name', 'ariaLabel']
 }

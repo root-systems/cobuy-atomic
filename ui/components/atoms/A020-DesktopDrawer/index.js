@@ -8,7 +8,7 @@ import schema from './schema'
 import styles from './styles'
 
 const A020 = props => {
-  const {classes, children} = props
+  const { classes, children } = props
   return (
     <Drawer
       variant='permanent'
