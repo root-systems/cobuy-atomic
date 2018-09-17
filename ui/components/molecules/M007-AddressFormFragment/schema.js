@@ -7,9 +7,6 @@ export default {
       properties: {
         value: {
           type: 'string'
-        },
-        error: {
-          type: 'boolean'
         }
       }
     },
@@ -18,9 +15,6 @@ export default {
       properties: {
         value: {
           type: 'string'
-        },
-        error: {
-          type: 'boolean'
         }
       }
     },
@@ -29,9 +23,6 @@ export default {
       properties: {
         value: {
           type: 'string'
-        },
-        error: {
-          type: 'boolean'
         }
       }
     },
@@ -40,9 +31,6 @@ export default {
       properties: {
         value: {
           type: 'string'
-        },
-        error: {
-          type: 'boolean'
         }
       }
     },
@@ -51,9 +39,6 @@ export default {
       properties: {
         value: {
           type: 'string'
-        },
-        error: {
-          type: 'boolean'
         }
       }
     },
@@ -62,9 +47,6 @@ export default {
       properties: {
         value: {
           type: 'string'
-        },
-        error: {
-          type: 'boolean'
         }
       }
     },
@@ -73,9 +55,6 @@ export default {
       properties: {
         value: {
           type: 'string'
-        },
-        error: {
-          type: 'boolean'
         }
       }
     }

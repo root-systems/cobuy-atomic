@@ -1,1 +1,0 @@
-checkbox  with custom icon
