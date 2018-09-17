@@ -12,7 +12,8 @@ import notes from './readme.md'
 // List of stories of use cases for atom
 storiesOf('Atoms|A105 - SwitchField', module)
   .addDecorator(withNotes)
-  .add('Default',
+  .add(
+    'Default',
     () => (
       <Formik
         initialValues={{ switch: '' }}
@@ -34,11 +35,10 @@ storiesOf('Atoms|A105 - SwitchField', module)
     ),
     { notes: { markdown: notes } }
   )
-  .add('Right label, Primary colour',
+  .add(
+    'Right label, Primary colour',
     () => (
-      <Formik
-        initialValues={{ switch: '' }}
-      >
+      <Formik initialValues={{ switch: '' }}>
         <SwitchField
           id='switch2'
           name='switch'
@@ -51,11 +51,10 @@ storiesOf('Atoms|A105 - SwitchField', module)
     ),
     { notes: { markdown: notes } }
   )
-  .add('Disabled',
+  .add(
+    'Disabled',
     () => (
-      <Formik
-        initialValues={{ switch: '' }}
-      >
+      <Formik initialValues={{ switch: '' }}>
         <SwitchField
           id='switch3'
           name='switch'

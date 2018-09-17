@@ -27,11 +27,7 @@ storiesOf('Atoms|A103 - PasswordField', module)
           return errors
         }}
       >
-        <PasswordField
-          id='1'
-          name='password'
-          label='Secret squirrel'
-        />
+        <PasswordField id='1' name='password' label='Secret squirrel' />
       </Formik>
     ),
     {

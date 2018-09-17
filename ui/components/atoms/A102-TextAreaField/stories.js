@@ -15,9 +15,7 @@ storiesOf('Atoms|A102 - TextArea', module)
   .add(
     'Default',
     () => (
-      <Formik
-        initialValues={{ default: '' }}
-      >
+      <Formik initialValues={{ default: '' }}>
         <TextArea
           id='1'
           name='default'

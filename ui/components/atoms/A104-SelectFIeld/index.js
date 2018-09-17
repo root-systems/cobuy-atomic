@@ -9,12 +9,7 @@ import schema from './schema'
 import styles from './styles'
 
 const A104 = props => {
-  const {
-    readOnly,
-    classes,
-    children,
-    ...other
-  } = props
+  const { readOnly, classes, children, ...other } = props
 
   return (
     <Field

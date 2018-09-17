@@ -8,22 +8,13 @@ import { Checkbox } from 'formik-material-ui'
 import schema from './schema'
 
 const A110 = props => {
-  const {
-    label,
-    labelPlacement,
-    ...other
-  } = props
+  const { label, labelPlacement, ...other } = props
 
   return (
     <FormControlLabel
       label={label}
       labelPlacement={labelPlacement || 'start'}
-      control={
-        <Field
-          component={Checkbox}
-          {...other}
-        />
-      }
+      control={<Field component={Checkbox} {...other} />}
     />
   )
 }

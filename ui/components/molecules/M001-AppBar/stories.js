@@ -33,12 +33,10 @@ storiesOf('Molecules|M001 - AppBar', module)
       pageTitle='Cobuy'
       menuClick={action('menu-click')}
       profileClick={action('profile-click')}
-      settingsItems={
-        MenuOptions.map(option => (
-          <MenuItem key={option.menuOption} value={option.menuOption}>
-            {option.menuOption}
-          </MenuItem>
-        ))
-      }
+      settingsItems={MenuOptions.map(option => (
+        <MenuItem key={option.menuOption} value={option.menuOption}>
+          {option.menuOption}
+        </MenuItem>
+      ))}
     />
   ))

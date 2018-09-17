@@ -15,9 +15,7 @@ storiesOf('Atoms|A101 - TextField', module)
   .add(
     'Default',
     () => (
-      <Formik
-        initialValues={{ favouriteTea: '' }}
-      >
+      <Formik initialValues={{ favouriteTea: '' }}>
         <TextField
           id='1'
           name='favouriteTea'

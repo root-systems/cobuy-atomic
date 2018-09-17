@@ -9,15 +9,18 @@ import notes from './readme.md'
 // List of stories of use cases for atom
 storiesOf('Atoms|A106 - RadioField', module)
   .addDecorator(withNotes)
-  .add('Default radio', () => (
-    <RadioField
-      label='this is my radio label'
-      value='radioValue'
-      id='radio1'
-      ariaLabel='Radio default'
-    />
-  ),
-  { notes: { markdown: notes } })
+  .add(
+    'Default radio',
+    () => (
+      <RadioField
+        label='this is my radio label'
+        value='radioValue'
+        id='radio1'
+        ariaLabel='Radio default'
+      />
+    ),
+    { notes: { markdown: notes } }
+  )
   .add('Default radio, Left label', () => (
     <RadioField
       label='this is my radio label'

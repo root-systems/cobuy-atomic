@@ -27,7 +27,6 @@ const materialMap = {
   more_horiz: 'more_horiz',
   favorite: 'favorite',
   favorite_border: 'favorite_border'
-
 }
 
 const svgMap = {

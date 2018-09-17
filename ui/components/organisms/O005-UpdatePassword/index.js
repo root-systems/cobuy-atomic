@@ -8,7 +8,7 @@ import PasswordField from '../../atoms/A012-PasswordField'
 import schema from './schema'
 
 const O005 = props => {
-  const {initialValues} = props
+  const { initialValues } = props
   return (
     <Formik
       initialValues={initialValues}

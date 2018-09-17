@@ -48,12 +48,7 @@ storiesOf('Atoms|A104 - SelectLabel', module)
           return errors
         }}
       >
-        <SelectLabel
-          id='1'
-          type='text'
-          name='country'
-          label='Select Country'
-        >
+        <SelectLabel id='1' type='text' name='country' label='Select Country'>
           {/* Add your MenuItems in here with a wrapper. This map is just for an example */}
           {Countries.map(option => (
             <MenuItem key={option.name} value={option.name}>

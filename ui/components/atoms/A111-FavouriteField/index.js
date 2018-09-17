@@ -12,8 +12,8 @@ const A111 = props => {
   return (
     <Field
       component={Checkbox}
-      icon={(<Icon iconname='favorite_border' />)}
-      checkedIcon={(<Icon iconname='favorite' />)}
+      icon={<Icon iconname='favorite_border' />}
+      checkedIcon={<Icon iconname='favorite' />}
       {...props}
     />
   )

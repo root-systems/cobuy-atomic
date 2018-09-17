@@ -9,12 +9,7 @@ import schema from './schema'
 const A103 = props => {
   const { currentPasswordLength, ...other } = props
   return (
-    <Field
-      component={TextField}
-      type='password'
-      margin='normal'
-      {...other}
-    />
+    <Field component={TextField} type='password' margin='normal' {...other} />
   )
 }
 

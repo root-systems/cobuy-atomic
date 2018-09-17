@@ -11,7 +11,7 @@ import schema from './schema'
 import styles from './styles'
 
 const M001 = props => {
-  const {classes, menuClick, profileClick, pageTitle, settingsItems} = props
+  const { classes, menuClick, profileClick, pageTitle, settingsItems } = props
   return (
     <AppBar position='fixed'>
       <IconButton
@@ -28,11 +28,7 @@ const M001 = props => {
         iconname='person'
         onClick={profileClick}
       />
-      {settingsItems &&
-        <PageSettingsMenu>
-          {settingsItems}
-        </PageSettingsMenu>
-      }
+      {settingsItems && <PageSettingsMenu>{settingsItems}</PageSettingsMenu>}
     </AppBar>
   )
 }

@@ -8,22 +8,13 @@ import { Switch } from 'formik-material-ui'
 import schema from './schema'
 
 const A105 = props => {
-  const {
-    label,
-    labelPlacement,
-    ...other
-  } = props
+  const { label, labelPlacement, ...other } = props
 
   return (
     <FormControlLabel
       label={label}
       labelPlacement={labelPlacement || 'start'}
-      control={
-        <Field
-          component={Switch}
-          {...other}
-        />
-      }
+      control={<Field component={Switch} {...other} />}
     />
   )
 }
