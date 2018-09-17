@@ -4,7 +4,7 @@ import { AppBar, Toolbar } from '@material-ui/core'
 
 import schema from './schema'
 
-const A004 = props => {
+const A009 = props => {
   return (
     <AppBar color='primary' position={props.position}>
       <Toolbar variant='regular'>{props.children}</Toolbar>
@@ -12,6 +12,6 @@ const A004 = props => {
   )
 }
 
-A004.propTypes = createPropTypes(schema)
+A009.propTypes = createPropTypes(schema)
 
-export default A004
+export default A009

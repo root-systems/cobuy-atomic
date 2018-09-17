@@ -6,7 +6,7 @@ import IconButton from '@material-ui/core/IconButton'
 import Icon from '../../particles/P001-Icon'
 import schema from './schema'
 
-const A017 = props => {
+const A004 = props => {
   return (
     <IconButton
       color={props.color}
@@ -19,6 +19,6 @@ const A017 = props => {
   )
 }
 
-A017.propTypes = createPropTypes(schema)
+A004.propTypes = createPropTypes(schema)
 
-export default A017
+export default A004

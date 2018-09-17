@@ -3,13 +3,13 @@ import createPropTypes from 'json-schema-prop-types'
 
 import { Grid } from '@material-ui/core/'
 
-import TextFieldLabel from '../../atoms/A010-TextFieldLabel'
-import TextAreaLabel from '../../atoms/A012-TextAreaLabel'
+import TextField from '../../atoms/A101-TextField'
+import TextAreaField from '../../atoms/A102-TextAreaField'
 import Avatar from '../../atoms/A018-Avatar'
 
 import schema from './schema'
 
-const M002 = props => {
+const M011 = props => {
   const {
     onChange,
     avatar,
@@ -25,7 +25,7 @@ const M002 = props => {
         <Avatar alt={avatar.alt} src={avatar.src} iconname='flower' />
       </Grid>
       <Grid item xs={12}>
-        <TextFieldLabel
+        <TextField
           id='name'
           name='name'
           label='Name'
@@ -38,7 +38,7 @@ const M002 = props => {
         />
       </Grid>
       <Grid item xs={12}>
-        <TextAreaLabel
+        <TextAreaField
           id='description'
           name='description'
           label='Description'
@@ -49,7 +49,7 @@ const M002 = props => {
         />
       </Grid>
       <Grid item xs={12}>
-        <TextFieldLabel
+        <TextField
           id='website'
           name='website'
           label='Website address'
@@ -61,7 +61,7 @@ const M002 = props => {
         />
       </Grid>
       <Grid item xs={12}>
-        <TextFieldLabel
+        <TextField
           id='email'
           name='email'
           label='Email address'
@@ -76,6 +76,6 @@ const M002 = props => {
   )
 }
 
-M002.propTypes = createPropTypes(schema)
+M011.propTypes = createPropTypes(schema)
 
-export default M002
+export default M011

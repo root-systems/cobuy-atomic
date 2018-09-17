@@ -2,9 +2,9 @@ import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
 import { withStyles } from '@material-ui/core/styles'
 
-import AppBar from '../../atoms/A004-AppBar'
+import AppBar from '../../atoms/A009-AppBar'
 import Typography from '../../particles/P002-Typography'
-import IconButton from '../../atoms/A017-IconButton'
+import IconButton from '../../atoms/A003-IconButton'
 
 import schema from './schema'
 import styles from './styles'

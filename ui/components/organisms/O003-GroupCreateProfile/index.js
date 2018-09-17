@@ -6,7 +6,7 @@ import { isNil } from 'lodash'
 
 import { Grid, Paper, withStyles } from '@material-ui/core/'
 
-import ProfileFormFragment from '../../molecules/M002-ProfleFormFragment'
+import ProfileFormFragment from '../../molecules/M011-ProfleFormFragment'
 
 import Button from '../../atoms/A001-Button'
 import Typography from '../../particles/P002-Typography'

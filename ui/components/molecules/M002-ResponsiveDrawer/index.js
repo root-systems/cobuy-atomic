@@ -10,7 +10,7 @@ import DesktopDrawer from '../../atoms/A020-DesktopDrawer'
 import schema from './schema'
 import styles from './styles'
 
-const M003 = props => {
+const M002 = props => {
   const { open, handleDrawerToggle, children } = props
   return (
     <Fragment>
@@ -27,6 +27,6 @@ const M003 = props => {
   )
 }
 
-M003.propTypes = createPropTypes(schema)
+M002.propTypes = createPropTypes(schema)
 
-export default withStyles(styles)(M003)
+export default withStyles(styles)(M002)

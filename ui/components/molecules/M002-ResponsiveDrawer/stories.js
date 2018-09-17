@@ -27,7 +27,7 @@ const Countries = [
 ]
 
 // List of stories of use cases for atom
-storiesOf('Molecules|M003 - Responsive Drawer', module)
+storiesOf('Molecules|M002 - Responsive Drawer', module)
   .addDecorator(withNotes)
   .addDecorator(withKnobs)
   .add(
