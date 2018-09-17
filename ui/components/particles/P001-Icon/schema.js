@@ -28,7 +28,10 @@ export default {
         'chevron_right',
         'chevron_left',
         'notifications',
-        'more_horiz'
+        'more_horiz',
+        'favorite',
+        'favorite_border'
+
       ]
     }
   },

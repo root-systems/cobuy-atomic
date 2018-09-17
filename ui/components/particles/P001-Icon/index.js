@@ -24,7 +24,10 @@ const materialMap = {
   chevron_left: 'chevron_left',
   chevron_right: 'chevron_right',
   notifications: 'notifications',
-  more_horiz: 'more_horiz'
+  more_horiz: 'more_horiz',
+  favorite: 'favorite',
+  favorite_border: 'favorite_border'
+
 }
 
 const svgMap = {

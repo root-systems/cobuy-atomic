@@ -9,36 +9,35 @@ import notes from './readme.md'
 // List of stories of use cases for atom
 storiesOf('Atoms|A027 - CustomCheckboxLabel', module)
   .addDecorator(withNotes)
-  .add('Checkbox Default', () => (
+  .add('Checkbox custom icon', () => (
     <CheckboxLabel
-      label='Checkers'
+      label='Custom icon'
       value='checkboxValue'
       id='check1'
-      ariaLabel='Check Default'
+      ariaLabel='Custom icon'
     />
   ), { notes: { markdown: notes } })
-  .add('Checkbox Checked', () => (
+  .add('Checkbox custom icon, Checked', () => (
     <CheckboxLabel
-      label='I have a dog'
+      label='Custom icon checked'
       value='checkboxValue'
       id='check2'
       ariaLabel='Check your check'
       checked
     />
   ))
-  .add('Checkbox Label left', () => (
+  .add('Checkbox custom icon, Label left', () => (
     <CheckboxLabel
-      label='I have a dog'
+      label='Custom icon, left label'
       value='checkboxValue'
       id='check2'
       ariaLabel='Check your check'
-      checked
       labelPlacement='start'
     />
   ))
-  .add('Checkbox Disabled', () => (
+  .add('Checkbox custom icon, Disabled', () => (
     <CheckboxLabel
-      label='But I love cats'
+      label='Custom icon, disabled'
       value='checkboxValue'
       id='check3'
       ariaLabel='Disabled Check'

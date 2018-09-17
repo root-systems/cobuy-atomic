@@ -22,8 +22,8 @@ const A027 = props => {
           indeterminate={props.indeterminate}
           value={props.value}
           aria-label={props.ariaLabel}
-          icon={(<CustomIcon iconname='menu' />)}
-          checkedIcon={(<CustomIcon iconname='cancel' />)}
+          icon={(<CustomIcon iconname='favorite_border' />)}
+          checkedIcon={(<CustomIcon iconname='favorite' />)}
         />
       }
     />
