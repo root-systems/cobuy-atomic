@@ -2,8 +2,8 @@ export default {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
   properties: {
-    checked: {
-      type: 'boolean'
+    ariaLabel: {
+      type: 'string'
     },
     color: {
       type: 'string',
@@ -15,15 +15,22 @@ export default {
     id: {
       type: 'string'
     },
-    indeterminate: {
-      type: 'boolean'
+    label: {
+      type: 'string'
+    },
+    labelPlacement: {
+      type: 'string',
+      enum: ['end', 'start']
+    },
+    name: {
+      type: 'string'
     },
     value: {
       type: 'string'
     },
-    ariaLabel: {
-      type: 'string'
+    indeterminate: {
+      type: 'boolean'
     }
   },
-  required: ['value', 'id', 'ariaLabel']
+  required: ['name', 'label', 'id', 'ariaLabel']
 }
