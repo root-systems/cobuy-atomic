@@ -2,23 +2,27 @@ export default {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
   properties: {
-    avatarAlt: {
+    id: {
       type: 'string'
     },
-    avatarSrc: {
+    value: {
       type: 'string'
     },
     name: {
       type: 'string'
     },
-    description: {
+    label: {
       type: 'string'
     },
-    website: {
+    disabled: {
+      type: 'boolean'
+    },
+    placeholder: {
       type: 'string'
     },
-    email: {
+    readOnly: {
       type: 'string'
     }
-  }
+  },
+  required: ['id', 'name', 'label']
 }

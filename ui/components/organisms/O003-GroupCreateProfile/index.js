@@ -1,9 +1,12 @@
 import React from 'react'
 import createPropTypes from 'json-schema-prop-types'
+import { withFormik } from 'formik'
+import { string, object } from 'yup'
+import { isNil } from 'lodash'
 
 import { Grid, Paper, withStyles } from '@material-ui/core/'
 
-import ProfileFormFragment from '../../molecules/M002-ProfleFormFragment'
+import ProfileFormFragment from '../../molecules/M011-ProfleFormFragment'
 
 import Button from '../../atoms/A001-Button'
 import Typography from '../../particles/P002-Typography'
@@ -11,38 +14,93 @@ import Typography from '../../particles/P002-Typography'
 import schema from './schema'
 import styles from './styles'
 
-const O003 = props => {
+const loadValues = props => ({
+  avatarAlt: isNil(props.avatarAlt) ? '' : props.avatarAlt,
+  avatarSrc: isNil(props.avatarSrc) ? '' : props.avatarSrc,
+  nameField: isNil(props.name) ? '' : props.name,
+  descriptionField: isNil(props.description) ? '' : props.description,
+  websiteField: isNil(props.website) ? '' : props.website,
+  emailField: isNil(props.email) ? '' : props.email
+})
+
+const validateSchema = () =>
+  object().shape({
+    name: string().required(),
+    email: string().email(),
+    website: string().url()
+  })
+
+const handleSubmit = (values, { setSubmitting }) => {
+  setTimeout(() => {
+    window.alert(JSON.stringify(values, null, 2))
+    setSubmitting(false)
+  }, 400)
+}
+
+const formikEnhancer = withFormik({
+  initialValues: loadValues,
+  mapPropsToValues: props => ({
+    avatarAlt: props.avatarAlt,
+    avatarSrc: props.avatarSrc,
+    nameField: props.name,
+    descriptionField: props.description,
+    websiteField: props.website,
+    emailField: props.email
+  }),
+  validationSchema: validateSchema,
+  onSubmit: handleSubmit
+})
+
+const form = props => {
+  const {
+    classes,
+    handleCancel,
+    values,
+    errors,
+    handleChange,
+    handleSubmit
+    /* Todo: pass isSubmitting to Save/Send button
+    isSubmitting
+    */
+  } = props
   return (
-    <Paper className={props.classes.paper} elevation={1}>
+    <Paper className={classes.paper} elevation={1}>
       <Typography variant='headline' align='center'>
         Create a group
       </Typography>
-
       <ProfileFormFragment
-        avatar={{ alt: props.avatar.alt, src: props.avatar.src }}
+        onChange={handleChange}
+        avatar={{ alt: values.avatarAlt, src: values.avatarSrc }}
         nameField={{
-          value: props.nameField.value,
-          error: props.nameField.error
+          value: values.nameField,
+          error: errors.nameField
         }}
-        descriptionField={{ value: props.descriptionField.value }}
+        descriptionField={{ value: values.descriptionField }}
         websiteField={{
-          value: props.websiteField.value,
-          error: props.websiteField.error
+          value: values.websiteField,
+          error: errors.websiteField
         }}
         emailField={{
-          value: props.emailField.value,
-          error: props.emailField.error
+          value: values.emailField,
+          error: errors.emailField
         }}
       />
       <Grid container spacing={8}>
         <Grid item xs={12}>
-          <Button variant='default' color='secondary' text='Cancel' />
-          <Button variant='contained' color='primary' text='Save' />
+          <Button onClick={handleCancel} color='secondary' text='Cancel' />
+          <Button
+            onClick={handleSubmit}
+            variant='contained'
+            color='primary'
+            text='Save'
+          />
         </Grid>
       </Grid>
     </Paper>
   )
 }
+
+const O003 = formikEnhancer(form)
 
 O003.propTypes = createPropTypes(schema)
 
