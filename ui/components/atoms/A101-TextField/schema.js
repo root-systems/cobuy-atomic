@@ -6,23 +6,13 @@ export default {
       type: 'string'
     },
     value: {
-      anyOf: [
-        {
-          type: 'string'
-        },
-        {
-          type: 'number'
-        }
-      ]
+      type: 'string'
     },
     name: {
       type: 'string'
     },
     label: {
       type: 'string'
-    },
-    required: {
-      type: 'boolean'
     },
     disabled: {
       type: 'boolean'
@@ -34,5 +24,5 @@ export default {
       type: 'string'
     }
   },
-  required: ['id', 'name']
+  required: ['id', 'name', 'label']
 }

@@ -6,21 +6,22 @@ import { TextField } from 'formik-material-ui'
 
 import schema from './schema'
 
-const A010 = props => {
-  const { readOnly } = props
+const A101 = props => {
+  const { readOnly, ...other } = props
 
   return (
     <Field
       component={TextField}
-      type='text'
       InputProps={{
         readOnly: readOnly
       }}
-      {...props}
+      type='text'
+      margin='normal'
+      {...other}
     />
   )
 }
 
-A010.propTypes = createPropTypes(schema)
+A101.propTypes = createPropTypes(schema)
 
-export default A010
+export default A101

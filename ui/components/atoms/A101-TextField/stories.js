@@ -10,7 +10,7 @@ import TextField from '.'
 import notes from './readme.md'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A009 - TextField', module)
+storiesOf('Atoms|A101 - TextField', module)
   .addDecorator(withNotes)
   .add(
     'Default',
