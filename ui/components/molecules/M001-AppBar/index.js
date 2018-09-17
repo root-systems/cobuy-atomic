@@ -5,27 +5,34 @@ import { withStyles } from '@material-ui/core/styles'
 import AppBar from '../../atoms/A009-AppBar'
 import Typography from '../../particles/P002-Typography'
 import IconButton from '../../atoms/A003-IconButton'
+import PageSettingsMenu from '../M008-PageSettingsMenu'
 
 import schema from './schema'
 import styles from './styles'
 
 const M001 = props => {
+  const {classes, menuClick, profileClick, pageTitle, settingsItems} = props
   return (
     <AppBar position='fixed'>
       <IconButton
-        class={props.classes.menuButton}
+        className={classes.menuButton}
         ariaLabel='menu'
         iconname='menu'
-        handleClick={props.menuClick}
+        onClick={menuClick}
       />
-      <Typography variant='title' color='inherit' class={props.classes.flex}>
-        {props.pageTitle}
+      <Typography variant='title' color='inherit' className={classes.title}>
+        {pageTitle}
       </Typography>
       <IconButton
         ariaLabel='profile'
         iconname='person'
-        handleClick={props.profileClick}
+        onClick={profileClick}
       />
+      {settingsItems &&
+        <PageSettingsMenu>
+          {settingsItems}
+        </PageSettingsMenu>
+      }
     </AppBar>
   )
 }
