@@ -9,7 +9,7 @@ export default {
     disabled: {
       type: 'boolean'
     },
-    handleClick: {
+    onClick: {
       instanceOf: 'function'
     },
     iconname: {
@@ -19,5 +19,5 @@ export default {
       type: 'string'
     }
   },
-  required: ['iconname', 'ariaLabel', 'handleClick']
+  required: ['iconname', 'ariaLabel', 'onClick']
 }

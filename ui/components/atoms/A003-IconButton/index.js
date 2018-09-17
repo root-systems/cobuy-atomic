@@ -7,14 +7,13 @@ import Icon from '../../particles/P001-Icon'
 import schema from './schema'
 
 const A004 = props => {
+  const { ariaLabel, iconname, ...other } = props
   return (
     <IconButton
-      color={props.color}
-      disabled={props.disabled}
-      onClick={props.handleClick}
-      aria-label={props.ariaLabel}
+      aria-label={ariaLabel}
+      {...other}
     >
-      <Icon iconname={props.iconname} />
+      <Icon iconname={iconname} />
     </IconButton>
   )
 }
