@@ -10,14 +10,15 @@ import Avatar from '../../atoms/A018-Avatar'
 import schema from './schema'
 
 const M002 = props => {
+  const { onChange, avatar, nameField, descriptionField, websiteField, emailField } = props
   return (
     <Grid container spacing={8}>
       <Grid item xs={12}>
         {/* TODO: onclick(Avatar) open upload modal when avatar clicked */}
         <Avatar
-          alt={props.avatar.alt}
-          src={props.avatar.src}
-          iconname='filter_vintage'
+          alt={avatar.alt}
+          src={avatar.src}
+          iconname='flower'
         />
       </Grid>
       <Grid item xs={12}>
@@ -25,11 +26,12 @@ const M002 = props => {
           id='name'
           name='name'
           label='Name'
-          value={props.nameField.value}
+          value={nameField.value}
           placeholder='Daniel Lewis'
           type='text'
           required
-          error={props.nameField.error}
+          error={nameField.error}
+          onChange={onChange}
         />
       </Grid>
       <Grid item xs={12}>
@@ -37,9 +39,10 @@ const M002 = props => {
           id='description'
           name='description'
           label='Description'
-          value={props.descriptionField.value}
+          value={descriptionField.value}
           placeholder='There once was a little group that wished to buy together...'
           type='text'
+          onChange={onChange}
         />
       </Grid>
       <Grid item xs={12}>
@@ -47,10 +50,11 @@ const M002 = props => {
           id='website'
           name='website'
           label='Website address'
-          value={props.websiteField.value}
+          value={websiteField.value}
           placeholder='www.cobuy.nz'
           type='url'
-          error={props.websiteField.error}
+          error={websiteField.error}
+          onChange={onChange}
         />
       </Grid>
       <Grid item xs={12}>
@@ -58,10 +62,11 @@ const M002 = props => {
           id='email'
           name='email'
           label='Email address'
-          value={props.emailField.value}
+          value={emailField.value}
           placeholder='support@cobuy.nz'
           type='email'
-          error={props.emailField.error}
+          error={emailField.error}
+          onChange={onChange}
         />
       </Grid>
     </Grid>
