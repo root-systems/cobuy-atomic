@@ -17,14 +17,8 @@ export default {
     name: {
       type: 'string'
     },
-    onChange: {
-      instanceOf: 'function'
-    },
     readOnly: {
       type: 'string'
-    },
-    error: {
-      type: 'boolean'
     },
     children: {
       anyOf: [
@@ -38,7 +32,10 @@ export default {
           type: 'object'
         }
       ]
+    },
+    label: {
+      type: 'string'
     }
   },
-  required: ['id', 'value', 'name', 'onChange', 'children']
+  required: ['id', 'name', 'children', 'label']
 }
