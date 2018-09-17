@@ -10,7 +10,7 @@ import rgAvatar from '../../../assets/avatars/richard.jpg'
 const catAvatar = 'http://www.catgifpage.com/gifs/318.gif'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A016 - Avatar', module)
+storiesOf('Atoms|A018 - Avatar', module)
   .addDecorator(withNotes)
   .add(
     'Static avatar',
