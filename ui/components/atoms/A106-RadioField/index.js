@@ -6,7 +6,7 @@ import Radio from '@material-ui/core/Radio'
 
 import schema from './schema'
 
-const A026 = props => {
+const A106 = props => {
   return (
     <FormControlLabel
       label={props.label}
@@ -25,6 +25,6 @@ const A026 = props => {
   )
 }
 
-A026.propTypes = createPropTypes(schema)
+A106.propTypes = createPropTypes(schema)
 
-export default A026
+export default A106

@@ -3,14 +3,14 @@ import { storiesOf } from '@storybook/react'
 import { withNotes } from '@storybook/addon-notes'
 
 // Import index.js from the same folder
-import RadioLabel from '.'
+import RadioField from '.'
 import notes from './readme.md'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A026 - RadioLabel', module)
+storiesOf('Atoms|A106 - RadioField', module)
   .addDecorator(withNotes)
   .add('Default radio', () => (
-    <RadioLabel
+    <RadioField
       label='this is my radio label'
       value='radioValue'
       id='radio1'
@@ -19,7 +19,7 @@ storiesOf('Atoms|A026 - RadioLabel', module)
   ),
   { notes: { markdown: notes } })
   .add('Default radio, Left label', () => (
-    <RadioLabel
+    <RadioField
       label='this is my radio label'
       labelPlacement='start'
       value='radioValue'
@@ -29,7 +29,7 @@ storiesOf('Atoms|A026 - RadioLabel', module)
     />
   ))
   .add('Radio checked', () => (
-    <RadioLabel
+    <RadioField
       label='this is my radio label'
       value='radioValue'
       id='radio2'
@@ -39,7 +39,7 @@ storiesOf('Atoms|A026 - RadioLabel', module)
     />
   ))
   .add('Radio disabled', () => (
-    <RadioLabel
+    <RadioField
       label='this is my radio label'
       value='radioValue'
       id='radio3'
