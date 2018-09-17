@@ -25,6 +25,7 @@ const materialMap = {
   chevron_right: 'chevron_right',
   notifications: 'notifications',
   more_horiz: 'more_horiz',
+  more_vert: 'more_vert',
   favorite: 'favorite',
   favorite_border: 'favorite_border'
 }

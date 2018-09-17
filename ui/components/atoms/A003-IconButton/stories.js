@@ -6,7 +6,7 @@ import { actions } from '@storybook/addon-actions'
 import IconButton from '.'
 import notes from './readme.md'
 
-storiesOf('Atoms|A015 - Icon Button', module)
+storiesOf('Atoms|A017 - Icon Button', module)
   .addDecorator(withNotes)
   .add(
     'Add',
@@ -28,6 +28,20 @@ storiesOf('Atoms|A015 - Icon Button', module)
         color='secondary'
         iconname='group'
         ariaLabel='group profile'
+        handleClick={actions({ onClick: 'clicked' })}
+      />
+    ),
+    {
+      notes: { markdown: notes }
+    }
+  )
+  .add(
+    'moreVertical',
+    () => (
+      <IconButton
+        color='primary'
+        iconname='more_vert'
+        ariaLabel='More menu'
         handleClick={actions({ onClick: 'clicked' })}
       />
     ),

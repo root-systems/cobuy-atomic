@@ -30,6 +30,7 @@ export default {
         'chevron_left',
         'notifications',
         'more_horiz',
+        'more_vert',
         'favorite',
         'favorite_border'
       ]
