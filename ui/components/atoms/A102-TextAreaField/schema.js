@@ -8,16 +8,10 @@ export default {
     value: {
       type: 'string'
     },
-    required: {
-      type: 'boolean'
-    },
-    disabled: {
-      type: 'boolean'
-    },
     label: {
       type: 'string'
     },
-    error: {
+    disabled: {
       type: 'boolean'
     },
     name: {
@@ -26,11 +20,14 @@ export default {
     placeholder: {
       type: 'string'
     },
-    onChange: {
-      instanceOf: 'function'
-    },
     readOnly: {
       type: 'string'
+    },
+    rows: {
+      type: 'number'
+    },
+    rowsMax: {
+      type: 'number'
     }
   },
   required: ['id', 'name', 'label']
