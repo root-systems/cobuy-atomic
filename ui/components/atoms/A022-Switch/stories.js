@@ -9,15 +9,18 @@ import notes from './readme.md'
 // List of stories of use cases for atom
 storiesOf('Atoms|A022 - Switch', module)
   .addDecorator(withNotes)
-  .add('Default switch', () => (
-    <Switch
-      value='switchValue'
-      id='switch1'
-      ariaLabel='Switch default'
-      color='secondary'
-    />
-  ),
-  { notes: { markdown: notes } })
+  .add(
+    'Default switch',
+    () => (
+      <Switch
+        value='switchValue'
+        id='switch1'
+        ariaLabel='Switch default'
+        color='secondary'
+      />
+    ),
+    { notes: { markdown: notes } }
+  )
   .add('Switch checked', () => (
     <Switch
       value='switchValue'

@@ -11,14 +11,15 @@ storiesOf('Organisms|O003 - Create Group Profile', module)
   .add('Default', () => (
     <GroupCreateProfile
       avatarAlt={'Avatar Alt Text'}
-      avatarSrc={text('Avatar image src', 'http://www.catgifpage.com/gifs/318.gif')}
+      avatarSrc={text(
+        'Avatar image src',
+        'http://www.catgifpage.com/gifs/318.gif'
+      )}
       name={text('Name', 'John Snow')}
-      description={
-        text(
-          'Description',
-          `The saddest aspect of life right now is that science fiction gathers knowledge faster than society gathers wisdom. - Isaac Asimov`
-        )
-      }
+      description={text(
+        'Description',
+        `The saddest aspect of life right now is that science fiction gathers knowledge faster than society gathers wisdom. - Isaac Asimov`
+      )}
       website={text('Website Url', 'rootsystems.nz')}
       email={text('Email', 'hello@makebamboo.com')}
     />

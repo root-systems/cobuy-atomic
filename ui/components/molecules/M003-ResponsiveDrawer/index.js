@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React, { Fragment } from 'react'
 import createPropTypes from 'json-schema-prop-types'
 import { withStyles } from '@material-ui/core/styles'
 
@@ -11,22 +11,17 @@ import schema from './schema'
 import styles from './styles'
 
 const M003 = props => {
-  const {open, handleDrawerToggle, children} = props
+  const { open, handleDrawerToggle, children } = props
   return (
     <Fragment>
       <Hidden mdUp>
-        <MobileDrawer
-          open={open}
-          onClose={handleDrawerToggle}
-        >
+        <MobileDrawer open={open} onClose={handleDrawerToggle}>
           {children}
         </MobileDrawer>
       </Hidden>
       {/* TODO Change to Hidden implementation='css' if server side rendering */}
       <Hidden smDown>
-        <DesktopDrawer>
-          {children}
-        </DesktopDrawer>
+        <DesktopDrawer>{children}</DesktopDrawer>
       </Hidden>
     </Fragment>
   )

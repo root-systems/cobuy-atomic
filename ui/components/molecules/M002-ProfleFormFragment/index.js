@@ -10,16 +10,19 @@ import Avatar from '../../atoms/A018-Avatar'
 import schema from './schema'
 
 const M002 = props => {
-  const { onChange, avatar, nameField, descriptionField, websiteField, emailField } = props
+  const {
+    onChange,
+    avatar,
+    nameField,
+    descriptionField,
+    websiteField,
+    emailField
+  } = props
   return (
     <Grid container spacing={8}>
       <Grid item xs={12}>
         {/* TODO: onclick(Avatar) open upload modal when avatar clicked */}
-        <Avatar
-          alt={avatar.alt}
-          src={avatar.src}
-          iconname='flower'
-        />
+        <Avatar alt={avatar.alt} src={avatar.src} iconname='flower' />
       </Grid>
       <Grid item xs={12}>
         <TextFieldLabel

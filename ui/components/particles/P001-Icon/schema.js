@@ -24,6 +24,7 @@ export default {
         'group',
         'shopping_basket',
         'person',
+        'flower',
         'filter_vintage',
         'chevron_right',
         'chevron_left',
@@ -31,7 +32,6 @@ export default {
         'more_horiz',
         'favorite',
         'favorite_border'
-
       ]
     }
   },

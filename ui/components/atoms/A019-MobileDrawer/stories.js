@@ -28,16 +28,20 @@ const Countries = [
 storiesOf('Atoms|A019 - MobileDrawer', module)
   .addDecorator(withNotes)
   .addDecorator(withKnobs)
-  .add('Default', () =>
-    <MobileDrawer
-      open={boolean('Toggle Drawer', true)}
-      handleDrawerToggle={action('Close Drawer!')}
-    >
-      {/* Add your MenuItems in here with a wrapper. This map is just for an example */}
-      {Countries.map(option => (
-        <MenuItem key={option.name} value={option.name}>
-          {option.name}
-        </MenuItem>
-      ))}
-    </MobileDrawer>,
-  { notes: { markdown: notes } })
+  .add(
+    'Default',
+    () => (
+      <MobileDrawer
+        open={boolean('Toggle Drawer', true)}
+        handleDrawerToggle={action('Close Drawer!')}
+      >
+        {/* Add your MenuItems in here with a wrapper. This map is just for an example */}
+        {Countries.map(option => (
+          <MenuItem key={option.name} value={option.name}>
+            {option.name}
+          </MenuItem>
+        ))}
+      </MobileDrawer>
+    ),
+    { notes: { markdown: notes } }
+  )

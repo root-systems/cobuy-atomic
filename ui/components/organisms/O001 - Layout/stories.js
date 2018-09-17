@@ -27,7 +27,7 @@ const Countries = [
 storiesOf('Organisms|O001', module)
   .addDecorator(withNotes)
   .addDecorator(withKnobs)
-  .add('Default', () =>
+  .add('Default', () => (
     <Layout
       open={boolean('Toggle Drawer', true)}
       handleDrawerToggle={action('Close Drawer!')}
@@ -39,4 +39,4 @@ storiesOf('Organisms|O001', module)
         </MenuItem>
       ))}
     </Layout>
-  )
+  ))

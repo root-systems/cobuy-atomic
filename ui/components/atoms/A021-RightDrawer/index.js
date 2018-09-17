@@ -9,7 +9,7 @@ import schema from './schema'
 import styles from './styles'
 
 const A021 = props => {
-  const {classes, handleDrawerClose, open, children} = props
+  const { classes, handleDrawerClose, open, children } = props
   return (
     <Slide direction='left' in={open} mountOnEnter unmountOnExit>
       <Drawer

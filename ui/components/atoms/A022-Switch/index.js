@@ -6,15 +6,7 @@ import Switch from '@material-ui/core/Switch'
 import schema from './schema'
 
 const A022 = props => {
-  const {
-    id,
-    color,
-    checked,
-    disabled,
-    ariaLabel,
-    value,
-    onChange
-  } = props
+  const { id, color, checked, disabled, ariaLabel, value, onChange } = props
 
   return (
     <Switch

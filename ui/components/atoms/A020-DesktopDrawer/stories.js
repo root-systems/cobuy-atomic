@@ -25,13 +25,17 @@ const Countries = [
 
 storiesOf('Atoms|A020 - DesktopDrawer', module)
   .addDecorator(withNotes)
-  .add('Default', () =>
-    <DesktopDrawer>
-      {/* Add your MenuItems in here with a wrapper. This map is just for an example */}
-      {Countries.map(option => (
-        <MenuItem key={option.name} value={option.name}>
-          {option.name}
-        </MenuItem>
-      ))}
-    </DesktopDrawer>,
-  { notes: { markdown: notes } })
+  .add(
+    'Default',
+    () => (
+      <DesktopDrawer>
+        {/* Add your MenuItems in here with a wrapper. This map is just for an example */}
+        {Countries.map(option => (
+          <MenuItem key={option.name} value={option.name}>
+            {option.name}
+          </MenuItem>
+        ))}
+      </DesktopDrawer>
+    ),
+    { notes: { markdown: notes } }
+  )
