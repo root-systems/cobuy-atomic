@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { withKnobs, text, boolean } from '@storybook/addon-knobs'
+import { withKnobs, text } from '@storybook/addon-knobs'
 
 // Import index.js from the same folder
 import AddressFormFragment from '.'
@@ -11,32 +11,25 @@ storiesOf('Molecules|M007 - Address Form Fragment', module)
   .add('Default', () => (
     <AddressFormFragment
       addressNameField={{
-        value: text('addressNameField addressname', 'c/o Enspiral Dev Academy'),
-        error: boolean('addressNameField error', false)
+        value: text('addressNameField addressname', 'c/o Enspiral Dev Academy')
       }}
       addressLineOneField={{
-        value: text('addressLineOneField address01', 'Level 2, 275 Cuba Street'),
-        error: boolean('addressLineOneField error', false)
+        value: text('addressLineOneField address01', 'Level 2, 275 Cuba Street')
       }}
       addressLineTwoField={{
-        value: text('addressLineTwoField address02', ' '),
-        error: boolean('addressLineTwoField error', false)
+        value: text('addressLineTwoField address02', ' ')
       }}
       suburbField={{
-        value: text('suburbField suburb', 'Te Aro'),
-        error: boolean('suburbField error', false)
+        value: text('suburbField suburb', 'Te Aro')
       }}
       cityField={{
-        value: text('cityField city', 'Wellington'),
-        error: boolean('cityField error', false)
+        value: text('cityField city', 'Wellington')
       }}
       postCodeField={{
-        value: text('postCodeField postcode', '6011'),
-        error: boolean('postCodeField error', false)
+        value: text('postCodeField postcode', '6011')
       }}
       countryField={{
-        value: text('countryField postcode', 'New Zealand'),
-        error: boolean('countryField error', false)
+        value: text('countryField postcode', 'New Zealand')
       }}
     />
   ))
