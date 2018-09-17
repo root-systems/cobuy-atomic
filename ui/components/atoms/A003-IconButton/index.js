@@ -9,10 +9,7 @@ import schema from './schema'
 const A004 = props => {
   const { ariaLabel, iconname, ...other } = props
   return (
-    <IconButton
-      aria-label={ariaLabel}
-      {...other}
-    >
+    <IconButton aria-label={ariaLabel} {...other}>
       <Icon iconname={iconname} />
     </IconButton>
   )

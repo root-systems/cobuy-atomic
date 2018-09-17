@@ -19,17 +19,12 @@ const MenuOptions = [
   }
 ]
 
-storiesOf('Molecules|M008 - Popper', module)
-  .add('Default', () => (
-    <RightPopper
-      ariaLabel='More menu'
-      iconname='more_vert'
-      open
-    >
-      {MenuOptions.map(option => (
-        <MenuItem key={option.menuOption} value={option.menuOption}>
-          {option.menuOption}
-        </MenuItem>
-      ))}
-    </RightPopper>
-  ))
+storiesOf('Molecules|M008 - Popper', module).add('Default', () => (
+  <RightPopper ariaLabel='More menu' iconname='more_vert' open>
+    {MenuOptions.map(option => (
+      <MenuItem key={option.menuOption} value={option.menuOption}>
+        {option.menuOption}
+      </MenuItem>
+    ))}
+  </RightPopper>
+))

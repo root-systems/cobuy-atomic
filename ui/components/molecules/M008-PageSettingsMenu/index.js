@@ -36,11 +36,7 @@ class PageSettingsMenu extends React.Component {
           iconname='more_vert'
           onClick={this.handleClick}
         />
-        <Popper
-          open={open}
-          placement='bottom-end'
-          anchorEl={anchorEl}
-        >
+        <Popper open={open} placement='bottom-end' anchorEl={anchorEl}>
           <Paper className={classes.paper} elevation={1}>
             {children}
           </Paper>

@@ -8,23 +8,12 @@ import schema from './schema'
 import styles from './styles'
 
 const M008 = props => {
-  const {
-    ariaLabel,
-    iconname,
-    open,
-    children
-  } = props
+  const { ariaLabel, iconname, open, children } = props
 
   return (
     <Fragment>
-      <IconButton
-        ariaLabel={ariaLabel}
-        iconname={iconname}
-      />
-      <Popper
-        open={open}
-        placement='right-end'
-      >
+      <IconButton ariaLabel={ariaLabel} iconname={iconname} />
+      <Popper open={open} placement='right-end'>
         <Paper className={props.classes.paper} elevation={1}>
           {children}
         </Paper>

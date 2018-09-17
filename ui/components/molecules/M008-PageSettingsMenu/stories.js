@@ -19,13 +19,12 @@ const MenuOptions = [
   }
 ]
 
-storiesOf('Molecules|M008 - PageSettingsMenu', module)
-  .add('Default', () => (
-    <PageSettingsMenu>
-      {MenuOptions.map(option => (
-        <MenuItem key={option.menuOption} value={option.menuOption}>
-          {option.menuOption}
-        </MenuItem>
-      ))}
-    </PageSettingsMenu>
-  ))
+storiesOf('Molecules|M008 - PageSettingsMenu', module).add('Default', () => (
+  <PageSettingsMenu>
+    {MenuOptions.map(option => (
+      <MenuItem key={option.menuOption} value={option.menuOption}>
+        {option.menuOption}
+      </MenuItem>
+    ))}
+  </PageSettingsMenu>
+))
