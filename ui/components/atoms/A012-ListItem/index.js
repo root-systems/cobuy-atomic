@@ -7,7 +7,7 @@ import schema from './schema'
 
 const A012 = props => {
   return (
-    <ListItem button>
+    <ListItem button={props.button}>
       {props.children}
     </ListItem>
   )

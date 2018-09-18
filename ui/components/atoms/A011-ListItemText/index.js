@@ -9,7 +9,7 @@ const A011 = props => {
   return (
     <ListItemText
       primary={props.primary}
-      iconname='cancel'
+      secondary={props.secondary}
     />
   )
 }

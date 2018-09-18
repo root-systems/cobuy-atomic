@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import createPropTypes from 'json-schema-prop-types'
 import { Popper, withStyles, Paper } from '@material-ui/core'
 
-import IconButton from '../../atoms/A017-IconButton'
+import IconButton from '../../atoms/A003-IconButton'
 
 import schema from './schema'
 import styles from './styles'

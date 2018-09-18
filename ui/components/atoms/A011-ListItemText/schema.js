@@ -4,6 +4,10 @@ export default {
   properties: {
     primary: {
       type: 'string'
+    },
+    secondary: {
+      type: 'string'
     }
-  }
+  },
+  required: ['primary']
 }

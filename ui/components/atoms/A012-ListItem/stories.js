@@ -4,13 +4,11 @@ import { storiesOf } from '@storybook/react'
 // Import index.js from the same folder
 import ListItem from '.'
 import ListItemText from '../A011-ListItemText'
-import Icon from '../../particles/P001-Icon'
 
 // List of stories of use cases for atom
 storiesOf('Atoms|A012 - List Item', module)
-  .add('List item', () => (
+  .add('List item, Text', () => (
     <ListItem button>
-      <Icon iconname='cancel' />
-      <ListItemText primary='Cancel' />
+      <ListItemText primary='List item text' secondary='Secondary text' />
     </ListItem>
   ))

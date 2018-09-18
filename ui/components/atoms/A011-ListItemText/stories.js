@@ -8,6 +8,7 @@ import ListItemText from '.'
 storiesOf('Atoms|A011 - List item text', module)
   .add('List item text 01', () => (
     <ListItemText
-      primary='List item text 01'
+      primary='Primary text'
+      secondary='Secondary text'
     />
   ))

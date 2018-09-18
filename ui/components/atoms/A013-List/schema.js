@@ -4,23 +4,6 @@ export default {
   properties: {
     label: {
       type: 'string'
-    },
-    disabled: {
-      type: 'boolean'
-    },
-    iconname: {
-      type: 'string'
     }
-  },
-  oneOf: [
-    {
-      required: ['iconname']
-    },
-    {
-      required: ['label']
-    },
-    {
-      required: ['label', 'iconname']
-    }
-  ]
+  }
 }
