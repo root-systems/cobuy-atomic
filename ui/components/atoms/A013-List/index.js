@@ -6,9 +6,11 @@ import List from '@material-ui/core/List'
 import schema from './schema'
 
 const A013 = props => {
+  const {children} = props
+
   return (
     <List>
-      {props.children}
+      {children}
     </List>
   )
 }

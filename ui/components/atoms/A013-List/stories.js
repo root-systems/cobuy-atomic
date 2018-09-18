@@ -78,20 +78,12 @@ storiesOf('Atoms|A012 - List', module)
         <ListItemText button primary='Group' secondary='List of groups' />
       </ListItem>
       <ListItem button>
-        <Icon iconname='cancel' />
-        <ListItemText button primary='Cancel' secondary='Cancel transactions' />
-      </ListItem>
-      <ListItem button>
         <Icon iconname='help' />
         <ListItemText button primary='Help' secondary='Need assistance to this website?' />
       </ListItem>
       <ListItem button>
         <Icon iconname='settings' />
         <ListItemText button primary='Settings' secondary='Configure your website settings' />
-      </ListItem>
-      <ListItem button>
-        <Icon iconname='favorite' />
-        <ListItemText button primary='Favorite' secondary='List of favorite group' />
       </ListItem>
     </List>
   ))

@@ -6,10 +6,12 @@ import ListItemText from '@material-ui/core/ListItemText'
 import schema from './schema'
 
 const A011 = props => {
+  const {primary, secondary} = props
+
   return (
     <ListItemText
-      primary={props.primary}
-      secondary={props.secondary}
+      primary={primary}
+      secondary={secondary}
     />
   )
 }
