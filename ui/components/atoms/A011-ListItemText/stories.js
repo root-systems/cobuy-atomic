@@ -6,7 +6,12 @@ import ListItemText from '.'
 
 // List of stories of use cases for atom
 storiesOf('Atoms|A011 - List item text', module)
-  .add('List item text 01', () => (
+  .add('Primary text', () => (
+    <ListItemText
+      primary='Primary text'
+    />
+  ))
+  .add('Primary & Secondary text', () => (
     <ListItemText
       primary='Primary text'
       secondary='Secondary text'

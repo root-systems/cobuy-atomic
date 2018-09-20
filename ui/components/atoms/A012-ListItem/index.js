@@ -6,10 +6,10 @@ import ListItem from '@material-ui/core/ListItem'
 import schema from './schema'
 
 const A012 = props => {
-  const {button, children} = props
+  const { children } = props
 
   return (
-    <ListItem button={button}>
+    <ListItem button>
       {children}
     </ListItem>
   )

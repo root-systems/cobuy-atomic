@@ -8,82 +8,82 @@ import ListItemText from '../A011-ListItemText'
 import ListItem from '../A012-ListItem'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A012 - List', module)
+storiesOf('Atoms|A013 - List', module)
   .add('Primary text only', () => (
     <List>
-      <ListItem button>
-        <ListItemText button primary='Tawa Veggy Buyers' />
+      <ListItem>
+        <ListItemText primary='Tawa Veggy Buyers' />
       </ListItem>
-      <ListItem button>
-        <ListItemText button primary='North Wellington Resto Group' />
+      <ListItem>
+        <ListItemText primary='North Wellington Resto Group' />
       </ListItem>
-      <ListItem button>
-        <ListItemText button primary='S.I. Salmon Buyers' />
+      <ListItem>
+        <ListItemText primary='S.I. Salmon Buyers' />
       </ListItem>
-      <ListItem button>
-        <ListItemText button primary='Weekly egg buyers' />
+      <ListItem>
+        <ListItemText primary='Weekly egg buyers' />
       </ListItem>
-      <ListItem button>
-        <ListItemText button primary='Strawberries LTD' />
+      <ListItem>
+        <ListItemText primary='Strawberries LTD' />
       </ListItem>
     </List>
   ))
   .add('Primary & secondary text', () => (
     <List>
-      <ListItem button>
-        <ListItemText button primary='Tawa Veggy Buyers' secondary='Tawa, Wellington' />
+      <ListItem>
+        <ListItemText primary='Tawa Veggy Buyers' secondary='Tawa, Wellington' />
       </ListItem>
-      <ListItem button>
-        <ListItemText button primary='North Wellington Resto Group' secondary='Wairarapa, Wellington & Porirua' />
+      <ListItem>
+        <ListItemText primary='North Wellington Resto Group' secondary='Wairarapa, Wellington & Porirua' />
       </ListItem>
-      <ListItem button>
-        <ListItemText button primary='S.I. Salmon Buyers' secondary='South Island, NZ' />
+      <ListItem>
+        <ListItemText primary='S.I. Salmon Buyers' secondary='South Island, NZ' />
       </ListItem>
-      <ListItem button>
-        <ListItemText button primary='Weekly egg buyers' secondary='Upper hutt, Wellington' />
+      <ListItem>
+        <ListItemText primary='Weekly egg buyers' secondary='Upper hutt, Wellington' />
       </ListItem>
-      <ListItem button>
-        <ListItemText button primary='Strawberries LTD' secondary='Horowhenua, Levin' />
+      <ListItem>
+        <ListItemText primary='Strawberries LTD' secondary='Horowhenua, Levin' />
       </ListItem>
     </List>
   ))
   .add('List, Text with icon', () => (
     <List>
-      <ListItem button>
+      <ListItem>
         <Icon iconname='group' />
-        <ListItemText button primary='Group' />
+        <ListItemText primary='Group' />
       </ListItem>
-      <ListItem button>
+      <ListItem>
         <Icon iconname='cancel' />
-        <ListItemText button primary='Cancel' />
+        <ListItemText primary='Cancel' />
       </ListItem>
-      <ListItem button>
+      <ListItem>
         <Icon iconname='help' />
-        <ListItemText button primary='Help' />
+        <ListItemText primary='Help' />
       </ListItem>
-      <ListItem button>
+      <ListItem>
         <Icon iconname='settings' />
-        <ListItemText button primary='Settings' />
+        <ListItemText primary='Settings' />
       </ListItem>
-      <ListItem button>
+      <ListItem>
         <Icon iconname='favorite' />
-        <ListItemText button primary='Favorite' />
+        <ListItemText primary='Favorite' />
       </ListItem>
     </List>
   ))
   .add('List, Primary & secondary text with icon', () => (
     <List>
-      <ListItem button>
+      <ListItem>
         <Icon iconname='group' />
-        <ListItemText button primary='Group' secondary='List of groups' />
+        <ListItemText primary='Group' secondary='List of groups' />
       </ListItem>
-      <ListItem button>
+      <ListItem>
         <Icon iconname='help' />
-        <ListItemText button primary='Help' secondary='Need assistance to this website?' />
+        <ListItemText primary='Help' secondary='Need assistance to this website?' />
       </ListItem>
-      <ListItem button>
+      <ListItem>
         <Icon iconname='settings' />
-        <ListItemText button primary='Settings' secondary='Configure your website settings' />
+        <ListItemText primary='Settings' secondary='Configure your website settings' />
       </ListItem>
     </List>
   ))
