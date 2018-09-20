@@ -7,6 +7,10 @@ import notes from './readme.md'
 
 storiesOf('Atoms|A015 - Circular Indeterminate float button', module)
   .addDecorator(withNotes)
-  .add('Floating button, disabled', () => <Button color='secondary' iconname='add' />, {
-    notes: { markdown: notes }
+  .add('Floating button, disabled', () =>
+    <Button
+      color='secondary'
+      iconname='add'
+    />,
+  { notes: { markdown: notes }
   })

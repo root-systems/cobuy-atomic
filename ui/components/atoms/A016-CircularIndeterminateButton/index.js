@@ -18,7 +18,10 @@ const A016 = props => {
       <Button variant='contained' disabled>
         {text}
       </Button>
-      <CircularProgress size={22} className={classes.circularProgress} />
+      <CircularProgress
+        size={22}
+        className={classes.circularProgress}
+      />
     </Fragment>
   )
 }

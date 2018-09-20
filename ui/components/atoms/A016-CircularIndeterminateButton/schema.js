@@ -6,22 +6,8 @@ export default {
       type: 'string',
       enum: ['default', 'inherit', 'primary', 'secondary']
     },
-    onClick: {
-      instanceOf: 'function'
-    },
-    disabled: {
-      type: 'boolean'
-    },
-    fullWidth: {
-      type: 'boolean'
-    },
     size: {
-      type: 'string',
-      enum: ['small', 'medium', 'large']
-    },
-    text: {
-      type: 'string'
+      type: 'number'
     }
-  },
-  required: ['color', 'onClick', 'text']
+  }
 }
