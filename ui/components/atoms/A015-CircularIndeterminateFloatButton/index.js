@@ -23,7 +23,8 @@ const A015 = props => {
       </Button>
       <CircularProgress
         size={68}
-        className={classes.circularProgress} />
+        className={classes.circularProgress}
+      />
     </Fragment>
   )
 }

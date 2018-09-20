@@ -5,7 +5,7 @@ import { withNotes } from '@storybook/addon-notes'
 import Button from '.'
 import notes from './readme.md'
 
-storiesOf('Atoms|A015 - Indeterminate circular', module)
+storiesOf('Atoms|A015 - Circular Indeterminate float button', module)
   .addDecorator(withNotes)
   .add('Floating button, disabled', () => <Button color='secondary' iconname='add' />, {
     notes: { markdown: notes }
