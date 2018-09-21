@@ -6,6 +6,9 @@ import Button from '.'
 
 // List of stories of use cases for atom
 storiesOf('Atoms|A016 - Circular Indeterminate button', module)
-  .add('Participate Order Button', () => (
-    <Button text={'Participate Order'} color={'default'} />
+  .add('Add Button', () => (
+    <Button iconname='add' submitting={false} />
+  ))
+  .add('Add button Indeterminate state', () => (
+    <Button iconname='add' submitting />
   ))
