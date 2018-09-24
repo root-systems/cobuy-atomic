@@ -6,7 +6,7 @@ import Icon from '../../particles/P001-Icon'
 
 import schema from './schema'
 
-const A012 = props => {
+const A011 = props => {
   const { handleClick, primaryText, secondaryText } = props
 
   return (
@@ -17,5 +17,5 @@ const A012 = props => {
   )
 }
 
-A012.propTypes = createPropTypes(schema)
-export default A012
+A011.propTypes = createPropTypes(schema)
+export default A011
