@@ -10,16 +10,17 @@ import schema from './schema'
 const isNothing = arg => isNil(arg) || isEmpty(arg)
 
 const A018 = props => {
+  const { src, text, iconname, alt, srcSet } = props
   return (
     <Fragment>
-      {isNothing(props.src) && isNil(props.text) ? (
+      {isNothing(src) && isNil(text) ? (
         <Avatar>
-          <Icon iconname={props.iconname} />
+          <Icon iconname={iconname} />
         </Avatar>
-      ) : isNil(props.src) ? (
-        <Avatar>{props.text}</Avatar>
+      ) : isNil(src) ? (
+        <Avatar>{text}</Avatar>
       ) : (
-        <Avatar alt={props.alt} src={props.src} srcSet={props.srcSet} />
+        <Avatar alt={alt} src={src} srcSet={srcSet} />
       )}
     </Fragment>
   )
