@@ -10,7 +10,7 @@ import schema from './schema'
 import styles from './styles'
 
 const A002 = props => {
-  const { color, size, ariaLabel, iconname, submitting, classes, hide } = props
+  const { color, size, ariaLabel, iconname, submitting, classes } = props
   return (
     <Fragment>
       <Button
@@ -22,12 +22,13 @@ const A002 = props => {
       >
         <Icon iconname={iconname} />
       </Button>
-      {submitting ? (
+      {submitting && (
         <CircularProgress
           size={68}
           className={classes.circularProgress}
         />
-      ) : (hide)}
+      )}
+
     </Fragment>
   )
 }
