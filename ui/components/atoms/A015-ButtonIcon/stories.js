@@ -5,9 +5,12 @@ import { storiesOf } from '@storybook/react'
 import Button from '.'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A016 - Button with Icon', module)
+storiesOf('Atoms|A015 - Button with Icon', module)
   .add('Add icon', () => (
-    <Button iconname='add' submitting={false} />
+    <Button
+      iconname='add'
+      submitting={false}
+    />
   ))
   .add('Add icon, Progress state', () => (
     <Button submitting />
