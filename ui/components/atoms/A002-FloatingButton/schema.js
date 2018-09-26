@@ -17,5 +17,5 @@ export default {
       type: 'string'
     }
   },
-  required: ['color', 'iconname']
+  required: ['iconname']
 }

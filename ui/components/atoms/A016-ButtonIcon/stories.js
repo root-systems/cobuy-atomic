@@ -5,10 +5,10 @@ import { storiesOf } from '@storybook/react'
 import Button from '.'
 
 // List of stories of use cases for atom
-storiesOf('Atoms|A016 - Circular Indeterminate button', module)
-  .add('Add Button', () => (
+storiesOf('Atoms|A016 - Button with Icon', module)
+  .add('Add icon', () => (
     <Button iconname='add' submitting={false} />
   ))
-  .add('Add button Indeterminate state', () => (
-    <Button iconname='add' submitting />
+  .add('Add icon, Progress state', () => (
+    <Button submitting />
   ))
