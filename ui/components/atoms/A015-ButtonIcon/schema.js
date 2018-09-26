@@ -6,16 +6,8 @@ export default {
       type: 'string',
       enum: ['default', 'inherit', 'primary', 'secondary']
     },
-    disabled: {
-      type: 'boolean'
-    },
     size: {
-      type: 'string',
-      enum: ['small', 'medium', 'large']
-    },
-    iconname: {
-      type: 'string'
+      type: 'number'
     }
-  },
-  required: ['iconname']
+  }
 }

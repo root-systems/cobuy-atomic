@@ -1,25 +1,38 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import createPropTypes from 'json-schema-prop-types'
+import { withStyles } from '@material-ui/core/styles'
 
-import Button from '@material-ui/core/Button'
+import {Button, CircularProgress} from '@material-ui/core'
 
 import Icon from '../../particles/P001-Icon'
+
 import schema from './schema'
+import styles from './styles'
 
 const A002 = props => {
+  const { color, size, ariaLabel, iconname, submitting, classes } = props
   return (
-    <Button
-      variant='fab'
-      color={props.color}
-      disabled={props.disabled}
-      size={props.size}
-      aria-label={props.ariaLabel}
-    >
-      <Icon iconname={props.iconname} />
-    </Button>
+    <Fragment>
+      <Button
+        variant='fab'
+        color={color}
+        size={size}
+        aria-label={ariaLabel}
+        disabled={submitting}
+      >
+        <Icon iconname={iconname} />
+      </Button>
+      {submitting && (
+        <CircularProgress
+          size={68}
+          className={classes.circularProgress}
+        />
+      )}
+
+    </Fragment>
   )
 }
 
 A002.propTypes = createPropTypes(schema)
 
-export default A002
+export default withStyles(styles)(A002)
